@@ -68,15 +68,36 @@ nav {
   height: -webkit-fill-available;
 }
 
-.dashboard-nav-left .home .main-menu {
+.dashboard-nav-left ul {
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.dashboard-nav-left .nav-left {
+  list-style-type: none;
+}
+
+.dashboard-nav-left .nav-left .main-menu {
   text-transform: uppercase;
+  padding: 5px;
 }
 
-.dashboard-nav-left .home img {
+.dashboard-nav-left .nav-left .submenu {
+  list-style-type: none;
+  margin: 5px 0px 10px 25px;
+}
+
+.dashboard-nav-left .nav-left .submenu li {
+  padding-top: 10px;
+}
+
+.dashboard-nav-left .nav-left img {
   fill: #ffffff;
+  width: 10px;
+  height: 10px;
 }
 
-.dashboard-nav-left .home a {
+.dashboard-nav-left .nav-left a {
   color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;

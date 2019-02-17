@@ -63,12 +63,27 @@ nav {
     background: $color-primary;
     box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
     height: -webkit-fill-available;
-    .home{
+    ul{
+        padding: 5px;
+        margin-left: 40px;
+    }
+    .nav-left{
+            list-style-type: none;
         .main-menu{
             text-transform: uppercase;
+            padding: 5px;
+        }
+        .submenu{
+            list-style-type: none;
+            margin: 5px 0px 10px 25px;
+            li{
+                padding-top: 10px;
+            }
         }
         img{
             fill: $color-white;
+            width: 10px;
+            height: 10px;
         }
         a{
             color: $color-white;
