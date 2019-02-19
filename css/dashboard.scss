@@ -35,9 +35,10 @@ nav {
         // padding: 15px 5px;
         .logo{
             padding: 0px;
-            margin-left: 30px;
-            width: 55px;
-            height: 40px;
+            margin-left: 45px;
+            width: 60px;
+            height: 45px;
+            margin-top: 4px;
         }
         .brand-name{
             color: #fff;
@@ -46,20 +47,21 @@ nav {
         }
     }
     .nav-link-right{
-        padding: 5px;
+        padding: 9px;
         background: transparent;
         list-style-type: none;
        a{
-            background-color: $color-white;
+            background-color: transparent;
             color: $color-primary;
-            padding: 4px 12px;
-            border: 2px solid $color-primary; 
+            padding: 6px 25px;
+            border: 1px solid $color-primary; 
             border-radius: 3px;
             cursor: pointer;
             font-family: Arial, Helvetica, sans-serif;
             position: relative;
             top: 8px;
-            left: 80px;
+            left: 120px;
+            text-decoration: none;
 
         }
     }
@@ -81,17 +83,17 @@ nav {
     background: $color-white;
     box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
     height: -webkit-fill-available;
-    z-index: -1;
+    // z-index: -1;
     ul{
-        padding: 5px;
-        margin-left: 45px;
-        margin-top: 65px;
+        padding: 0px;
+        margin-left: 40px;
+        margin-top: 100px;
        li{
            ul{
                opacity: 0;
-               transition: .4 ease-in;
-               width: 0px;
-               height: 0px;
+               transition: .4s ease-in;
+               width: 68px;
+               height: 20px;
            }
        } 
     }
@@ -100,8 +102,9 @@ nav {
        li:hover{
            ul{
                opacity: 1;
-               width: 20px;
-               height: inherit;
+               width: 80%;
+               height: 50%;
+               padding: 5px;
            }
        } 
     }
@@ -113,10 +116,13 @@ nav {
         }
         .submenu{
             list-style-type: none;
-            margin: 25px 10px 0px 10px;
-            transition: .9s linear;
+            margin: 0px 0px 5px 30px;
+            transition: .5s linear .4s;
+            a:hover{
+                text-decoration: underline;
+            }
             li{
-                padding-top: 10px;
+                padding-top: 0px;
             }
         }
         img{
@@ -127,9 +133,11 @@ nav {
         a{
             color: $color-primary;
             font-size: 12px;
+            cursor: pointer;
             text-decoration: none;
             text-transform: capitalize;
         }
+       
     }
 }
 
@@ -137,12 +145,13 @@ nav {
 
 .dashboard-details-right{
     display: block;
+    background-color: $color-grey;
 }
 .header-details-right{
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 5px;
-    margin-top: 60px;
+    margin-top: 85px;
     h1{
         font-family: inherit;
         text-transform: capitalize;
@@ -178,14 +187,22 @@ nav {
     margin: 10px;
     text-transform: capitalize;
     p{
-        margin-top: 10px;
+        margin-top: 20px;
+        font-size: 12px;
     }
     .naira{
         text-decoration: line-through;
+        font-size: 12px;
     }
     .today-payment{
         margin: 30% 0 5% 0;
         text-transform: capitalize;
+        font-size: 15px;
+    }
+    .approved-credit{
+        margin: 30% 0 5% 0;
+        text-transform: capitalize;
+        font-size: 15px;
     }
     .price{
         position: relative;
@@ -197,18 +214,38 @@ nav {
             text-decoration: line-through;
         }
     }
+    .price2{
+        position: relative;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 10px;
+        color: $color-approve;
+        .naira{
+            text-decoration: line-through;
+        }
+    }
     .product{
-        padding: 15px;
+        padding: 5px;
+        tr{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         thead{
             text-transform: capitalize;
             color: $color-primary;
+            th{
+                padding: 20px 10px 15px 5px;
+                color: $color-black;
+                font-size: 12px;
+                font-weight: 100;
+            }
         }
         td{
             color: $color-black;
             padding-top: 2px;
             padding-right: 6px;
             padding-left: 13px;
-            font-size: 13px;
+            font-size: 12px;
             .naira{
                 text-decoration: line-through;
             }
@@ -224,12 +261,13 @@ nav {
             text-align: center;
         }
         td{
-            padding-top: 2px;
-            padding-right: 59px;
-            padding-left: 10px;
-            font-size: 13px;
+            padding-top: 5px;
+            padding-right: 39px;
+            padding-left: 18px;
+            font-size: 12px;
             .naira{
                 text-decoration: line-through;
+                font-size: 12px;
             }
         }
     }
@@ -239,12 +277,12 @@ nav {
 
 .right-second{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 65% 35%;
     // width: 100%;
     margin: 20px;
 }
 .right-second-top{
-    margin: 20px;
+    margin: 15px;
     table{
         border-spacing: 0;
         color: $color-white;
@@ -253,11 +291,18 @@ nav {
         min-height: 25vh;
         box-shadow: 2px 2px 5px 4px $color-grey;
         thead{
+            text-align: center;
             tr{
                 td{
                     font-size: 12px;
-                    padding: 14px;
+                    padding: 15px 0px 15px 32px;
                     background-color: $color-primary;
+                    p{
+                        margin-left: 50px;
+                    }
+                }
+                .right{
+                    padding: 0;
                 }
             }
         }
@@ -266,7 +311,7 @@ nav {
             color: $color-black;
         }
         td{
-            padding: 20px 5px;
+            padding: 10px 30px 24px 30px;
             font-size: 12px;
         }
     }
@@ -308,7 +353,7 @@ nav {
     grid-template-columns: 1fr;
     // width: 100%;
     grid-template-rows: 20%;
-    margin: 20px;
+    margin: 15px;
     p{
         margin: 0px 20px;
         padding-top: 13px;
