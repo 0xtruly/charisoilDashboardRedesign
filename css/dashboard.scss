@@ -1,7 +1,18 @@
 @import './variable.scss';
+@mixin font($font-family, $font-file) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file+'.ttf') format('truetype');
+    }
+    
+}
+@include font('Helvetica', '/assets/fonts/Helvetica');
+@include font('Open Sans, Bold', '/assets/fonts/OpenSans-Bold');
+@include font('Open Sans, Regular', '/assets/fonts/OpenSans-Regular');
 *{
     padding: 0px;
     margin: 0px;
+    font-family: Helvetica;
 }
 
 /*nav */
@@ -10,19 +21,23 @@ nav {
     width: 100%;
     margin: 0px auto;
     box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
+    position: fixed;
 }
 .nav-grid{
     display: grid;
+    height: 10vh;
     grid-template-columns: 3fr 1fr;
-    background:$color-primary;
+    background:$color-white;
 
     .logo-left{
         // display: grid;
         // grid-template-columns: 1fr 4fr;
         // padding: 15px 5px;
         .logo{
-            padding: 10px;
-            margin-left: 20px;
+            padding: 0px;
+            margin-left: 30px;
+            width: 55px;
+            height: 40px;
         }
         .brand-name{
             color: #fff;
@@ -32,24 +47,27 @@ nav {
     }
     .nav-link-right{
         padding: 5px;
-        margin-top: 35px;
-        margin-right: 15px;
         background: transparent;
         list-style-type: none;
-        button{
-            background-color: $color-primary;
-            color: $color-white;
-            width: 76px;
-            height: 35px;
+       a{
+            background-color: $color-white;
+            color: $color-primary;
+            padding: 4px 12px;
+            border: 2px solid $color-primary; 
             border-radius: 3px;
             cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 8px;
+            left: 80px;
+
         }
     }
 }
 
 /*nav end */
 
-/*section-dashboard */
+/*section-dashboard grid left*/
 
 .dashboard{
     width: 100%;
@@ -60,12 +78,32 @@ nav {
     grid-template-columns: 1fr 3fr;
 }
 .dashboard-nav-left{
-    background: $color-primary;
+    background: $color-white;
     box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
     height: -webkit-fill-available;
+    z-index: -1;
     ul{
         padding: 5px;
-        margin-left: 40px;
+        margin-left: 45px;
+        margin-top: 65px;
+       li{
+           ul{
+               opacity: 0;
+               transition: .4 ease-in;
+               width: 0px;
+               height: 0px;
+           }
+       } 
+    }
+    ul{
+        
+       li:hover{
+           ul{
+               opacity: 1;
+               width: 20px;
+               height: inherit;
+           }
+       } 
     }
     .nav-left{
             list-style-type: none;
@@ -75,7 +113,8 @@ nav {
         }
         .submenu{
             list-style-type: none;
-            margin: 5px 0px 10px 25px;
+            margin: 25px 10px 0px 10px;
+            transition: .9s linear;
             li{
                 padding-top: 10px;
             }
@@ -83,12 +122,217 @@ nav {
         img{
             fill: $color-white;
             width: 10px;
-            height: 10px;
+            height: 14px;
         }
         a{
-            color: $color-white;
+            color: $color-primary;
+            font-size: 12px;
             text-decoration: none;
             text-transform: capitalize;
         }
+    }
+}
+
+/* dashboard left */
+
+.dashboard-details-right{
+    display: block;
+}
+.header-details-right{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 5px;
+    margin-top: 60px;
+    h1{
+        font-family: inherit;
+        text-transform: capitalize;
+        margin-left: 15px;
+    }
+    .merchant{
+        background: $color-primary;
+        padding: 3px;
+        margin-right: 25px;
+        p{
+            color: $color-white;
+            padding: 5px;
+            font-family: Open sans Regular;
+            text-transform: uppercase;
+        }
+        a{
+            color: $color-white;
+            padding: 5px;
+        }
+    }
+}
+.right-first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+}
+.right-first-top{
+    min-height: 190px;
+    border-radius: 5px;
+    background-color: $color-primary;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px;
+    text-transform: capitalize;
+    p{
+        margin-top: 10px;
+    }
+    .naira{
+        text-decoration: line-through;
+    }
+    .today-payment{
+        margin: 30% 0 5% 0;
+        text-transform: capitalize;
+    }
+    .price{
+        position: relative;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 10px;
+        color: $color-gold;
+        .naira{
+            text-decoration: line-through;
+        }
+    }
+    .product{
+        padding: 15px;
+        thead{
+            text-transform: capitalize;
+            color: $color-primary;
+        }
+        td{
+            color: $color-black;
+            padding-top: 2px;
+            padding-right: 6px;
+            padding-left: 13px;
+            font-size: 13px;
+            .naira{
+                text-decoration: line-through;
+            }
+        }
+    }
+    .average-price{
+        padding: 10px;
+        .currentAvr-price{
+            text-transform: capitalize;
+            color: $color-primary;
+            padding: 5px;
+            padding-left: 15px;
+            text-align: center;
+        }
+        td{
+            padding-top: 2px;
+            padding-right: 59px;
+            padding-left: 10px;
+            font-size: 13px;
+            .naira{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+/* ---second set of dashboard details */
+
+.right-second{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    // width: 100%;
+    margin: 20px;
+}
+.right-second-top{
+    margin: 20px;
+    table{
+        border-spacing: 0;
+        color: $color-white;
+        text-align: center;
+        width: 100%;
+        min-height: 25vh;
+        box-shadow: 2px 2px 5px 4px $color-grey;
+        thead{
+            tr{
+                td{
+                    font-size: 12px;
+                    padding: 14px;
+                    background-color: $color-primary;
+                }
+            }
+        }
+        tbody{
+            background-color: $color-white;
+            color: $color-black;
+        }
+        td{
+            padding: 20px 5px;
+            font-size: 12px;
+        }
+    }
+}
+.right-third{
+    display: grid;
+    grid-template-columns: 1fr;
+    // width: 100%;
+    grid-template-rows: 20%;
+    margin: 20px;
+    p{
+        margin: 0px 20px;
+        padding-top: 13px;
+    }
+    a{
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-family: inherit;
+        color: $color-white;
+    }
+    .approve{
+        background-color: $color-approve;
+    }
+    .cancel{
+        background-color: $color-cancel;
+    }
+    .product{
+        background-color: $color-white;
+        color: $color-payment;
+        box-shadow: 2px 2px 2px 2px #e7e5e5;
+    }
+    .payment{
+        background-color: $color-payment;
+        color: $color-white;
+    }
+}
+.right-fourth{
+    display: grid;
+    grid-template-columns: 1fr;
+    // width: 100%;
+    grid-template-rows: 20%;
+    margin: 20px;
+    p{
+        margin: 0px 20px;
+        padding-top: 13px;
+    }
+    a{
+        padding: 8px 5px;
+        border-radius: 10px;
+        font-family: inherit;
+        color: $color-white;
+        font-size: 12px;
+    }
+    .approve{
+        background-color: $color-approve;
+    }
+    .cancel{
+        background-color: $color-cancel;
+    }
+    .product{
+        background-color: $color-white;
+        color: $color-primary;
+        box-shadow: 2px 2px 2px 2px #e7e5e5;
+    }
+    .payment{
+        background-color: $color-primary;
+        color: $color-white;
     }
 }
