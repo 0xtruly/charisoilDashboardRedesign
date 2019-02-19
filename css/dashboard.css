@@ -39,9 +39,10 @@ nav {
 
 .nav-grid .logo-left .logo {
   padding: 0px;
-  margin-left: 30px;
-  width: 55px;
-  height: 40px;
+  margin-left: 45px;
+  width: 60px;
+  height: 45px;
+  margin-top: 4px;
 }
 
 .nav-grid .logo-left .brand-name {
@@ -51,22 +52,23 @@ nav {
 }
 
 .nav-grid .nav-link-right {
-  padding: 5px;
+  padding: 9px;
   background: transparent;
   list-style-type: none;
 }
 
 .nav-grid .nav-link-right a {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #004487;
-  padding: 4px 12px;
-  border: 2px solid #004487;
+  padding: 6px 25px;
+  border: 1px solid #004487;
   border-radius: 3px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: 8px;
-  left: 80px;
+  left: 120px;
+  text-decoration: none;
 }
 
 /*nav end */
@@ -88,27 +90,27 @@ nav {
   -webkit-box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
           box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
   height: -webkit-fill-available;
-  z-index: -1;
 }
 
 .dashboard-nav-left ul {
-  padding: 5px;
-  margin-left: 45px;
-  margin-top: 65px;
+  padding: 0px;
+  margin-left: 40px;
+  margin-top: 100px;
 }
 
 .dashboard-nav-left ul li ul {
   opacity: 0;
-  -webkit-transition: .4 ease-in;
-  transition: .4 ease-in;
-  width: 0px;
-  height: 0px;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
+  width: 68px;
+  height: 20px;
 }
 
 .dashboard-nav-left ul li:hover ul {
   opacity: 1;
-  width: 20px;
-  height: inherit;
+  width: 80%;
+  height: 50%;
+  padding: 5px;
 }
 
 .dashboard-nav-left .nav-left {
@@ -122,13 +124,17 @@ nav {
 
 .dashboard-nav-left .nav-left .submenu {
   list-style-type: none;
-  margin: 25px 10px 0px 10px;
-  -webkit-transition: .9s linear;
-  transition: .9s linear;
+  margin: 0px 0px 5px 30px;
+  -webkit-transition: .5s linear .4s;
+  transition: .5s linear .4s;
+}
+
+.dashboard-nav-left .nav-left .submenu a:hover {
+  text-decoration: underline;
 }
 
 .dashboard-nav-left .nav-left .submenu li {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .dashboard-nav-left .nav-left img {
@@ -140,6 +146,7 @@ nav {
 .dashboard-nav-left .nav-left a {
   color: #004487;
   font-size: 12px;
+  cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -147,6 +154,7 @@ nav {
 /* dashboard left */
 .dashboard-details-right {
   display: block;
+  background-color: #e8f5fa;
 }
 
 .header-details-right {
@@ -155,7 +163,7 @@ nav {
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
   padding: 5px;
-  margin-top: 60px;
+  margin-top: 85px;
 }
 
 .header-details-right h1 {
@@ -201,16 +209,25 @@ nav {
 }
 
 .right-first-top p {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 .right-first-top .naira {
   text-decoration: line-through;
+  font-size: 12px;
 }
 
 .right-first-top .today-payment {
   margin: 30% 0 5% 0;
   text-transform: capitalize;
+  font-size: 15px;
+}
+
+.right-first-top .approved-credit {
+  margin: 30% 0 5% 0;
+  text-transform: capitalize;
+  font-size: 15px;
 }
 
 .right-first-top .price {
@@ -225,8 +242,27 @@ nav {
   text-decoration: line-through;
 }
 
+.right-first-top .price2 {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #034A00;
+}
+
+.right-first-top .price2 .naira {
+  text-decoration: line-through;
+}
+
 .right-first-top .product {
-  padding: 15px;
+  padding: 5px;
+}
+
+.right-first-top .product tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .right-first-top .product thead {
@@ -234,12 +270,19 @@ nav {
   color: #004487;
 }
 
+.right-first-top .product thead th {
+  padding: 20px 10px 15px 5px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 100;
+}
+
 .right-first-top .product td {
   color: #000000;
   padding-top: 2px;
   padding-right: 6px;
   padding-left: 13px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .right-first-top .product td .naira {
@@ -259,27 +302,28 @@ nav {
 }
 
 .right-first-top .average-price td {
-  padding-top: 2px;
-  padding-right: 59px;
-  padding-left: 10px;
-  font-size: 13px;
+  padding-top: 5px;
+  padding-right: 39px;
+  padding-left: 18px;
+  font-size: 12px;
 }
 
 .right-first-top .average-price td .naira {
   text-decoration: line-through;
+  font-size: 12px;
 }
 
 /* ---second set of dashboard details */
 .right-second {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
   margin: 20px;
 }
 
 .right-second-top {
-  margin: 20px;
+  margin: 15px;
 }
 
 .right-second-top table {
@@ -288,14 +332,26 @@ nav {
   text-align: center;
   width: 100%;
   min-height: 25vh;
-  -webkit-box-shadow: 2px 2px 5px 4px #dcdee0;
-          box-shadow: 2px 2px 5px 4px #dcdee0;
+  -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
+          box-shadow: 2px 2px 5px 4px #e8f5fa;
+}
+
+.right-second-top table thead {
+  text-align: center;
 }
 
 .right-second-top table thead tr td {
   font-size: 12px;
-  padding: 14px;
+  padding: 15px 0px 15px 32px;
   background-color: #004487;
+}
+
+.right-second-top table thead tr td p {
+  margin-left: 50px;
+}
+
+.right-second-top table thead tr .right {
+  padding: 0;
 }
 
 .right-second-top table tbody {
@@ -304,7 +360,7 @@ nav {
 }
 
 .right-second-top table td {
-  padding: 20px 5px;
+  padding: 10px 30px 24px 30px;
   font-size: 12px;
 }
 
@@ -357,7 +413,7 @@ nav {
       grid-template-columns: 1fr;
   -ms-grid-rows: 20%;
       grid-template-rows: 20%;
-  margin: 20px;
+  margin: 15px;
 }
 
 .right-fourth p {
