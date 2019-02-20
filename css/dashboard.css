@@ -377,9 +377,16 @@ nav {
   padding: 0;
 }
 
+table thead{
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+  box-shadow: 2px 2px 5px 0px #bcc9ce;
+}
+
 .right-second-top table tbody {
   background-color: #ffffff;
   color: #000000;
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+          box-shadow: 2px 2px 5px 0px #bcc9ce;
 }
 
 .right-second-top table td {
@@ -409,11 +416,11 @@ nav {
   color: #ffffff;
 }
 
-.right-third .approve {
+ .approve {
   background-color: #034A00;
 }
 
-.right-third .cancel {
+ .cancel {
   background-color: #b10202;
 }
 
