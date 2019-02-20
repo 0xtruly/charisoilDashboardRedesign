@@ -58,13 +58,14 @@ nav {
 }
 
 .nav-grid .nav-link-right a {
-  background-color: transparent;
+  background-color: #FFFEFF;
   color: #004487;
   padding: 6px 25px;
-  border: 1px solid #004487;
+  border: 2px solid #004487;
   border-radius: 3px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
   position: relative;
   top: 8px;
   left: 120px;
@@ -92,6 +93,10 @@ nav {
   height: -webkit-fill-available;
 }
 
+.active{
+  border-left: 2px solid #004487;
+}
+
 .dashboard-nav-left ul {
   padding: 0px;
   margin-left: 40px;
@@ -113,6 +118,12 @@ nav {
   padding: 5px;
 }
 
+
+.dashboard-nav-left ul li:hover ul li {
+  margin: 10px 0;
+}
+
+
 .dashboard-nav-left .nav-left {
   list-style-type: none;
 }
@@ -128,6 +139,13 @@ nav {
   -webkit-transition: .5s linear .4s;
   transition: .5s linear .4s;
 }
+
+
+
+.dashboard-nav-left .nav-left .submenu a {
+  text-decoration: none;
+}
+
 
 .dashboard-nav-left .nav-left .submenu a:hover {
   text-decoration: underline;
@@ -203,6 +221,11 @@ nav {
   border-radius: 5px;
   background-color: #004487;
   text-align: center;
+<<<<<<< HEAD
+  min-height: 200px;
+  color: white;
+=======
+>>>>>>> 9fd82581a4809c43ad0c467d5ea7826ee76f23f9
   padding: 0 10px;
   margin: 10px;
   text-transform: capitalize;
@@ -354,9 +377,16 @@ nav {
   padding: 0;
 }
 
+table thead{
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+  box-shadow: 2px 2px 5px 0px #bcc9ce;
+}
+
 .right-second-top table tbody {
   background-color: #ffffff;
   color: #000000;
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+          box-shadow: 2px 2px 5px 0px #bcc9ce;
 }
 
 .right-second-top table td {
@@ -386,11 +416,11 @@ nav {
   color: #ffffff;
 }
 
-.right-third .approve {
+ .approve {
   background-color: #034A00;
 }
 
-.right-third .cancel {
+ .cancel {
   background-color: #b10202;
 }
 

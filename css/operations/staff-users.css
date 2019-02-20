@@ -1,0 +1,98 @@
+.staff-users-top{
+    padding: 10px 20px;
+}
+
+.staff-users-main{
+    background-color: #ffffff;
+    width: 80%;
+    margin: 10px 0;
+    box-shadow: 0px 0px 2px 2px #DCDDDD;
+}
+
+.staff-users-contents{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
+    padding: 20px;
+}
+
+
+input[type='submit'], input[type='reset'] {
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: inherit;
+    color: white;
+    width: 50px;
+    border: 2px solid transparent;
+}
+
+.approve {
+    background-color: #034A00;
+}
+  
+.cancel {
+    background-color: #b10202;
+}
+
+table td{
+    padding: 8px;
+    font-size : small;
+}
+
+form{
+    width: 90%;
+    padding: 20px;
+}
+
+table td:nth-child(odd){
+    width: 40%;
+}
+
+table td:nth-child(even){
+    width: 60%;
+}
+
+input, select{
+    padding:7px 8px;
+    width: 100%;
+    border: 1px solid #004487;
+    border-radius: 5px;
+}
+
+select{
+    padding: 10px 15px;
+    color  : #004487;
+}
+
+.form-buttons{
+    text-align: right;
+    padding: 0 10%;
+}
+
+.buttons{
+    padding: 20px 70px 10px 70px;
+}
+
+.buttons > .main-buttons{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    opacity: .7;
+}
+
+.buttons > .main-buttons:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(218, 184, 184);
+    opacity: 1;
+}
+
+.existing{
+    display: none;
+}
+
+.active-staff{
+    color: #004487 !important;
+    border-bottom: 2px solid #004487 !important;
+    opacity: 1 !important;
+}

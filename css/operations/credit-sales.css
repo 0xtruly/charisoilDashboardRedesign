@@ -1,0 +1,49 @@
+.credit-sales{
+    padding: 20px;
+}
+
+.credit-sales-top{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+input[type="button"] {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #ffffff;
+}
+table {
+  border-spacing: 0;
+  color: #ffffff;
+  width: 100%;
+  padding: 0px;
+  min-height: 25vh;
+  -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
+          box-shadow: 2px 2px 5px 4px #e8f5fa;
+}
+
+table thead{
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+  box-shadow: 2px 2px 5px 0px #bcc9ce;
+}
+
+table thead tr td {
+    font-size: 12px;
+    padding: 15px 0px 15px 32px;
+    background-color: #004487;
+}
+
+table tbody {
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+            box-shadow: 2px 2px 5px 0px #bcc9ce;
+}
+
+table td {
+    padding: 10px 30px 24px 30px;
+    font-size: 12px;
+}
