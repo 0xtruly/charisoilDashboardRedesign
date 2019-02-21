@@ -1,7 +1,7 @@
 .dashboard-details-right > form > select{
     margin-left: 4%;
     padding: 5px 25px;
-    border: 1px solid #004487;
+    border: 1px solid #3462FD;
     border-radius: 5px;
     appearance: none;
     -webkit-appearance: none;
@@ -26,10 +26,13 @@
 
 input{
     padding: 2px 7px;
-    border: 1px solid #004487;
+    border: 1px solid #3462FD;
     border-radius: 5px;
 }
 
+input:focus, select:focus{
+    outline: none;
+}
 .price{
     width: 40%;
     padding: 5px;
@@ -68,13 +71,13 @@ table td{
     font-size: small;
 }
 table tr td:nth-child(odd){
-    color: #004487;
+    color: #3462FD;
 }
 
 hr{
     padding: 1px;
     width: 50%;
     opacity: .7;
-    background-color: #004487;
+    background-color: #3462FD;
     margin: 0 auto;
 }
