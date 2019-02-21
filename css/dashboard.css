@@ -59,9 +59,9 @@ nav {
 
 .nav-grid .nav-link-right a {
   background-color: #FFFEFF;
-  color: #004487;
+  color: #3462FD;
   padding: 6px 25px;
-  border: 2px solid #004487;
+  border: 2px solid #3462FD;
   border-radius: 3px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +94,7 @@ nav {
 }
 
 .active{
-  border-left: 2px solid #004487;
+  border-left: 2px solid #3462FD;
 }
 
 .dashboard-nav-left ul {
@@ -162,7 +162,7 @@ nav {
 }
 
 .dashboard-nav-left .nav-left a {
-  color: #004487;
+  color: #3462FD;
   font-size: 12px;
   cursor: pointer;
   text-decoration: none;
@@ -191,7 +191,7 @@ nav {
 }
 
 .header-details-right .merchant {
-  background: #004487;
+  background: #3462FD;
   padding: 3px;
   margin-right: 25px;
 }
@@ -219,7 +219,7 @@ nav {
 .right-first-top {
   min-height: 190px;
   border-radius: 5px;
-  background-color: #004487;
+  background-color: #3462FD;
   text-align: center;
 <<<<<<< HEAD
   min-height: 200px;
@@ -290,7 +290,7 @@ nav {
 
 .right-first-top .product thead {
   text-transform: capitalize;
-  color: #004487;
+  color: #3462FD;
 }
 
 .right-first-top .product thead th {
@@ -366,7 +366,11 @@ nav {
 .right-second-top table thead tr td {
   font-size: 12px;
   padding: 15px 0px 15px 32px;
-  background-color: #004487;
+  background-color: #3462FD;
+}
+
+input:focus, select:focus{
+  outline: none;
 }
 
 .right-second-top table thead tr td p {
@@ -377,10 +381,10 @@ nav {
   padding: 0;
 }
 
-table thead{
+/* table thead{
   -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
   box-shadow: 2px 2px 5px 0px #bcc9ce;
-}
+} */
 
 .right-second-top table tbody {
   background-color: #ffffff;
@@ -469,13 +473,13 @@ table thead{
 
 .right-fourth .product {
   background-color: #ffffff;
-  color: #004487;
+  color: #3462FD;
   -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
           box-shadow: 2px 2px 2px 2px #e7e5e5;
 }
 
 .right-fourth .payment {
-  background-color: #004487;
+  background-color: #3462FD;
   color: #ffffff;
 }
 /*# sourceMappingURL=dashboard.css.map */
