@@ -6,7 +6,7 @@
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 }
 
 input[type="button"] {
@@ -15,35 +15,76 @@ input[type="button"] {
   font-family: inherit;
   color: #ffffff;
 }
-table {
+.credit-sales-top > table {
   border-spacing: 0;
   color: #ffffff;
   width: 100%;
   padding: 0px;
   min-height: 25vh;
-  -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
-          box-shadow: 2px 2px 5px 4px #e8f5fa;
-}
-
-table thead{
   -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
-  box-shadow: 2px 2px 5px 0px #bcc9ce;
+  box-shadow: 0px 1px 5px 1px #bcc9ce;
 }
 
-table thead tr td {
+.credit-sales-top > table thead{
+    -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
+}
+
+.credit-sales-top > table thead tr td {
     font-size: 12px;
     padding: 15px 0px 15px 32px;
-    background-color: #004487;
+    background-color: #3462FD;
 }
 
-table tbody {
+.credit-sales-top > table tbody {
     background-color: #ffffff;
     color: #000000;
     -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
-            box-shadow: 2px 2px 5px 0px #bcc9ce;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
 }
 
-table td {
+.credit-sales-top  table td {
     padding: 10px 30px 24px 30px;
     font-size: 12px;
+}
+
+.credit-sales-bottom{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-gap: 15px;
+    grid-gap: 15px;
+}
+
+.credit-sales-bottom-body{
+    margin-top: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
+    border-radius: 5px;
+    padding: 25px 15px;
+}
+
+.credit-sales-bottom  table td{
+    width: 50%;
+    padding: 10px;
+    font-size: small;
+}
+
+.credit-sales-bottom  input, select{
+    padding: 2px 7px;
+    border: 1px solid #3462FD;
+    border-radius: 5px;
+    width: 100%;
+    font-size: small;
+    color: #3462FD;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+.credit-sales-bottom select{
+    width: 100%;
 }

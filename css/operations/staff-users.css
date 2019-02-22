@@ -56,13 +56,13 @@ table td:nth-child(even){
 input, select{
     padding:7px 8px;
     width: 100%;
-    border: 1px solid #004487;
+    border: 1px solid #3462FD;
     border-radius: 5px;
 }
 
 select{
     padding: 10px 15px;
-    color  : #004487;
+    color  : #3462FD;
 }
 
 .form-buttons{
@@ -92,7 +92,7 @@ select{
 }
 
 .active-staff{
-    color: #004487 !important;
+    color: #3462FD !important;
     border-bottom: 2px solid #004487 !important;
     opacity: 1 !important;
 }
