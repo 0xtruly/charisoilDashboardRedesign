@@ -24,8 +24,9 @@ nav {
   width: 100%;
   margin: 0px auto;
   -webkit-box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
-          box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
+  box-shadow: 1px -3px 5px 1px rgba(60, 60, 62, 0.88);
   position: fixed;
+  z-index: +5;
 }
 
 .nav-grid {
@@ -91,6 +92,8 @@ nav {
   -webkit-box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
           box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
   height: -webkit-fill-available;
+  position: relative;
+  z-index: +1;
 }
 
 .active{
@@ -115,12 +118,17 @@ nav {
   opacity: 1;
   width: 80%;
   height: 50%;
-  padding: 5px;
 }
 
 
-.dashboard-nav-left ul li:hover ul li {
+.dashboard-nav-left ul li ul li {
   margin: 10px 0;
+  padding-left: 5px;
+
+}
+
+.dashboard-nav-left ul li ul li:hover {
+  border-left: 2px solid #3462FD;
 }
 
 
@@ -148,7 +156,7 @@ nav {
 
 
 .dashboard-nav-left .nav-left .submenu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .dashboard-nav-left .nav-left .submenu li {
@@ -172,7 +180,7 @@ nav {
 /* dashboard left */
 .dashboard-details-right {
   display: block;
-  background-color: #e8f5fa;
+  background-color: #F6F8F8;
 }
 
 .header-details-right {
@@ -221,11 +229,6 @@ nav {
   border-radius: 5px;
   background-color: #3462FD;
   text-align: center;
-<<<<<<< HEAD
-  min-height: 200px;
-  color: white;
-=======
->>>>>>> 9fd82581a4809c43ad0c467d5ea7826ee76f23f9
   padding: 0 10px;
   margin: 10px;
   text-transform: capitalize;

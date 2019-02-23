@@ -1,0 +1,78 @@
+.sales-payment{
+    padding: 20px;
+    display: -ms-grid;
+    margin: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.sales-payment-form{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type="button"] {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #ffffff;
+}
+.sales-transaction-top > table {
+  border-spacing: 0;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  min-height: 25vh;
+}
+
+
+
+.sales-payment-bottom  div{
+    padding: 2px 5px 5px 5px;
+}
+label{
+    margin: 12px;
+}
+
+input[type="date"]{
+    width: 70px;
+}
+
+select{
+    width: 270px;
+}
+
+input[type="date"], select{
+    padding: 5px 7px;
+    border: 1px solid #3462FD;
+    border-radius: 5px;
+    font-size: small;
+    color: #3462FD;
+}
+
+input[type="radio"]{
+    margin: 10px;
+}
+
+input[type="submit"]{
+    float: right;
+    float: right;
+    background-color: #3663FD;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: small;
+}
+
+.view{
+    color: #3462FD;
+}

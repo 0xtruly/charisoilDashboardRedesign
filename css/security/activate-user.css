@@ -1,0 +1,61 @@
+.right-second-top {
+margin: 15px;
+}
+
+.activate-user{
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
+    box-shadow: 2px 2px 5px 4px #e8f5fa;
+}
+
+.activate-user table {
+border-spacing: 0;
+color: black;
+text-align: center;
+font-size: small;
+width: 100%;
+min-height: 25vh;
+}
+
+.activate-user table thead {
+text-align: center;
+}
+
+.activate-user table thead tr td {
+font-size: 12px;
+padding: 15px 0px 15px 32px;
+color: #ffffff;
+background-color: #3462FD;
+}
+
+
+.activate-user table thead tr td p {
+margin-left: 50px;
+}
+
+.activate-inputs{
+    float: right;
+    padding: 20px;
+    font-size: small;
+}
+
+.activate-inputs label, input{
+    margin: 10px;
+}
+
+input{
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+}
+
+.activate-inputs input[type="submit"] {
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+}
+
+.activate-inputs input[type="text"] {
+    width: 250px;
+}
