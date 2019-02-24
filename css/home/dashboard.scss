@@ -1,4 +1,4 @@
-@import './variable.scss';
+@import '../variable.scss';
 @mixin font($font-family, $font-file) {
     @font-face {
         font-family: $font-family;
@@ -38,7 +38,7 @@ nav {
             margin-left: 45px;
             width: 60px;
             height: 45px;
-            margin-top: 4px;
+            margin-top: 10px;
         }
         .brand-name{
             color: #fff;
@@ -59,8 +59,8 @@ nav {
             cursor: pointer;
             font-family: Arial, Helvetica, sans-serif;
             position: relative;
-            top: 8px;
-            left: 120px;
+            top: 15px;
+            left: 170px;
             text-decoration: none;
 
         }
@@ -77,7 +77,7 @@ nav {
 }
 .dashboard-grid-container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 19% 81%;
 }
 .dashboard-nav-left{
     background: $color-white;
@@ -116,7 +116,7 @@ nav {
         }
         .submenu{
             list-style-type: none;
-            margin: 0px 0px 5px 30px;
+            margin: 0px 0px 5px 25px;
             transition: .5s linear .4s;
             a:hover{
                 text-decoration: underline;
@@ -131,7 +131,7 @@ nav {
             height: 14px;
         }
         a{
-            color: $color-primary;
+            color: $color-doggerblue;
             font-size: 12px;
             cursor: pointer;
             text-decoration: none;
@@ -155,44 +155,56 @@ nav {
     h1{
         font-family: inherit;
         text-transform: capitalize;
-        margin-left: 15px;
+        margin-left: 60px;
+        margin-top: 20px;
+        font-weight: 100;
     }
     .merchant{
-        background: $color-primary;
+        background: $color-doggerblue;
         padding: 3px;
-        margin-right: 25px;
+        margin-right: 35px;
+        margin-top: -5px;
+        border-radius: 5px;
         p{
             color: $color-white;
             padding: 5px;
             font-family: Open sans Regular;
             text-transform: uppercase;
+            font-size: 13px;
         }
         a{
             color: $color-white;
             padding: 5px;
+            font-size: 13px;
         }
     }
 }
 .right-first{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 30px;
+    padding: 10px 25px 0px 25px;
 }
 .right-first-top{
+    color: $color-white;
     min-height: 190px;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: $color-primary;
     text-align: center;
     padding: 0 10px;
     margin: 10px;
     text-transform: capitalize;
-    p{
+    .heading{
         margin-top: 20px;
+    }
+    p{
+        margin-top: 0px;
         font-size: 12px;
+        color: $color-white;
     }
     .naira{
         text-decoration: line-through;
         font-size: 12px;
+        color: $color-white;
     }
     .today-payment{
         margin: 30% 0 5% 0;
@@ -235,13 +247,13 @@ nav {
             color: $color-primary;
             th{
                 padding: 20px 10px 15px 5px;
-                color: $color-black;
+                color: $color-white;
                 font-size: 12px;
                 font-weight: 100;
             }
         }
         td{
-            color: $color-black;
+            color: $color-white;
             padding-top: 2px;
             padding-right: 6px;
             padding-left: 13px;
@@ -255,16 +267,18 @@ nav {
         padding: 10px;
         .currentAvr-price{
             text-transform: capitalize;
-            color: $color-primary;
+            color: $color-white;
             padding: 5px;
             padding-left: 15px;
             text-align: center;
         }
+      
         td{
             padding-top: 5px;
             padding-right: 39px;
             padding-left: 18px;
             font-size: 12px;
+            color: $color-white;
             .naira{
                 text-decoration: line-through;
                 font-size: 12px;
@@ -293,10 +307,10 @@ nav {
         thead{
             text-align: center;
             tr{
-                td{
+                th{
                     font-size: 12px;
                     padding: 15px 0px 15px 32px;
-                    background-color: $color-primary;
+                    background-color: $color-doggerblue;
                     p{
                         margin-left: 50px;
                     }

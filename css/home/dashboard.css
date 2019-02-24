@@ -24,9 +24,8 @@ nav {
   width: 100%;
   margin: 0px auto;
   -webkit-box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
-  box-shadow: 1px -3px 5px 1px rgba(60, 60, 62, 0.88);
+          box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
   position: fixed;
-  z-index: +5;
 }
 
 .nav-grid {
@@ -43,7 +42,7 @@ nav {
   margin-left: 45px;
   width: 60px;
   height: 45px;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .nav-grid .logo-left .brand-name {
@@ -59,17 +58,16 @@ nav {
 }
 
 .nav-grid .nav-link-right a {
-  background-color: #FFFEFF;
-  color: #3462FD;
+  background-color: transparent;
+  color: #001f88;
   padding: 6px 25px;
-  border: 2px solid #3462FD;
+  border: 1px solid #001f88;
   border-radius: 3px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
   position: relative;
-  top: 8px;
-  left: 120px;
+  top: 15px;
+  left: 170px;
   text-decoration: none;
 }
 
@@ -83,9 +81,8 @@ nav {
 .dashboard-grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  min-height: 100%;
+  -ms-grid-columns: 19% 81%;
+      grid-template-columns: 19% 81%;
 }
 
 .dashboard-nav-left {
@@ -93,13 +90,6 @@ nav {
   -webkit-box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
           box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
   height: -webkit-fill-available;
-  position: relative;
-  z-index: +1;
-  min-height: 100%
-}
-
-.active{
-  border-left: 2px solid #3462FD;
 }
 
 .dashboard-nav-left ul {
@@ -120,19 +110,8 @@ nav {
   opacity: 1;
   width: 80%;
   height: 50%;
+  padding: 5px;
 }
-
-
-.dashboard-nav-left ul li ul li {
-  margin: 10px 0;
-  padding-left: 5px;
-
-}
-
-.dashboard-nav-left ul li ul li:hover {
-  border-left: 2px solid #3462FD;
-}
-
 
 .dashboard-nav-left .nav-left {
   list-style-type: none;
@@ -145,20 +124,13 @@ nav {
 
 .dashboard-nav-left .nav-left .submenu {
   list-style-type: none;
-  margin: 0px 0px 5px 30px;
+  margin: 0px 0px 5px 25px;
   -webkit-transition: .5s linear .4s;
   transition: .5s linear .4s;
 }
 
-
-
-.dashboard-nav-left .nav-left .submenu a {
-  text-decoration: none;
-}
-
-
 .dashboard-nav-left .nav-left .submenu a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .dashboard-nav-left .nav-left .submenu li {
@@ -172,7 +144,7 @@ nav {
 }
 
 .dashboard-nav-left .nav-left a {
-  color: #3462FD;
+  color: #3663fd;
   font-size: 12px;
   cursor: pointer;
   text-decoration: none;
@@ -182,7 +154,7 @@ nav {
 /* dashboard left */
 .dashboard-details-right {
   display: block;
-  background-color: #F6F8F8;
+  background-color: #f2f5f8;
 }
 
 .header-details-right {
@@ -197,13 +169,17 @@ nav {
 .header-details-right h1 {
   font-family: inherit;
   text-transform: capitalize;
-  margin-left: 15px;
+  margin-left: 60px;
+  margin-top: 20px;
+  font-weight: 100;
 }
 
 .header-details-right .merchant {
-  background: #3462FD;
+  background: #3663fd;
   padding: 3px;
-  margin-right: 25px;
+  margin-right: 35px;
+  margin-top: -5px;
+  border-radius: 5px;
 }
 
 .header-details-right .merchant p {
@@ -211,11 +187,13 @@ nav {
   padding: 5px;
   font-family: Open sans Regular;
   text-transform: uppercase;
+  font-size: 13px;
 }
 
 .header-details-right .merchant a {
   color: #ffffff;
   padding: 5px;
+  font-size: 13px;
 }
 
 .right-first {
@@ -223,27 +201,34 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 30px;
+  padding: 10px 25px 0px 25px;
 }
 
 .right-first-top {
+  color: #ffffff;
   min-height: 190px;
-  border-radius: 5px;
-  background-color: #004487;
+  border-radius: 15px;
+  background-color: #001f88;
   text-align: center;
   padding: 0 10px;
   margin: 10px;
   text-transform: capitalize;
 }
 
-.right-first-top p {
+.right-first-top .heading {
   margin-top: 20px;
+}
+
+.right-first-top p {
+  margin-top: 0px;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .right-first-top .naira {
   text-decoration: line-through;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .right-first-top .today-payment {
@@ -263,7 +248,7 @@ nav {
   margin-left: 15px;
   margin-top: 15px;
   padding: 10px;
-  color: #e2a025;
+  color: #ffbf2c;
 }
 
 .right-first-top .price .naira {
@@ -275,7 +260,7 @@ nav {
   margin-left: 15px;
   margin-top: 15px;
   padding: 10px;
-  color: #034A00;
+  color: #054a00;
 }
 
 .right-first-top .price2 .naira {
@@ -295,18 +280,18 @@ nav {
 
 .right-first-top .product thead {
   text-transform: capitalize;
-  color: #3462FD;
+  color: #001f88;
 }
 
 .right-first-top .product thead th {
   padding: 20px 10px 15px 5px;
-  color: #000000;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 100;
 }
 
 .right-first-top .product td {
-  color: #000000;
+  color: #ffffff;
   padding-top: 2px;
   padding-right: 6px;
   padding-left: 13px;
@@ -323,7 +308,7 @@ nav {
 
 .right-first-top .average-price .currentAvr-price {
   text-transform: capitalize;
-  color: #004487;
+  color: #ffffff;
   padding: 5px;
   padding-left: 15px;
   text-align: center;
@@ -334,6 +319,7 @@ nav {
   padding-right: 39px;
   padding-left: 18px;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .right-first-top .average-price td .naira {
@@ -360,25 +346,21 @@ nav {
   text-align: center;
   width: 100%;
   min-height: 25vh;
-  -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
-          box-shadow: 2px 2px 5px 4px #e8f5fa;
+  -webkit-box-shadow: 2px 2px 5px 4px #f2f5f8;
+          box-shadow: 2px 2px 5px 4px #f2f5f8;
 }
 
 .right-second-top table thead {
   text-align: center;
 }
 
-.right-second-top table thead tr td {
+.right-second-top table thead tr th {
   font-size: 12px;
   padding: 15px 0px 15px 32px;
-  background-color: #3462FD;
+  background-color: #3663fd;
 }
 
-input:focus, select:focus{
-  outline: none;
-}
-
-.right-second-top table thead tr td p {
+.right-second-top table thead tr th p {
   margin-left: 50px;
 }
 
@@ -386,16 +368,9 @@ input:focus, select:focus{
   padding: 0;
 }
 
-/* table thead{
-  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
-  box-shadow: 2px 2px 5px 0px #bcc9ce;
-} */
-
 .right-second-top table tbody {
   background-color: #ffffff;
   color: #000000;
-  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
-          box-shadow: 2px 2px 5px 0px #bcc9ce;
 }
 
 .right-second-top table td {
@@ -425,12 +400,12 @@ input:focus, select:focus{
   color: #ffffff;
 }
 
- .approve {
-  background-color: #034A00;
+.right-third .approve {
+  background-color: #054a00;
 }
 
- .cancel {
-  background-color: #b10202;
+.right-third .cancel {
+  background-color: #b70000;
 }
 
 .right-third .product {
@@ -469,22 +444,22 @@ input:focus, select:focus{
 }
 
 .right-fourth .approve {
-  background-color: #034A00;
+  background-color: #054a00;
 }
 
 .right-fourth .cancel {
-  background-color: #b10202;
+  background-color: #b70000;
 }
 
 .right-fourth .product {
   background-color: #ffffff;
-  color: #3462FD;
+  color: #001f88;
   -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
           box-shadow: 2px 2px 2px 2px #e7e5e5;
 }
 
 .right-fourth .payment {
-  background-color: #3462FD;
+  background-color: #001f88;
   color: #ffffff;
 }
 /*# sourceMappingURL=dashboard.css.map */
