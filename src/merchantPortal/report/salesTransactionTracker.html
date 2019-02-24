@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Merchant Portal</title>
     <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/report/stock-transaction-details.css">
 </head>
 <body>
     <header>
@@ -32,7 +33,6 @@
 
             <!-- left nav link -->
             <div class="dashboard-nav-left">
-
               <ul>
                   <li class="nav-left">
                      <img src="../../../assets/home.svg" alt="">
@@ -46,32 +46,48 @@
                      <img src="../../../assets/operations.svg" alt="">
                      <a class="main-menu" href="#">operations</a>
                       <ul class="submenu">
-                        <li><a href="#">dashboard</a></li>
-                        <li><a href="#">help manual</a></li>
+                        <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
+                        <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
+                        <li><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
+                        <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
                       </ul>
                   </li>
                   <li class="nav-left">
                      <img src="../../../assets/utility.svg" alt="">
                      <a class="main-menu" href="#">utility</a>
                       <ul class="submenu">
-                        <li><a href="#">dashboard</a></li>
-                        <li><a href="#">help manual</a></li>
+                        <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
+                        <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
+                        <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
+                        <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
+                        <li><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
+                        <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
                       </ul>
                   </li>
                   <li class="nav-left">
                      <img src="../../../assets/security.svg" alt="">
                      <a class="main-menu" href="#">security</a>
                       <ul class="submenu">
-                        <li><a href="#">dashboard</a></li>
-                        <li><a href="#">help manual</a></li>
+                        <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
+                        <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
+                        <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
+                        <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
+                        <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
                       </ul>
                   </li>
                   <li class="nav-left">
                      <img src="../../../assets/report.svg" alt="">
                      <a class="main-menu" href="#">report</a>
                       <ul class="submenu">
-                        <li><a href="#">dashboard</a></li>
-                        <li><a href="#">help manual</a></li>
+                        <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
+                        <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
+                        <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
+                        <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
+                        <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
+                        <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
+                        <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
+                        <li class="active"><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
+                        <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
                       </ul>
                   </li>
               </ul>
@@ -79,256 +95,75 @@
             <div class="dashboard-details-right">
                 <!-- header -->
                 <div class="header-details-right">
-                    <h1 class="dashboard">dashboard</h1>
+                    <h1 class="dashboard">sales transaction tracker</h1>
                     <div class="merchant">
                         <p>merchant portal</p>
                         <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                     </div>
                 </div>
-
-                <!-- the first four boxes -->
-                <div class="right-first">
-                    <div class="right-first-top">
-                        <p class="today-payment">sum of today's payment</p>
-                        <div class="price"><span class="naira">N</span>0.00</div>
-                    </div>
-
-                    <div class="right-first-top">
-                        <p class="today-payment">sum of approved credit for <span class="date">feb. 2019</span></p>
-                        <div class="price"><span class="naira">N</span>0.00</div>
-                    </div>
-
-                    <div class="right-first-top">
-                        <table class="product">
-                            <thead>
+                <div class="stock-transaction">
+                    <form action="">
+                        <label for="">Choose  Reference</label>
+                        <select name="reference" id="">
+                            <option value="" selected disabled>Reference id</option>
+                            <option value="" >Reference id</option>
+                            <option value="" >Reference id</option>
+                            <option value="" >Reference id</option>
+                        </select>
+                        <div class="stock-transaction-form tracker">
+                            <table>
                                 <tr>
-                                    <td>product</td>
-                                    <td>total sales (<span class="naira">N</span>)</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>AGO</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>ATK</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>BOIL</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>DPK</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>LPFO</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
+                                    <td>Product:</td>
                                     <td>PMS</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="right-first-top">
-                        <table class="average-price">
-                            <thead class="currentAvr-price"><p>current average price per liter</p> (<span class="naira">N</span>)</thead>
-                            <tbody>
-                                <tr>
-                                    <td>AGO</td>
-                                    <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>ATK</td>
-                                    <td>0</td>
+                                    <td>Price per Litre:</td>
+                                    <td>134.00</td>
                                 </tr>
                                 <tr>
-                                    <td>BOIL</td>
-                                    <td>0</td>
+                                    <td>Quantity:</td>
+                                    <td>30 Litres</td>
                                 </tr>
                                 <tr>
-                                    <td>DPK</td>
-                                    <td>0</td>
+                                    <td>Value:</td>
+                                    <td>4,020.00</td>
                                 </tr>
                                 <tr>
-                                    <td>LPFO</td>
-                                    <td>0</td>
+                                    <td>Requested Date:</td>
+                                    <td>04-Feb-2019</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>Payment Status:</td>
+                                    <td>Cancelled</td>
                                 </tr>
                                 <tr>
-                                    <td>PMS</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                  
-                <!-- second line of boxes -->
-                <div class="right-second">
-                    <div class="right-second-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Product</td>
-                                    <td>Stock Released to Merchant</td>
-                                    <td>Stock Released to Customer</td>
-                                    <td>Stock Loaded by Customer</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>AGO</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
+                                    <td>Depot:</td>
+                                    <td>A-Z Petroleum Limited</td>
                                 </tr>
                                 <tr>
-                                    <td>ATK</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
+                                    <td>Storage:</td>
+                                    <td>Access-Lanstan Energy Ltd 130081-PMS</td>
                                 </tr>
-                                <tr>
-                                    <td>BOIL</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>DPK</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>LPFO</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>PMS</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="right-second-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Your Current Stock (Litres)</td>
-                                    <td></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>AGO</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>ATK</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>BOIL</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>DPK</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>LPFO</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>PMS</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="right-third">
-                    <p>Pending Purchase Request</p>
-                    <div class="right-second-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Transaction Ref</td>
-                                    <td>Customer</td>
-                                    <td>Product</td>
-                                    <td>Quality</td>
-                                    <td>Amount</td>
-                                    <td>Credit</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>200019020918</td>
-                                    <td>Lanstan Energy Limited</td>
-                                    <td>PMS</td>
-                                    <td>33,000</td>
-                                    <td>#4389,000.00</td>
-                                    <td>No</td>
-                                    <td><a href="#" class="approve">approve</a></td>
-                                    <td><a href="#" class="cancel">cancel</a></td>
-                                </tr>
-                                <tr>
-                                    <td>200019287810</td>
-                                    <td>Lanstan Energy Limited</td>
-                                    <td>PMS</td>
-                                    <td>50,000</td>
-                                    <td>#6,650,000.00</td>
-                                    <td>Yes</td>
-                                    <td><a href="#" class="approve">approve</a></td>
-                                    <td><a href="#" class="cancel">cancel</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="right-fourth">
-                    <p>Recent Payments</p>
-                    <div class="right-second-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Transaction Ref</td>
-                                    <td>Customer</td>
-                                    <td>Product</td>
-                                    <td>Amount</td>
-                                    <td>Credit</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>200019020918</td>
-                                    <td>Lanstan Energy Limited</td>
-                                    <td>PMS</td>
-                                    <td>#4389,000.00</td>
-                                    <td>No</td>
-                                    <td><a href="#" class="product">Release Product</a></td>
-                                    <td><a href="#" class="payment">View Payment</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                            </table>
+                        </div>
+                        <div class="view">
+                            <input type="radio" name="view" id="" value="customer" checked>
+                            <label for="">View on Screen</label> 
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in Crystaly Report</label> 
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in PDF</label>  
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in Excel</label> 
+                            <input type="submit" value="View Report">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <script src="../../js/index.js"></script>
+    <script src="../../../js/staff.js"></script>
 </body>
 </html>

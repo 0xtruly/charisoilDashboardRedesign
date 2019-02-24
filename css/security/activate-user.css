@@ -1,0 +1,163 @@
+.right-second-top {
+margin: 15px;
+}
+
+.activate-user{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px;
+    -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
+    box-shadow: 2px 2px 5px 4px #D7DADC;
+    min-height: 255px;
+}
+
+.activate-user > p{
+    text-align: right;
+    font-size: small;
+}
+
+
+.activate-user table {
+border-spacing: 0;
+color: black;
+text-align: center;
+font-size: small;
+width: 100%;
+min-height: 25vh;
+}
+
+.activate-user table thead {
+text-align: center;
+}
+
+.activate-user table thead tr td {
+font-size: 12px;
+padding: 15px 0px 15px 32px;
+color: #ffffff;
+background-color: #3462FD;
+}
+
+
+.activate-user table thead tr td p {
+margin-left: 50px;
+}
+
+.activate-inputs{
+    text-align: right;
+    padding: 20px;
+    font-size: small;
+}
+
+.activate-inputs label, input{
+    margin: 10px;
+}
+
+input, select{
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+}
+
+.activate-inputs input[type="submit"] {
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+}
+
+.activate-inputs input[type="text"] {
+    width: 250px;
+}
+
+/* change password page  */
+.change-user{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 2px 20px;
+    width: 450px;
+    padding:  20px 50px 70px 50px;
+    font-size: small;
+    -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
+    box-shadow: 2px 2px 5px 4px #D7DADC;
+}
+
+.change-user  select , .change-user input{
+    width: 100%;
+    margin: 10px;;
+}
+
+.change-user select{
+    color: #3462FD;
+}
+
+.change-user td{
+    width: 50%;
+    align-content: flex-start;
+}
+
+.change-user input[type="submit"]{
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+    float: right;
+    width: auto;
+}
+
+/* grant user access page */
+.grant-user{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 40px;
+    -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
+    box-shadow: 2px 2px 5px 4px #D7DADC;
+    min-height: 255px;
+}
+
+.grant-user  p{
+    font-size: medium;
+    margin: 0;
+}
+
+
+.grant-user table {
+    border-spacing: 0;
+    color: black;
+    text-align: center;
+    font-size: small;
+    /* margin: 1px auto; */
+    width: 100%;
+    border-radius: 5px;
+    min-height: 25vh;
+}
+
+.grant-user table thead {
+    text-align: center;
+}
+
+.grant-user table thead tr td {
+    font-size: small;
+    padding: 15px 0px ;
+    color: #ffffff;
+    background-color: #3462FD;
+}
+
+
+.grant-user-bottom{
+    padding: 10px;
+}
+
+.grant-user-bottom > select{
+    padding: 10px;
+    color: #3462FD;
+    width: 250px;
+}
+
+.grant-user > .form {
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
+    box-shadow: 2px 2px 5px 4px #D7DADC;
+}
+
+ .grant-user .revoke{
+    color: #BD1414;
+}
