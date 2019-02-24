@@ -1,0 +1,40 @@
+.right-second-top {
+margin: 15px;
+}
+
+.approve-ticket{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 30px;
+    -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
+    box-shadow: 2px 2px 5px 4px #D7DADC;
+    min-height: 255px;
+}
+
+.approve-ticket  select{
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    color: #3663FD;
+}
+
+.approve-inputs input{
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+}
+
+.approve-inputs{
+    position: relative;
+    top: 200px;
+}
+
+.approve-inputs > input[type="button"]{
+    float: right;
+}

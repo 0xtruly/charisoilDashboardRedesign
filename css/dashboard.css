@@ -85,6 +85,7 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
+  min-height: 100%;
 }
 
 .dashboard-nav-left {
@@ -94,6 +95,7 @@ nav {
   height: -webkit-fill-available;
   position: relative;
   z-index: +1;
+  min-height: 100%
 }
 
 .active{
