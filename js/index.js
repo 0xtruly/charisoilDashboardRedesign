@@ -1,28 +1,28 @@
+// $(document).ready(function(){
 
+// 	$('#toggle').click(function(){
 
-var mainUl = document.querySelectorAll(".home");
+// 		if($('.dashboard-nav-left').css('display', 'block')){	
+// 			$('.dashboard-nav-left').css('display', 'none')
+			
+// 		}else if($('.dashboard-nav-left').css('display', 'none')){
+// 			$('.dashboard-nav-left').css('display', 'block')
+			
+// 		}
+// 	});
+// });
 
-var subUl = document.querySelectorAll(".home > .submenu > li");
+var toggle =  document.getElementById("toggle")
+var dashboard = document.querySelector(".dashboard-nav-left")
 
-
-// for (let i = 0; i < mainUl.length; i++) {
-//     // var a = mainUl.childElement.length
-//     // alert(a)
-//     console.log(mainUl[i])
-//     mainUl[i].addEventListener("mouseover", function(){
-//         for(let i = 0; i < subUl.length; i++){
-//             if(subUl[i].style.display = "none"){
-//                 subUl[i].style.display = "block";
-//             }
-//         }
-//     })
-//     mainUl[i].addEventListener("mouseout", function(){
-//         for(let i = 0; i < subUl.length; i++){
-//             if(subUl[i].style.display = "block"){
-//                 setTimeout(function(){
-//                     subUl[i].style.display = "none"
-//                 },10000)
-//                 }
-//             }
-//     })    
-// }
+toggle.addEventListener("click", function(){
+	if (dashboard.style.opacity == 0) {
+		dashboard.style.opacity = "1"
+		dashboard.style.width = "50%"
+		dashboard.style.height = "100%"
+	}else{
+		dashboard.style.opacity = "0"
+		dashboard.style.width = "0%"
+		dashboard.style.height = "0%"
+	}
+})

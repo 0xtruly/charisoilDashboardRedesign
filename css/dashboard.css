@@ -1,0 +1,567 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/Helvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans, Bold";
+  src: url("/assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans, Regular";
+  src: url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica;
+}
+
+/* small screen toggle button */
+#toggle{
+  display: none;
+}
+
+/*nav */
+nav {
+  width: 100%;
+  margin: 0px auto;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(60, 60, 62, 0.88);
+  box-shadow: 1px -3px 5px 1px rgba(60, 60, 62, 0.88);
+  position: fixed;
+  z-index: +5;
+}
+
+.nav-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 10vh;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  background: #ffffff;
+}
+
+.nav-grid .logo-left .logo {
+  padding: 0px;
+  margin-left: 45px;
+  width: 60px;
+  height: 45px;
+  margin-top: 4px;
+}
+
+.nav-grid .logo-left .brand-name {
+  color: #fff;
+  padding: 5px;
+  margin-top: 35px;
+}
+
+.nav-grid .nav-link-right {
+  padding: 9px;
+  background: transparent;
+  list-style-type: none;
+}
+
+.nav-grid .nav-link-right a {
+  background-color: #FFFEFF;
+  color: #3462FD;
+  padding: 6px 25px;
+  border: 2px solid #3462FD;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  position: relative;
+  top: 8px;
+  left: 120px;
+  text-decoration: none;
+}
+
+/*nav end */
+/*section-dashboard grid left*/
+.dashboard {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  min-height: 100%;
+}
+
+.dashboard-nav-left {
+  background: #ffffff;
+  -webkit-box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
+          box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
+  height: -webkit-fill-available;
+  position: relative;
+  z-index: +1;
+  min-height: 100%
+}
+
+.active{
+  border-left: 2px solid #3462FD;
+}
+
+.dashboard-nav-left ul {
+  padding: 0px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.dashboard-nav-left ul li ul {
+  opacity: 0;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
+  width: 68px;
+  height: 20px;
+}
+
+.dashboard-nav-left ul li:hover ul {
+  opacity: 1;
+  width: 80%;
+  height: 50%;
+}
+
+
+.dashboard-nav-left ul li ul li {
+  margin: 10px 0;
+  padding-left: 5px;
+
+}
+
+.dashboard-nav-left ul li ul li:hover {
+  border-left: 2px solid #3462FD;
+}
+
+
+.dashboard-nav-left .nav-left {
+  list-style-type: none;
+}
+
+.dashboard-nav-left .nav-left .main-menu {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.dashboard-nav-left .nav-left .submenu {
+  list-style-type: none;
+  margin: 0px 0px 5px 30px;
+  -webkit-transition: .5s linear .4s;
+  transition: .5s linear .4s;
+}
+
+
+
+.dashboard-nav-left .nav-left .submenu a {
+  text-decoration: none;
+}
+
+
+.dashboard-nav-left .nav-left .submenu a:hover {
+  text-decoration: none;
+}
+
+.dashboard-nav-left .nav-left .submenu li {
+  padding-top: 0px;
+}
+
+.dashboard-nav-left .nav-left img {
+  fill: #ffffff;
+  width: 10px;
+  height: 14px;
+}
+
+.dashboard-nav-left .nav-left a {
+  color: #3462FD;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* dashboard left */
+.dashboard-details-right {
+  display: block;
+  background-color: #F6F8F8;
+}
+
+.header-details-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  padding: 5px;
+  margin-top: 85px;
+}
+
+.header-details-right h1 {
+  font-family: inherit;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+
+.header-details-right .merchant {
+  background: #3462FD;
+  padding: 3px;
+  margin-right: 25px;
+}
+
+.header-details-right .merchant p {
+  color: #ffffff;
+  padding: 5px;
+  font-family: Open sans Regular;
+  text-transform: uppercase;
+}
+
+.header-details-right .merchant a {
+  color: #ffffff;
+  padding: 5px;
+}
+
+.right-first {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+}
+
+.right-first-top {
+  min-height: 190px;
+  border-radius: 5px;
+  background-color: #004487;
+  text-align: center;
+  padding: 0 10px;
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.right-first-top p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.right-first-top .naira {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.right-first-top .today-payment {
+  margin: 30% 0 5% 0;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.right-first-top .approved-credit {
+  margin: 30% 0 5% 0;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.right-first-top .price {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #e2a025;
+}
+
+.right-first-top .price .naira {
+  text-decoration: line-through;
+}
+
+.right-first-top .price2 {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #034A00;
+}
+
+.right-first-top .price2 .naira {
+  text-decoration: line-through;
+}
+
+.right-first-top .product {
+  padding: 5px;
+}
+
+.right-first-top .product tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.right-first-top .product thead {
+  text-transform: capitalize;
+  color: #3462FD;
+}
+
+.right-first-top .product thead th {
+  padding: 20px 10px 15px 5px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.right-first-top .product td {
+  color: #000000;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-left: 13px;
+  font-size: 12px;
+}
+
+.right-first-top .product td .naira {
+  text-decoration: line-through;
+}
+
+.right-first-top .average-price {
+  padding: 10px;
+}
+
+.right-first-top .average-price .currentAvr-price {
+  text-transform: capitalize;
+  color: #004487;
+  padding: 5px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.right-first-top .average-price td {
+  padding-top: 5px;
+  padding-right: 39px;
+  padding-left: 18px;
+  font-size: 12px;
+}
+
+.right-first-top .average-price td .naira {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+/* ---second set of dashboard details */
+.right-second {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  margin: 20px;
+}
+
+.right-second-top {
+  margin: 15px;
+}
+
+.right-second-top table {
+  border-spacing: 0;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  min-height: 25vh;
+  -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
+          box-shadow: 2px 2px 5px 4px #e8f5fa;
+}
+
+.right-second-top table thead {
+  text-align: center;
+}
+
+.right-second-top table thead tr td {
+  font-size: 12px;
+  padding: 15px 0px 15px 32px;
+  background-color: #3462FD;
+}
+
+input:focus, select:focus{
+  outline: none;
+}
+
+.right-second-top table thead tr td p {
+  margin-left: 50px;
+}
+
+.right-second-top table thead tr .right {
+  padding: 0;
+}
+
+/* table thead{
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+  box-shadow: 2px 2px 5px 0px #bcc9ce;
+} */
+
+.right-second-top table tbody {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+          box-shadow: 2px 2px 5px 0px #bcc9ce;
+}
+
+.right-second-top table td {
+  padding: 10px 30px 24px 30px;
+  font-size: 12px;
+}
+
+.right-third {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20%;
+      grid-template-rows: 20%;
+  margin: 20px;
+}
+
+.right-third p {
+  margin: 0px 20px;
+  padding-top: 13px;
+}
+
+.right-third a {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #ffffff;
+}
+
+ .approve {
+  background-color: #034A00;
+}
+
+ .cancel {
+  background-color: #b10202;
+}
+
+.right-third .product {
+  background-color: #ffffff;
+  color: #2f66f3;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+          box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.right-third .payment {
+  background-color: #2f66f3;
+  color: #ffffff;
+}
+
+.right-fourth {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20%;
+      grid-template-rows: 20%;
+  margin: 15px;
+}
+
+.right-fourth p {
+  margin: 0px 20px;
+  padding-top: 13px;
+}
+
+.right-fourth a {
+  padding: 8px 5px;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.right-fourth .approve {
+  background-color: #034A00;
+}
+
+.right-fourth .cancel {
+  background-color: #b10202;
+}
+
+.right-fourth .product {
+  background-color: #ffffff;
+  color: #3462FD;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+          box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.right-fourth .payment {
+  background-color: #3462FD;
+  color: #ffffff;
+}
+
+
+/* media queries */
+@media(max-width: 800px){
+  .dashboard-nav-left {
+      position: absolute;
+      width: 30%;
+      z-index: +1;
+      /* margin-left: -40%; */
+  		transition: 0.5s linear;
+      opacity: 0;
+      height: auto;
+  }
+  #toggle{
+    display: inline-block;
+    width: 0%;
+  }
+  
+  .icon-bar{
+    display: block;
+    background-color: black;
+    width: 29px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 8px;
+  }
+  .right-first {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr ;
+        grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .right-second-top {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .right-second-top table td {
+    width: 100vw;
+    /* font-size: 2%; */
+    padding: 2% 5%;
+  }
+
+  .right-second-top table thead tr td {
+    width: 100vw;
+    /* font-size: 2%; */
+    padding: 2% 5%;
+  }
+
+  .right-second, .right-third {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .right-second-top table  {
+    width: 100vw;
+    /* font-size: 2%; */
+    padding: 2% 5%;
+  }
+  
+  .right-third table thead tr td {
+    /* overflow-wrap:  */
+    width: 100vw;
+    /* font-size: 2%; */
+    padding: 2% 5;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */
