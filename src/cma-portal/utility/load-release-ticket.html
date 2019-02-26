@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Portal</title>
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/cma/utility/load-release-ticket.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-grid">
+                <div class="logo-left">
+                    
+                        <!-- <input type="button" id="toggle" value=""> -->
+                        <label for="menu" id="toggle">
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </label>
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                   <!-- <div class="imge">
+                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                   </div> -->
+                </div>
+                <div class="nav-link-right">
+                    <a href="">log out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="dashboard">
+
+        <!-- dashboard grid container -->
+        <div class="dashboard-grid-container">
+            <!-- left nav link -->
+            <div class="dashboard-nav-left">
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+              <ul>
+                  <li class="nav-left">
+                     <img src="../../../assets/home.svg" alt="">
+                     <a class="main-menu" href="#">home</a>
+                      <ul class="submenu">
+                          <li><a href="/src/merchantPortal/home/dashboard.html">dashboard</a></li>
+                          <li><a href="#">help manual</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-left">
+                     <img src="../../../assets/operations.svg" alt="">
+                     <a class="main-menu" href="#">operations</a>
+                      <ul class="submenu">
+                        <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
+                        <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
+                        <li><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
+                        <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-left">
+                    <img src="../../../assets/utility.svg" alt="">
+                    <a class="main-menu" href="#">utility</a>
+                    <ul class="submenu">
+                        <li><a href="/src/cma-portal/utility/virtual-stock.html">View virtual stock</a></li>
+                        <li><a href="/src/cma-portal/utility/view-release-ticket.html">View Release Ticket</a></li>
+                        <li class="active"><a href="/src/cma-portal/utility/load-release-ticket.html">Load Release Tickets</a></li>
+                        <li><a href="/src/cma-portal/utility/message-feed-alert.html">Message Feed alert</a></li>
+                    </ul>
+                  </li>
+              </ul>
+                <div class="nav-link">
+                    <a href="#" >log out</a>
+                </div>
+            </div>
+            <div class="dashboard-details-right">
+                <!-- header -->
+                <div class="header-details-right">
+                    <h1 class="dashboard">load release ticket</h1>
+                    <div class="merchant">
+                        <p>merchant portal</p>
+                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+                    </div>
+                </div>
+                <div class="load-release">
+                    <div class="load-form">
+                        <form action="">
+                            <select name="" id="">
+                                <option value="" selected disabled>Approved Released Tickets</option>
+                                <option value="">Released Tickets</option>
+                                <option value="">Released Tickets</option>
+                                <option value="">Released Tickets</option>
+                            </select>
+                            <p>No Release Tickets Available</p>
+                            <table>
+                                <tr>
+                                    <td>Waybill Number</td>
+                                    <td><input type="text" name="" id=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Loading Date</td>
+                                    <td><input type="text" name="" id=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Truck Number</td>
+                                    <td><input type="text" name="" id=""></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>
