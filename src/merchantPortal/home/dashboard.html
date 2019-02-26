@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Merchant Portal</title>
-    <link rel="stylesheet" href="/css/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/dashboard.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <div class="nav-grid">
                 <div class="logo-left">
+                    
+                        <!-- <input type="button" id="toggle" value=""> -->
+                        <label for="menu" id="toggle">
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </label>
                   <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
                   <!-- <h3 class="brand-name">Charis Oil</h3> -->
                    <!-- <div class="imge">
@@ -29,10 +36,9 @@
 
         <!-- dashboard grid container -->
         <div class="dashboard-grid-container">
-
             <!-- left nav link -->
             <div class="dashboard-nav-left">
-
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
               <ul>
                   <li class="nav-left">
                      <img src="../../../assets/home.svg" alt="">
@@ -91,6 +97,9 @@
                       </ul>
                   </li>
               </ul>
+                <div class="nav-link">
+                    <a href="#" >log out</a>
+                </div>
             </div>
             <div class="dashboard-details-right">
                 <!-- header -->
@@ -152,7 +161,7 @@
                     </div>
                     <div class="right-first-top">
                         <table class="average-price">
-                            <thead class="currentAvr-price"><p class="heading">current average price</p><p>per liter</p><span class="naira-symbol" style="font-size: 12px;">(&#8358;)</span></thead>
+                            <thead class="currentAvr-price"><p>current average price per liter</p> (&#8358;)</thead>
                             <tbody>
                                 <tr>
                                     <td>AGO</td>
@@ -189,10 +198,10 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Product</th>
-                                    <th>Stock Released to Merchant</th>
-                                    <th>Stock Released to Customer</th>
-                                    <th>Stock Loaded by Customer</th>
+                                    <td>Product</td>
+                                    <td>Stock Released to Merchant</td>
+                                    <td>Stock Released to Customer</td>
+                                    <td>Stock Loaded by Customer</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -240,8 +249,8 @@
                             <thead>
                                 <tr>
                                     <!-- <td class="right"></td> -->
-                                    <th><p>Your Current Stock (Litres)</p></th>
-                                    <th class="right"></th>
+                                    <td><p>Your Current Stock (Litres)</p></td>
+                                    <td class="right"></td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -275,18 +284,18 @@
                 </div>
                 <div class="right-third">
                     <div class="right-second-top">
-                    <p>Pending Purchase Request</p>
-                        <table>
+                    <!-- <p>Pending Purchase Request</p> -->
+                        <table class="right-third-table">
                             <thead>
                                 <tr>
-                                    <th>Transaction Ref</th>
-                                    <th>Customer</th>
-                                    <th>Product</th>
-                                    <th>Quality</th>
-                                    <th>Amount</th>
-                                    <th>Credit</th>
-                                    <th></th>
-                                    <th></th>
+                                    <td>Transaction Ref</td>
+                                    <td>Customer</td>
+                                    <td>Product</td>
+                                    <td>Quality</td>
+                                    <td>Amount</td>
+                                    <td>Credit</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -320,13 +329,13 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Transaction Ref</th>
-                                    <th>Customer</th>
-                                    <th>Product</th>
-                                    <th>Amount</th>
-                                    <th>Credit</th>
-                                    <th></th>
-                                    <th></th>
+                                    <td>Transaction Ref</td>
+                                    <td>Customer</td>
+                                    <td>Product</td>
+                                    <td>Amount</td>
+                                    <td>Credit</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -346,6 +355,7 @@
             </div>
         </div>
     </section>
-    <script src="../../js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../../js/index.js"></script>
 </body>
 </html>

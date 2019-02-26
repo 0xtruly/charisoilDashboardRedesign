@@ -96,3 +96,48 @@ input[type="radio"]{
     width: 70%;
     margin: 5px;
 }
+
+
+/* media queries */
+@media(max-width: 700px){
+    .stock-transaction-form {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 37px;
+        margin: 20px;
+    }
+    
+
+    input[type="date"], select {
+        padding: 5px 7px;
+        border: 1px solid #3462FD;
+        border-radius: 5px;
+        display: block;
+        font-size: small;
+        color: #3462FD;
+        width: 200px;
+    }
+
+    .view {
+        color: #3462FD;
+        display: grid;
+    }
+    /*tracker page  */
+    .tracker{
+        margin: 0;
+    }
+
+    .tracker table{
+        margin: 0;
+    }
+
+    .tracker table >tbody > tr > td:nth-child(odd){
+        width: 50%;
+    }
+    
+    .tracker table >tbody > tr > td:nth-child(even){
+        width: 50%;
+    }
+}

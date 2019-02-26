@@ -76,3 +76,23 @@ input[type="submit"]{
 .view{
     color: #3462FD;
 }
+
+/* media queries */
+@media(max-width: 700px){
+    .sales-payment-form {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .view {
+        display: grid;
+        color: #3462FD;
+    }
+
+    input[type="date"], select{
+        width: 200px;
+    }
+}
