@@ -406,6 +406,11 @@ nav {
   padding: 15px 0px 15px 32px;
   background-color: #3462FD;
 }
+.right-second-top table thead tr th {
+  font-size: 12px;
+  padding: 15px 0px 15px 32px;
+  background-color: #3462FD;
+}
 
 input:focus, select:focus{
   outline: none;
@@ -434,6 +439,12 @@ input:focus, select:focus{
 .right-second-top table td {
   padding: 10px 30px 24px 30px;
   font-size: 12px;
+}
+.right-second-top.thirdTable{
+  border-radius: 5px;
+}
+.right-second-top.fourthTable{
+  border-radius: 5px;
 }
 
 .right-third {
@@ -599,21 +610,42 @@ input:focus, select:focus{
     margin: 0 auto;
   }
 
-  .right-second-top {
+  .leftCard {
     width: 100vw;
     padding: 0;
   }
-
+  .rightCard {
+    width: 100vw;
+    padding: 0;
+  }
+  .thirdTable{
+    overflow: auto;
+    min-height: 103vh;
+    width: 103vh;
+    margin-left: -52px;
+  }
+  .fourthTable{
+    overflow: auto;
+    min-height: 103vh;
+    width: 103vh;
+    margin-left: -52px;
+  }
+  .right-third-table{
+    overflow-y: scroll;
+  }
+  .right-third-table td{
+    overflow: scroll;
+  }
   .right-second-top table td {
     width: 100vw;
     /* font-size: 2%; */
-    padding: 2% 5%;
+    padding: 1% 2%;
   }
 
   .right-second-top table thead tr td {
     width: 100vw;
     /* font-size: 2%; */
-    padding: 2% 5%;
+    padding: 1% 4%;
   }
 
   .right-second, .right-third, .right-fourth {
@@ -622,17 +654,36 @@ input:focus, select:focus{
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         width: 70%;
+  
+  }
+  .right-second, .right-third{
     margin: 0 auto;
   }
+  .right-fourth{
+    margin: -270px auto 0px auto;
+  }
+  .right-third p {
+    margin: 12px 3px;
+    padding-top: 13px;
+}
+  .right-fourth p {
+    margin: 17px -50px;
+    padding-top: 82px;
+}
 
-  .right-second-top table  {
-    width: 100vw;
+  .rightCard table  {
+    width: 65vw;
     /* font-size: 2%; */
+  }
+  .leftCard table  {
+    width: 75vw;
+    /* font-size: 2%; */
+    margin-left: -26px;
   }
 
   /* right dashboard */
   .dashboard-details-right {
-    width: 100vw;
+    width: 100%;
 }
   
 }
