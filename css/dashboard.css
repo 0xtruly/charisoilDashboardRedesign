@@ -529,7 +529,7 @@ input:focus, select:focus{
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 5px;
+    padding: 5px 31px;
     margin-top: 85px;
   }
 
