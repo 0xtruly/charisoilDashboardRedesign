@@ -101,6 +101,16 @@
     width: 70%;
 }
 
+/* Register stock page */
+#register-stock-btn{
+    background-color: #3663FD;
+    color: white;
+    width: 250px;
+    margin: 20px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+}
+
 
 /* media queries */
 @media(max-width: 700px){
