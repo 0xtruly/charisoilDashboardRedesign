@@ -1,0 +1,107 @@
+/* load release ticket page */
+.load-release{
+    padding: 40px;
+    display: -ms-grid;
+    margin: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.load-form select, .load-form input{
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    color: #3663FD;
+}
+
+.load-form p{
+    padding: 12px 0 40px 0;
+}
+
+/* message feed page */
+.message-feed{
+    min-height: 200px;
+}
+
+.message-feed p{
+    color: #3663FD;
+    padding: 12px 0 40px 0;
+}
+
+.message-feed label{
+    margin-right: 20px;
+}
+
+.message-feed input:checked{
+    background-color: #3663FD;
+}
+
+/* release ticket page */
+.release-ticket{
+    min-height: 100px;
+    padding: 40px;
+    display: -ms-grid;
+    margin: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr ;
+    grid-template-columns:  1fr;
+    grid-gap: 30px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.release-ticket p{
+    padding: 12px 0 40px 0;
+}
+
+.release-ticket select{
+    padding: 5px 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+    width: 40%;
+    color: #3663FD;
+}
+
+.release-ticket-button{
+    float: right;
+    background-color: #3663FD;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: small;
+}
+
+
+
+/* media queries */
+@media(max-width: 700px){
+    .load-release{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        /* padding: 20px; */
+    }
+    .load-form table td:nth-child(odd){
+        width: 20%;
+    }
+    .load-form table td:nth-child(even){
+        width: 80%;
+    }
+
+    .release-ticket select{
+        width: 100%;
+    }
+}

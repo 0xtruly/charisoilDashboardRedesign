@@ -1,0 +1,123 @@
+/* approve users page */
+.approval{
+    margin: 20px;
+    font-size: small;
+}
+
+.approval-search{
+    margin: 20px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.approval-search input[type='search']{
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    width:  270px;
+    margin: 10px;
+    color: #3663FD; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.approval-setup{
+    padding: 15px;
+    display: -ms-grid;
+    margin-top: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    min-height: 200px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.approval-setup select{
+    padding: 5px 60px 0 30px;
+    border: 1px solid #3663FD;
+    margin: 10px;
+    border-radius: 5px;
+    width: auto;
+    color: #3663FD;
+}
+
+.approval-submit{
+    text-align: right;
+    margin: 30px;
+}
+
+.approval-submit > input{
+    background-color: #3663FD;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: small;
+}
+
+/*create storage page */
+.storage-submit{
+    text-align: right;
+    margin: 30px;
+}
+
+.storage-submit > input{
+    color: white;
+    padding: 5px 15px;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: small;
+}
+
+
+.approval-setup table input{
+    
+    padding: 5px 20px;
+    margin: 10px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+    width: auto;
+    color: #3663FD;
+}
+
+.approval-setup input[type='search']{
+    padding: 5px ;
+}
+
+.approval-setup table tr td:nth-child(odd){
+    width: 30%;
+}
+
+.approval-setup table tr td:nth-child(even){
+    width: 70%;
+}
+
+
+/* media queries */
+@media(max-width: 700px){
+    .approval-setup{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .approval-setup table input{
+        padding: 5px 10px;
+    }
+    
+    .approval-setup input[type='search']{
+        padding: 5px 0px ;
+    }
+    
+    .approval-setup select{
+        padding: 5px 60px 0 10px;
+    }
+}
