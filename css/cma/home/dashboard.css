@@ -1,0 +1,91 @@
+.cma-dashboard{
+    margin: 20px;
+    font-size: small;
+}
+
+.dashboard-search{
+    margin: 20px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.dashboard-search input[type='search']{
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    width:  270px;
+    margin: 10px;
+    color: #3663FD; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+
+.dashboard-setup{
+    display: -ms-grid;
+    margin-top: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    min-height: 200px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+    overflow: auto;
+}
+.dashboard-setup table {
+    border-spacing: 0;
+    color: black;
+    text-align: left;
+    font-size: small;
+    padding: 0;
+    overflow-y: scroll;
+}
+.dashboard-setup table thead tr td {
+    font-size: 12px;
+    padding: 15px 0px 15px 32px;
+    color: #ffffff;
+    background-color: #3462FD;
+}
+
+.dashboard-setup table td {
+    padding: 10px 30px 24px 30px;
+    font-size: 12px;
+}
+
+input[type="button"]{
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: inherit;
+    background-color: #3462FD;
+    color: white;
+    font-size: small;
+    width: auto;
+    border: 2px solid transparent;
+}
+
+/* view transaction pagr in operations */
+.transaction-select{
+    padding: 5px 60px 0 30px;
+    border: 1px solid #3663FD;
+    margin: 10px;
+    border-radius: 5px;
+    width: auto;
+    color: #3663FD
+}
+
+/* media queries */
+@media(max-width: 700px){
+    .dashboard-setup table td {
+        overflow: scroll;
+    }
+
+    .dashboard-setup {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}

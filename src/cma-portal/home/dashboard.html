@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Merchant Portal</title>
     <link rel="stylesheet" href="../../../css/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
+    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
 </head>
 <body>
     <header>
@@ -44,7 +44,7 @@
                      <img src="../../../assets/home.svg" alt="">
                      <a class="main-menu" href="#">home</a>
                       <ul class="submenu">
-                          <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
+                          <li class="active"><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
                           <li><a href="#">help manual</a></li>
                       </ul>
                   </li>
@@ -53,7 +53,7 @@
                      <a class="main-menu" href="#">operations</a>
                       <ul class="submenu">
                         <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
-                        <li class="active"><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
+                        <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
                         <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
                         <li><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
                         <li><a href="/src/cma-portal/operations/register-stock-take.html">register stock in take</a></li>
@@ -79,63 +79,50 @@
             <div class="dashboard-details-right">
                 <!-- header -->
                 <div class="header-details-right">
-                    <h1 class="dashboard">create storage tanks</h1>
+                    <h1 class="dashboard">dashboard</h1>
                     <div class="merchant">
                         <p>merchant portal</p>
                         <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                     </div>
                 </div>
-                <div class="approval-search">
+                <div class="dashboard-search">
                     <input type="search" name="" id="" placeholder="Search">
                 </div>
-                <form action="" class="approval">
-                    <p>Storage Tank Details</p>
-                    <div class="approval-setup">
+                <div class="cma-dashboard">
+                    <p>Current Stock</p>
+                    <div class="dashboard-setup">
                         <table>
-                            <tr>
-                                <td><label for="">Storage Id:</label></td>   
-                                <td><input type="search" name="" id=""></td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Description:</label></td>   
-                                <td><input type="text" name="" id=""></td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Capacity(Litres):</label></td>   
-                                <td><input type="text" name="" id=""></td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Depot:</label></td>
-                                <td>
-                                    <select name="" id="">
-                                            <option value="">Select Depot</option>
-                                            <option value="">Select Depot</option>
-                                            <option value="">Select Depot</option>
-                                            <option value="">Select Depot</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="">Product:</label></td>
-                                <td>
-                                    <select name="" id="">
-                                            <option value="">Select Product</option>
-                                            <option value="">Select Product</option>
-                                            <option value="">Select Product</option>
-                                            <option value="">Select Product</option>
-                                    </select>
-                                </td>
-                            </tr>
+                           <thead>
+                               <tr>
+                                   <td>Depo</td>
+                                   <td>Storage</td>
+                                   <td>Product</td>
+                                   <td>Current Stock(Litres)</td>
+                                   <td>Company</td>
+                                   <td></td>
+                               </tr>
+                           </thead> 
+                           <tbody>
+                               <tr>
+                                   <td>Folawiyi Energy Ltd</td>
+                                   <td>Providus Lanstan Energy Ltd-130082-PMS</td>
+                                   <td>PMS</td>
+                                   <td>5,000,000 Litres</td>
+                                   <td>Providus Bank Ltd</td>
+                                   <td><input type="button" value="Virtual Stock"></td>
+                               </tr>
+                           </tbody>
                         </table>
-                        <table>
-                            <div class="storage-submit">
-                                <input type="submit" value="Save" class="approve">
-                                <input type="reset" value="Clear" class="cancel">
-                            </div>
+                    </div>
+                </div>
+                <div class="cma-dashboard">
+                    <p>Approved Ticket List</p>
+                    <div class="dashboard-setup">
+                        <div class="cma-dashboard">
+                            <input type="button" value="Select Below">
                         </div>
-                    </table>
-                </form>
-            </div>
+                    </div>
+                </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

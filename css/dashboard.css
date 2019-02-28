@@ -554,6 +554,11 @@ input:focus, select:focus{
     height: auto;;
   }
 
+  .dashboard-grid-container {
+    -ms-grid-columns: 1fr ;
+    grid-template-columns: 1fr;
+}
+
   .logo-left .logo {
     display: none;
   }

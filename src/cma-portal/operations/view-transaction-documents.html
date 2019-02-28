@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CMA Portal</title>
     <link rel="stylesheet" href="../../../css/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
+    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <div class="nav-grid">
                 <div class="logo-left">
-                    
                         <!-- <input type="button" id="toggle" value=""> -->
                         <label for="menu" id="toggle">
                             <span class='icon-bar'></span>
@@ -45,14 +44,15 @@
                      <img src="../../../assets/home.svg" alt="">
                      <a class="main-menu" href="#">home</a>
                       <ul class="submenu">
-                          <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
+                          <li class="active"><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
+                          <li><a href="#">help manual</a></li>
                       </ul>
                   </li>
                   <li class="nav-left">
                      <img src="../../../assets/operations.svg" alt="">
                      <a class="main-menu" href="#">operations</a>
                       <ul class="submenu">
-                        <li class="active"><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
+                        <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
                         <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
                         <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
                         <li><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
@@ -79,41 +79,55 @@
             <div class="dashboard-details-right">
                 <!-- header -->
                 <div class="header-details-right">
-                    <h1 class="dashboard">approval users setup</h1>
+                    <h1 class="dashboard">view transaction details</h1>
                     <div class="merchant">
                         <p>CMA portal</p>
                         <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                     </div>
                 </div>
-                <div class="approval-search">
-                    <input type="search" name="" id="" placeholder="Search">
+                <div class="cma-dashboard">
+                    <div class="dashboard-setup">
+                        <table>
+                           <thead>
+                               <tr>
+                                   <td></td>
+                                   <td>Transaction Name</td>
+                                   <td>Product</td>
+                                   <td>Quantity</td>
+                                   <td>Reference</td>
+                                   <td>Company</td>
+                                   <td>Merchant</td>
+                                   <td>Assigned Date</td>
+                               </tr>
+                           </thead> 
+                           <tbody>
+                               <tr>
+                                   <td><input type="button" value="Select"></td>
+                                   <td>PMS Lanstan (Metric Tonnes)</td>
+                                   <td>PMS</td>
+                                   <td>6,000</td>
+                                   <td>130081</td>
+                                   <td>Access Bank</td>
+                                   <td>Lanstan Energy Ltd</td>
+                                   <td>04 February 2019 </td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </div>
                 </div>
-                <form action="" class="approval">
-                    <div class="approval-setup">
-                        <div>
-                            <label for="">Choose Approval Interface:</label>    
-                            <select name="" id="">
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="">Choose User:</label>    
-                            <select name="" id="">
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                                <option value="">Select Interface Level</option>
-                            </select>
-                            <div class="approval-submit">
-                                <input type="submit" value="Add User To Access Table">
-                            </div>
+                <div class="cma-dashboard">
+                    <label>Select Document For Preview</label>
+                    <select class="transaction-select" name="" id="">
+                        <option value="">Document Specification</option>
+                        <option value="">Document Specification</option>
+                        <option value="">Document Specification</option>
+                        <option value="">Document Specification</option>
+                    </select>
+                    <div class="dashboard-setup">
+                        <div class="cma-dashboard">
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

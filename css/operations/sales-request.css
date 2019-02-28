@@ -81,3 +81,15 @@ hr{
     background-color: #3462FD;
     margin: 0 auto;
 }
+
+
+/* media queries */
+@media(max-width: 700px){
+    .request-contents {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns:  1fr;
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+}

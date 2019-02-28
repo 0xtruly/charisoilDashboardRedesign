@@ -2,6 +2,14 @@
 margin: 15px;
 }
 
+.activate-user-main{
+    margin: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:  1fr;
+    grid-template-columns:  1fr;
+}
+
 .activate-user{
     background-color: #ffffff;
     border-radius: 5px;
@@ -9,6 +17,7 @@ margin: 15px;
     -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
     box-shadow: 2px 2px 5px 4px #D7DADC;
     min-height: 255px;
+    overflow: auto;
 }
 
 .activate-user > p{
@@ -18,28 +27,29 @@ margin: 15px;
 
 
 .activate-user table {
-border-spacing: 0;
-color: black;
-text-align: center;
-font-size: small;
-width: 100%;
-min-height: 25vh;
+    border-spacing: 0;
+    color: black;
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    min-height: 25vh;
+    overflow-y: scroll;
 }
 
 .activate-user table thead {
-text-align: center;
+    text-align: center;
 }
 
 .activate-user table thead tr td {
-font-size: 12px;
-padding: 15px 0px 15px 32px;
-color: #ffffff;
-background-color: #3462FD;
+    font-size: 12px;
+    padding: 15px 0px 15px 32px;
+    color: #ffffff;
+    background-color: #3462FD;
 }
 
 
 .activate-user table thead tr td p {
-margin-left: 50px;
+    margin-left: 50px;
 }
 
 .activate-inputs{
@@ -73,7 +83,7 @@ input, select{
     background-color: #ffffff;
     border-radius: 5px;
     margin: 2px 20px;
-    width: 450px;
+    width: 40%;
     padding:  20px 50px 70px 50px;
     font-size: small;
     -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
@@ -111,6 +121,7 @@ input, select{
     -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
     box-shadow: 2px 2px 5px 4px #D7DADC;
     min-height: 255px;
+    overflow: auto;
 }
 
 .grant-user  p{
@@ -128,6 +139,7 @@ input, select{
     width: 100%;
     border-radius: 5px;
     min-height: 25vh;
+    overflow-y: scroll;
 }
 
 .grant-user table thead {
@@ -144,6 +156,7 @@ input, select{
 
 .grant-user-bottom{
     padding: 10px;
+    overflow: auto;
 }
 
 .grant-user-bottom > select{
@@ -160,4 +173,19 @@ input, select{
 
  .grant-user .revoke{
     color: #BD1414;
+}
+
+/* media queries */
+@media(max-width: 700px){
+    .activate-user table td{
+        overflow: scroll;
+    }
+
+    .change-user{
+        width: auto;
+    }
+
+    .grant-user table thead tr td,  .grant-user table{
+        font-size: 3vw;
+    }
 }
