@@ -31,7 +31,7 @@
     background-color: #ffffff;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
     min-height: 200px;
     border-radius: 5px; 
     -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
@@ -102,7 +102,7 @@
 }
 
 /* Register stock page */
-#register-stock-btn{
+#register-stock-btn, #uploaded-submit{
     background-color: #3663FD;
     color: white;
     width: 250px;
@@ -112,6 +112,94 @@
 }
 
 
+/* upload document transaction page */
+#upload-transaction{
+    display: -ms-grid;
+    margin-top: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns:  1fr;
+    grid-template-columns:  1fr;
+    grid-gap: 20px;
+    min-height: 250px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+#upload-transaction > .approval-setup{
+    -webkit-box-shadow: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 0px 0px;
+}
+
+#upload-transaction table tr td{
+    width: 1000%;
+    padding: 5px;
+}
+
+#upload-transaction input[type="file"]{
+    /* display: none; */
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: #e7e5e5;
+    width: 100%;
+    margin: 0;
+    /* font-size: 1px; */
+    cursor: pointer;
+    /* opacity: 0; */
+    /* filter: alpha(opacity=0); */
+}
+#uploaded-submit{
+    width: 120px;
+    float: right;
+}
+
+.upload-bank{
+    float: right;
+    padding: 20px;
+    color: #3663FD;
+}
+
+#upload-transaction .file-btn{
+    background-color: #3663FD;
+    position: relative;
+    top: 23px;
+    left: 4px;
+    z-index: +1;
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* width: 50px; */
+    font-size: small;
+    -webkit-box-shadow: 0px 1px 5px 2px #bcc9ce;
+    box-shadow: 0px 1px 5px 2px #bcc9ce;
+    transition: .9s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#upload-transaction .file-btn:focus{
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#upload-transaction hr{
+    width: 100%;
+    background-color: #3663FD;
+    border-radius: 5px;
+    border: 1px solid #3663fD;
+    height: 2px;
+    margin: 15px auto;
+}
+
+.uploaded-documents{
+    min-height: 300px;
+    padding: 10px;
+}
 /* media queries */
 @media(max-width: 700px){
     .approval-setup{
