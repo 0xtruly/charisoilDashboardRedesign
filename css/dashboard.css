@@ -65,7 +65,7 @@ nav {
   border-radius: 3px;
 }
 
-.dashboard-nav-left .nav-link {
+.dashboard-nav-left .nav-link a{
   display: none;
 }
 
@@ -593,6 +593,10 @@ input:focus, select:focus{
 
 /* media queries */
 @media(max-width: 700px){
+  .nav-grid {
+    border: 2px solid #081021; 
+  }
+
   .header-details-right {
     display: -ms-grid;
     display: grid;
@@ -605,11 +609,16 @@ input:focus, select:focus{
   .dashboard-nav-left {
     position: fixed;
     width: 14%;
+    background-color: #081021;
     z-index: +1;
     /* margin-left: -40%; */
     transition: 0.5s linear;
     opacity: 0;
     height: auto;;
+  }
+
+  .dashboard-nav-left .nav-left a {
+    color: #ffffff;
   }
 
   .dashboard-grid-container {
@@ -623,22 +632,29 @@ input:focus, select:focus{
 
   .dashboard-nav-left .logo {
     display: block;
+    padding: 0px;
+    /* margin-left: 45px; */
+    width: 60px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    /* border-radius: 3px; */
   }
 
-  .dashboard-nav-left .nav-link {
+  .dashboard-nav-left .nav-link a {
     display: block;
     background-color: #FFFEFF;
-    color: #3462FD;
+    color: #000000;
     padding: 6px 25px;
-    border: 2px solid #3462FD;
     border-radius: 3px;
+    box-shadow: 1px -1px 1px 2px hsla(240, 2%, 24%, 0.68);
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    text-decoration: none;
+    border-radius: 3px;
     text-align: center;
     width: 40%;
-    margin: 0 auto;
-    text-decoration: none;
+    margin: 15px auto;
   }
 
   .nav-grid .nav-link-right a {
@@ -647,7 +663,7 @@ input:focus, select:focus{
 
   #toggle{
     display: inline-block;
-    background-color: #f1e3e64d;
+    background-color: #f6f8f8;
     height: auto;
     border-radius: 3px;
     border: 2px solid #e8e8e8;
@@ -657,7 +673,7 @@ input:focus, select:focus{
   
   .icon-bar{
     display: block;
-    background-color: #736e6e33;
+    background-color: #736e6ede;
     width: 29px;
     height: 2px;
     border-radius: 1px;
