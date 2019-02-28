@@ -105,3 +105,14 @@ input[type="number"]{
     padding: 10px 30px 24px 50px ;
     font-size: small;
 }
+
+/* media queries */
+@media(max-width: 700px){
+    .product-price-bottom {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .product-price-top > form > select {
+        width: 70vw;
+    }
+}

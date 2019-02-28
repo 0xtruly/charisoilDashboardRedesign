@@ -68,9 +68,24 @@ input[type="button"]{
     border: 2px solid transparent;
 }
 
+/* view transaction pagr in operations */
+.transaction-select{
+    padding: 5px 60px 0 30px;
+    border: 1px solid #3663FD;
+    margin: 10px;
+    border-radius: 5px;
+    width: auto;
+    color: #3663FD
+}
+
 /* media queries */
 @media(max-width: 700px){
     .dashboard-setup table td {
         overflow: scroll;
+    }
+
+    .dashboard-setup {
+        width: 90vw;
+        margin: 0 auto;
     }
 }
