@@ -105,6 +105,7 @@
 #register-stock-btn, #uploaded-submit{
     background-color: #3663FD;
     color: white;
+    cursor: pointer;
     width: 250px;
     margin: 20px;
     border: 2px solid #3663FD;

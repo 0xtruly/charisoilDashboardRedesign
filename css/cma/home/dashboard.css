@@ -58,14 +58,15 @@
 }
 
 input[type="button"]{
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-family: inherit;
     background-color: #3462FD;
-    color: white;
-    font-size: small;
-    width: auto;
+    border-radius: 5px;
     border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: small;
+    padding: 3px 6px;
+    width: auto;
 }
 
 /* view transaction pagr in operations */

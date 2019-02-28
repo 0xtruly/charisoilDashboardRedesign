@@ -16,7 +16,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* small screen toggle button */
@@ -52,7 +52,7 @@ nav {
   height: 10vh;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-  background: #ffffff;
+  background: #081021;
 }
 
 .nav-grid .logo-left .logo {
@@ -60,7 +60,9 @@ nav {
   margin-left: 45px;
   width: 60px;
   height: 45px;
-  margin-top: 4px;
+  margin-top: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
 }
 
 .dashboard-nav-left .nav-link {
@@ -91,10 +93,10 @@ nav {
 
 .nav-grid .nav-link-right a {
   background-color: #FFFEFF;
-  color: #3462FD;
+  color: #000000;
   padding: 6px 25px;
-  border: 2px solid #3462FD;
   border-radius: 3px;
+  box-shadow: 1px -1px 1px 2px hsla(240, 2%, 24%, 0.68);
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
@@ -229,14 +231,21 @@ nav {
 
 .header-details-right h1 {
   font-family: inherit;
+  font-weight: 100;
   text-transform: capitalize;
-  margin-left: 15px;
+  margin-left: 35px;
+  margin-top: 10px;
 }
 
 .header-details-right .merchant {
-  background: #3462FD;
-  padding: 3px;
+  background: #3663fd;
+  border-radius: 4px;
+  padding: 3px 0px 3px 0px;
   margin-right: 25px;
+  width: 31vh;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 100;
 }
 
 .header-details-right .merchant p {
@@ -256,13 +265,14 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 30px;
+      padding: 15px 30px 0px 30px;
 }
 
 .right-first-top {
   min-height: 190px;
-  border-radius: 5px;
-  background-color: #004487;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #001f88;
   text-align: center;
   padding: 0 10px;
   margin: 10px;
@@ -296,7 +306,7 @@ nav {
   margin-left: 15px;
   margin-top: 15px;
   padding: 10px;
-  color: #e2a025;
+  color: #ffbf26;
 }
 
 .right-first-top .price .naira {
@@ -308,7 +318,7 @@ nav {
   margin-left: 15px;
   margin-top: 15px;
   padding: 10px;
-  color: #034A00;
+  color: #12d44d;
 }
 
 .right-first-top .price2 .naira {
@@ -333,7 +343,7 @@ nav {
 
 .right-first-top .product thead th {
   padding: 20px 10px 15px 5px;
-  color: #000000;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 100;
 }
@@ -344,6 +354,12 @@ nav {
   padding-right: 6px;
   padding-left: 13px;
   font-size: 12px;
+}
+.right-first-top .product td:nth-child(odd){
+  color: #ffffff;
+}
+.right-first-top .product td:nth-child(even){
+  color: #bd18ee;
 }
 
 .right-first-top .product td .naira {
@@ -368,6 +384,9 @@ nav {
   padding-left: 18px;
   font-size: 12px;
 }
+.right-first-top .average-price td:nth-child(even){
+  color: #21bdcd;
+}
 
 .right-first-top .average-price td .naira {
   text-decoration: line-through;
@@ -378,8 +397,8 @@ nav {
 .right-second {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% 35%;
-      grid-template-columns: 65% 35%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
   margin: 20px;
 }
 
@@ -393,6 +412,8 @@ nav {
   text-align: center;
   width: 100%;
   min-height: 25vh;
+  border-radius: 5px;
+  overflow: hidden;
   -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
           box-shadow: 2px 2px 5px 4px #e8f5fa;
 }
@@ -401,15 +422,42 @@ nav {
   text-align: center;
 }
 
-.right-second-top table thead tr td {
+
+.right-second-top.rightCard table thead tr th {
   font-size: 12px;
-  padding: 15px 0px 15px 32px;
-  background-color: #3462FD;
+  padding: 8px 0px 15px 56px;
+  background-color: #3663fd;
+  text-align: end;
 }
-.right-second-top table thead tr th {
+.right-second-top.thirdTable table thead tr th {
   font-size: 12px;
-  padding: 15px 0px 15px 32px;
-  background-color: #3462FD;
+  padding: 8px 1px 15px 25px;
+  background-color: #3663fd;
+  text-align: end;
+}
+.right-second-top.fourthTable table thead tr th {
+  font-size: 12px;
+  padding: 8px 1px 15px 25px;
+  background-color: #3663fd;
+  text-align: end;
+}
+.right-second-top.rightCard table thead tr th .gap{
+  margin-right: -7px;
+  text-align: center;
+}
+.right-second-top.rightCard td {
+  padding: 17px 65px 17px 0px;
+}
+.right-second-top.leftCard table thead tr th {
+  font-size: 12px;
+  padding: 24px 2px 15px 2px;
+  background-color: #3663fd;
+}
+.right-second-top.leftCard table{
+
+}
+.right-second-top.rightCard table{
+
 }
 
 input:focus, select:focus{
@@ -446,6 +494,12 @@ input:focus, select:focus{
 .right-second-top.fourthTable{
   border-radius: 5px;
 }
+.right-second-top.thirdTable td {
+  padding: 0px 0px 0px 0px;
+}
+.right-second-top.fourthTable td {
+  padding: 0px 0px 0px 0px;
+}
 
 .right-third {
   display: -ms-grid;
@@ -458,8 +512,9 @@ input:focus, select:focus{
 }
 
 .right-third p {
-  margin: 0px 20px;
-  padding-top: 13px;
+  margin: 0px 1px;
+  padding-top: 0px;
+  margin-bottom: 15px;
 }
 
 .right-third a {
@@ -467,6 +522,7 @@ input:focus, select:focus{
   border-radius: 10px;
   font-family: inherit;
   color: #ffffff;
+  text-decoration: none;
 }
 
  .approve {
@@ -500,8 +556,9 @@ input:focus, select:focus{
 }
 
 .right-fourth p {
-  margin: 0px 20px;
-  padding-top: 13px;
+  margin: 0px 16px;
+  padding-top: 1px;
+  margin-top: 22px;
 }
 
 .right-fourth a {
@@ -510,6 +567,7 @@ input:focus, select:focus{
   font-family: inherit;
   color: #ffffff;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .right-fourth .approve {
