@@ -2,6 +2,9 @@
 margin: 15px;
 }
 
+.approve-ticket-main{
+    margin: 20px;
+}
 .approve-ticket{
     background-color: #ffffff;
     border-radius: 5px;
@@ -23,16 +26,26 @@ margin: 15px;
 
 .approve-inputs input{
     background-color: #3663FD;
+    position: relative;
+    top: 80%;
     color: white;
     font-size: small;
     padding: 5px 10px;
+    width: 200px;
+    margin: 5px;
     border: 1px solid #3663FD;
     border-radius: 5px;
 }
 
+.approve-inputs input:nth-child(even){
+    left: 50%;
+}
+
 .approve-inputs{
-    position: relative;
-    top: 200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .approve-inputs > input[type="button"]{
@@ -53,6 +66,7 @@ margin: 15px;
     background-color: #ffffff;
     /* border: 2px solid white; */
     border-radius: 5px;
+    overflow: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -150,4 +164,31 @@ input[type="button"] {
 
 .view-ticket-bottom select{
     width: 100%;
+}
+
+/* media queries */
+@media(max-width: 700px){
+    .approve-inputs{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns:  1fr;
+        grid-template-columns:  1fr;
+    }
+
+    .view-ticket-top {
+        width: 90vw;
+    }
+
+    .view-ticket-bottom-body {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns:  1fr;
+    }
+}
+
+@media(max-width: 1100px){
+    .approve-inputs input:nth-child(even){
+        left: 0%;
+    }
 }
