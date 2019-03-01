@@ -615,6 +615,7 @@ input:focus, select:focus{
 
   .dashboard-nav-left .nav-left a {
     color: #ffffff;
+    display: none;
   }
 
   .dashboard-grid-container {
