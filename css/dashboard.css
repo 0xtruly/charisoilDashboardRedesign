@@ -411,7 +411,7 @@ nav {
   color: #ffffff;
   text-align: center;
   width: 100%;
-  min-height: 25vh;
+  min-height: 256px;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
@@ -427,19 +427,19 @@ nav {
   font-size: 12px;
   padding: 8px 0px 15px 56px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.thirdTable table thead tr th {
   font-size: 12px;
   padding: 8px 1px 15px 25px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.fourthTable table thead tr th {
   font-size: 12px;
   padding: 8px 1px 15px 25px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.rightCard table thead tr th .gap{
   margin-right: -7px;
@@ -499,6 +499,7 @@ input:focus, select:focus{
 }
 .right-second-top.fourthTable td {
   padding: 0px 0px 0px 0px;
+  width: auto;
 }
 
 .right-third {
@@ -511,18 +512,24 @@ input:focus, select:focus{
   margin: 20px;
 }
 
-.right-third p {
-  margin: 0px 1px;
-  padding-top: 0px;
-  margin-bottom: 15px;
-}
-
-.right-third a {
+.right-third a , .right-fourth a{
   padding: 8px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: inherit;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
+  width: max-content;
+  display: -webkit-inline-box;
+  display: inline-box;
+  transition: .4s linear;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+  box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.right-third a:hover , .right-fourth a:hover{
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
 }
 
  .approve {
@@ -555,19 +562,8 @@ input:focus, select:focus{
   margin: 15px;
 }
 
-.right-fourth p {
-  margin: 0px 16px;
-  padding-top: 1px;
-  margin-top: 22px;
-}
-
-.right-fourth a {
-  padding: 8px 5px;
-  border-radius: 10px;
-  font-family: inherit;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
+.right-fourth p, .right-third p {
+  margin: 44px 16px -10px 16px;
 }
 
 .right-fourth .approve {
@@ -685,35 +681,27 @@ input:focus, select:focus{
     -ms-grid-columns: 1fr ;
         grid-template-columns: 1fr;
     padding: 30px;
-    width: 70%;
     margin: 0 auto;
   }
 
   .leftCard {
-    width: 100vw;
+    width: 80vw;
     padding: 0;
   }
   .rightCard {
-    width: 100vw;
+    width: 80vw;
     padding: 0;
   }
-  .thirdTable{
+  .thirdTable , .fourthTable{
     overflow: auto;
-    min-height: 103vh;
-    width: 103vh;
-    margin-left: -52px;
-  }
-  .fourthTable{
-    overflow: auto;
-    min-height: 103vh;
-    width: 103vh;
-    margin-left: -52px;
+    min-height: 200px;
+    width: 80vw;
   }
   .right-third-table{
     overflow-y: scroll;
   }
   .right-third-table td{
-    overflow: scroll;
+    /* overflow: scroll; */
   }
   .right-second-top table td {
     width: 100vw;
@@ -731,38 +719,21 @@ input:focus, select:focus{
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        width: 70%;
-  
+        grid-template-columns: 1fr;  
   }
   .right-second, .right-third{
-    margin: 0 auto;
+    margin: 30px;
   }
   .right-fourth{
-    margin: -270px auto 0px auto;
+    margin: 20px;
   }
   .right-third p {
-    margin: 12px 3px;
-    padding-top: 13px;
+    margin: 20px;
 }
-  .right-fourth p {
-    margin: 17px -50px;
-    padding-top: 82px;
-}
-
-  .rightCard table  {
-    width: 65vw;
-    /* font-size: 2%; */
-  }
-  .leftCard table  {
-    width: 75vw;
-    /* font-size: 2%; */
-    margin-left: -26px;
-  }
 
   /* right dashboard */
-  .dashboard-details-right {
-    width: 100%;
+.dashboard-details-right {
+  width: 100%;
 }
   
 }
