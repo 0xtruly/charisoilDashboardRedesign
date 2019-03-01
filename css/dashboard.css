@@ -65,7 +65,7 @@ nav {
   border-radius: 3px;
 }
 
-.dashboard-nav-left .nav-link {
+.dashboard-nav-left .nav-link a{
   display: none;
 }
 
@@ -411,7 +411,7 @@ nav {
   color: #ffffff;
   text-align: center;
   width: 100%;
-  min-height: 25vh;
+  min-height: 256px;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 5px 4px #e8f5fa;
@@ -427,19 +427,19 @@ nav {
   font-size: 12px;
   padding: 8px 0px 15px 56px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.thirdTable table thead tr th {
   font-size: 12px;
   padding: 8px 1px 15px 25px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.fourthTable table thead tr th {
   font-size: 12px;
   padding: 8px 1px 15px 25px;
   background-color: #3663fd;
-  text-align: end;
+  text-align: left;
 }
 .right-second-top.rightCard table thead tr th .gap{
   margin-right: -7px;
@@ -499,6 +499,7 @@ input:focus, select:focus{
 }
 .right-second-top.fourthTable td {
   padding: 0px 0px 0px 0px;
+  width: auto;
 }
 
 .right-third {
@@ -511,18 +512,24 @@ input:focus, select:focus{
   margin: 20px;
 }
 
-.right-third p {
-  margin: 0px 1px;
-  padding-top: 0px;
-  margin-bottom: 15px;
-}
-
-.right-third a {
+.right-third a , .right-fourth a{
   padding: 8px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: inherit;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
+  width: max-content;
+  display: -webkit-inline-box;
+  display: inline-box;
+  transition: .4s linear;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+  box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.right-third a:hover , .right-fourth a:hover{
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
 }
 
  .approve {
@@ -555,19 +562,8 @@ input:focus, select:focus{
   margin: 15px;
 }
 
-.right-fourth p {
-  margin: 0px 16px;
-  padding-top: 1px;
-  margin-top: 22px;
-}
-
-.right-fourth a {
-  padding: 8px 5px;
-  border-radius: 10px;
-  font-family: inherit;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
+.right-fourth p, .right-third p {
+  margin: 44px 16px -10px 16px;
 }
 
 .right-fourth .approve {
@@ -593,6 +589,10 @@ input:focus, select:focus{
 
 /* media queries */
 @media(max-width: 700px){
+  .nav-grid {
+    border: 2px solid #081021; 
+  }
+
   .header-details-right {
     display: -ms-grid;
     display: grid;
@@ -605,11 +605,17 @@ input:focus, select:focus{
   .dashboard-nav-left {
     position: fixed;
     width: 14%;
+    background-color: #081021;
     z-index: +1;
     /* margin-left: -40%; */
     transition: 0.5s linear;
     opacity: 0;
     height: auto;;
+  }
+
+  .dashboard-nav-left .nav-left a {
+    color: #ffffff;
+    display: none;
   }
 
   .dashboard-grid-container {
@@ -623,22 +629,29 @@ input:focus, select:focus{
 
   .dashboard-nav-left .logo {
     display: block;
+    padding: 0px;
+    /* margin-left: 45px; */
+    width: 60px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    /* border-radius: 3px; */
   }
 
-  .dashboard-nav-left .nav-link {
+  .dashboard-nav-left .nav-link a {
     display: block;
     background-color: #FFFEFF;
-    color: #3462FD;
+    color: #000000;
     padding: 6px 25px;
-    border: 2px solid #3462FD;
     border-radius: 3px;
+    box-shadow: 1px -1px 1px 2px hsla(240, 2%, 24%, 0.68);
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    text-decoration: none;
+    border-radius: 3px;
     text-align: center;
     width: 40%;
-    margin: 0 auto;
-    text-decoration: none;
+    margin: 15px auto;
   }
 
   .nav-grid .nav-link-right a {
@@ -647,7 +660,7 @@ input:focus, select:focus{
 
   #toggle{
     display: inline-block;
-    background-color: #f1e3e64d;
+    background-color: #f6f8f8;
     height: auto;
     border-radius: 3px;
     border: 2px solid #e8e8e8;
@@ -657,7 +670,7 @@ input:focus, select:focus{
   
   .icon-bar{
     display: block;
-    background-color: #736e6e33;
+    background-color: #736e6ede;
     width: 29px;
     height: 2px;
     border-radius: 1px;
@@ -669,35 +682,27 @@ input:focus, select:focus{
     -ms-grid-columns: 1fr ;
         grid-template-columns: 1fr;
     padding: 30px;
-    width: 70%;
     margin: 0 auto;
   }
 
   .leftCard {
-    width: 100vw;
+    width: 80vw;
     padding: 0;
   }
   .rightCard {
-    width: 100vw;
+    width: 80vw;
     padding: 0;
   }
-  .thirdTable{
+  .thirdTable , .fourthTable{
     overflow: auto;
-    min-height: 103vh;
-    width: 103vh;
-    margin-left: -52px;
-  }
-  .fourthTable{
-    overflow: auto;
-    min-height: 103vh;
-    width: 103vh;
-    margin-left: -52px;
+    min-height: 200px;
+    width: 80vw;
   }
   .right-third-table{
     overflow-y: scroll;
   }
   .right-third-table td{
-    overflow: scroll;
+    /* overflow: scroll; */
   }
   .right-second-top table td {
     width: 100vw;
@@ -715,38 +720,21 @@ input:focus, select:focus{
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        width: 70%;
-  
+        grid-template-columns: 1fr;  
   }
   .right-second, .right-third{
-    margin: 0 auto;
+    margin: 30px;
   }
   .right-fourth{
-    margin: -270px auto 0px auto;
+    margin: 20px;
   }
   .right-third p {
-    margin: 12px 3px;
-    padding-top: 13px;
+    margin: 20px;
 }
-  .right-fourth p {
-    margin: 17px -50px;
-    padding-top: 82px;
-}
-
-  .rightCard table  {
-    width: 65vw;
-    /* font-size: 2%; */
-  }
-  .leftCard table  {
-    width: 75vw;
-    /* font-size: 2%; */
-    margin-left: -26px;
-  }
 
   /* right dashboard */
-  .dashboard-details-right {
-    width: 100%;
+.dashboard-details-right {
+  width: 100%;
 }
   
 }
