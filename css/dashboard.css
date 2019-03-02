@@ -522,15 +522,19 @@ input:focus, select:focus{
   width: max-content;
   display: -webkit-inline-box;
   display: inline-box;
+}
+
+.right-third .approve, .right-third .cancel, .right-fourth .product, .right-fourth .payment{
   transition: .4s linear;
   -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
   box-shadow: 2px 2px 2px 2px #e7e5e5;
 }
 
-.right-third a:hover , .right-fourth a:hover{
+.right-third .approve:hover, .right-third .cancel:hover, .right-fourth .payment:hover, .right-fourth .product:hover{
   -webkit-box-shadow: 0px 0px 0px 0px;
-  box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px; 
 }
+
 
  .approve {
   background-color: #034A00;
