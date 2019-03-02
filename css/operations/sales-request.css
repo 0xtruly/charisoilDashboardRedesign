@@ -15,13 +15,48 @@
     border-radius: 5px;
     box-shadow: 0px 0px 2px 2px #DCDDDD;
 }
+.request-details2{
+    background-color: #ffffff;
+    margin: 4%;
+}
 
 .request-contents{
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr ;
-    padding: 70px;
+    padding: 0px 50px 0px 50px;
+}
+.request-contents.two{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
+    padding: 30px 178px 30px 61px;
+}
+.request-contents-top.left table{
+    padding: 20px 0px 62px 0px;
+    display: grid;
+    grid-template-columns: 103%;
+}
+.request-contents-top.left{
+    margin-left: 10px;
+    margin-top: 35px;
+}
+.request-contents-top.right table{
+    padding: 20px 40px 44px 0px;
+    width: 386px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 144%;
+}
+.request-contents-top.right{
+    margin-top: 35px;
+    margin-right: 20px;
+}
+.request-contents.floor {
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 input{
@@ -44,17 +79,19 @@ input:focus, select:focus{
 
 .bank{
     width: 50%;
-    padding: 10px;
+    padding: 10px 0px 0px 23px;
     font-size: small;
-    font-weight: bolder
+    font-weight: 700;
 }
 
 input[type='submit'], a {
+    cursor: pointer;
     padding: 3px 6px;
     border-radius: 5px;
     font-family: inherit;
     color: white;
     border: 2px solid transparent;
+    width: 80px;
 }
 
 .approve {
@@ -66,12 +103,24 @@ input[type='submit'], a {
 }
 
 table td{
-    width: 50%;
     padding: 10px;
     font-size: small;
 }
 table tr td:nth-child(odd){
     color: #3462FD;
+    width: 140px;
+}
+.bottom-right tr td:nth-child(odd){
+    
+}
+.bottom-left tr td:nth-child(odd){
+    width: 110px;
+}
+.bottom-left tbody{
+    width: 110px;
+}
+.bottom-right tr td:nth-child(even){
+    
 }
 
 hr{
