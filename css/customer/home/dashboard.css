@@ -30,27 +30,114 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-family: inherit;
+    color: #ffffff;
     text-decoration: none;
 }
 
 #pay{
     background-color: #3462FD;
-    color: #ffffff;
 }
 
 #track{
     border: 1px solid #3462FD;
     color: #3462FD;
+    background-color: #ffffff;
 }
 
 #customer-table table td{
     padding: 10px;
 }
+
+/* purchase product page */
+.purchase-product-bottom{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:1fr;
+    grid-template-columns:1fr;
+    background-color: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.purchase-product-body{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.purchase-product-body > table td{
+    width: fit-content;
+    padding: 5px;
+    font-size: small;
+}
+
+.blue-text{
+    color: #3462FD;
+}
+
+.purchase-product-body input {
+    padding: 2px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+}
+
+.purchase-product-bottom input[type="text"]{
+    width: 100%;
+}
+
+/* ticket-payment page */
+.ticket-payment{
+    display: -ms-grid;
+    display: grid;
+    margin: 20px;
+    -ms-grid-columns:1fr;
+    grid-template-columns:1fr;
+    background-color: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
+    border-radius: 5px;
+}
+
+.ticket-payment input{
+    padding: 2px 15px;
+    border: 1px solid #3663FD;
+    border-radius: 5px;
+    background-color: #3462FD;
+    color: white;
+}
+
+.ticket-payment-paragraph{
+    margin: 20px;
+    font-size: small;
+}
+
+.ticket-payment-inner{
+    margin: 35px;
+    min-height: 150px;
+}
+.input-right{
+    text-align: right;
+    margin: 20px;
+}
+
 /* media queries */
 @media(max-width: 700px){
     .customer-right-first{
         grid-template-columns: 1fr;
             -ms-grid-columns:  1fr;
         grid-gap: 20px;
+    }
+
+    .purchase-product-body{
+        -ms-grid-columns: 1fr;
+        grid-template-columns:  1fr;
+        grid-gap: 20px;
+    }
+
+    .input-right{
+        text-align: center;
     }
 }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Portal</title>
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/report/stock-transaction-details.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-grid">
+                <div class="logo-left">
+                    
+                        <!-- <input type="button" id="toggle" value=""> -->
+                        <label for="menu" id="toggle">
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </label>
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                   <!-- <div class="imge">
+                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                   </div> -->
+                </div>
+                <div class="nav-link-right">
+                    <a href="">log out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="dashboard">
+
+        <!-- dashboard grid container -->
+        <div class="dashboard-grid-container">
+            <!-- left nav link -->
+            <div class="dashboard-nav-left">
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                  <ul>
+                    <li class="nav-left">
+                       <img src="../../../assets/home.svg" alt="">
+                       <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/customer/home/dashboard.html">dashboard</a></li>
+                            <li><a href="/src/customer/home/purchase-product">purchase product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                       <img src="../../../assets/operations.svg" alt="">
+                       <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                          <li class="active"><a href="/src/customer/operations/track-transactions.html">track transaction</a></li>
+                          <li><a href="/src/customer/operations/view-release-ticket.html">view release ticket</a></li>
+                          <li><a href="/src/customer/operations/view-ticket-and-payment.html">view tickets and payments</a></li>
+                          <li><a href="/src/customer/operations/message-feed-alert.html">Message Feed alert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                       <img src="../../../assets/report.svg" alt="">
+                       <a class="main-menu" href="#">Report</a>
+                       <ul class="submenu">
+                          <li><a href="src/customer/report/purchase-details-report.html">Purchase Details Report</a></li>
+                          <li><a href="src/customer/report/payment-details-report.html">Payment Details Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                       <img src="../../../assets/profile.svg" alt="">
+                       <a class="main-menu" href="#">Profile</a>
+                       <ul class="submenu">
+                        <li><a href="/src/customer/profile/update-signup-details.html">Update Sign Up Details</a></li>
+                        <li><a href="/src/customer/profile/change-your-password.html">Change Your Password</a></li>
+                       </ul>
+                    </li>
+                </ul>
+                <div class="nav-link">
+                    <a href="#" >log out</a>
+                </div>
+            </div>
+            <div class="dashboard-details-right">
+                <!-- header -->
+                <div class="header-details-right">
+                    <h1 class="dashboard">track transactions</h1>
+                    <div class="merchant">
+                        <p>customer portal</p>
+                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+                    </div>
+                </div>
+                <div class="dashboard-search">
+                        <input type="search" name="" id="" placeholder="Search">
+                </div>
+                <div class="stock-transaction">
+                    <form action="">
+                        <label for="">Choose  Reference</label>
+                        <select name="reference" id="">
+                            <option value="" selected disabled>Reference id</option>
+                            <option value="" >Reference id</option>
+                            <option value="" >Reference id</option>
+                            <option value="" >Reference id</option>
+                        </select>
+                        <div class="stock-transaction-form tracker">
+                            <table>
+                                <tr>
+                                    <td>Product:</td>
+                                    <td>PMS</td>
+                                </tr>
+                                <tr>
+                                    <td>Price per Litre:</td>
+                                    <td>134.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Quantity:</td>
+                                    <td>30 Litres</td>
+                                </tr>
+                                <tr>
+                                    <td>Value:</td>
+                                    <td>4,020.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Requested Date:</td>
+                                    <td>04-Feb-2019</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>Payment Status:</td>
+                                    <td>Cancelled</td>
+                                </tr>
+                                <tr>
+                                    <td>Depot:</td>
+                                    <td>A-Z Petroleum Limited</td>
+                                </tr>
+                                <tr>
+                                    <td>Storage:</td>
+                                    <td>Access-Lanstan Energy Ltd 130081-PMS</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="view">
+                            <input type="radio" name="view" id="" value="customer" checked>
+                            <label for="">View on Screen</label> 
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in Crystaly Report</label> 
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in PDF</label>  
+                            <input type="radio" name="view" id="" value="customer" >
+                            <label for="">View in Excel</label> 
+                            <input type="submit" value="View Report">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>

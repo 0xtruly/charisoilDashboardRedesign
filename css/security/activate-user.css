@@ -58,11 +58,11 @@ margin: 15px;
     font-size: small;
 }
 
-.activate-inputs label, input{
+.activate-inputs label, input, textarea{
     margin: 10px;
 }
 
-input, select{
+input, select, textarea{
     padding: 5px 10px;
     border: 1px solid #3663FD;
     border-radius: 5px;
@@ -77,6 +77,7 @@ input, select{
 .activate-inputs input[type="text"] {
     width: 250px;
 }
+
 
 /* change password page  */
 .change-user{

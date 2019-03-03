@@ -34,6 +34,25 @@ button, input[type='submit'], input[type='button'], input[type='reset']{
   box-shadow: 0px 0px 0px 0px ;
 }
 
+/* search bars */
+
+.dashboard-search {
+  margin: 20px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dashboard-search input[type='search'] {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  width: 270px;
+  margin: 10px;
+  color: #3663FD;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+  box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
 /*nav */
 nav {
   width: 100%;
@@ -242,7 +261,7 @@ nav {
   border-radius: 4px;
   padding: 3px 0px 3px 0px;
   margin-right: 25px;
-  width: 31vh;
+  width: fit-content;
   font-size: 14px;
   font-family: inherit;
   font-weight: 100;
@@ -614,7 +633,8 @@ input:focus, select:focus{
     /* margin-left: -40%; */
     transition: 0.5s linear;
     opacity: 0;
-    height: auto;;
+    height: 100vh;
+    overflow: auto;
   }
 
   .dashboard-nav-left .nav-left a {
