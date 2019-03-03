@@ -1,11 +1,26 @@
+
+.header-details-right h1 {
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-left: 59px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
 .staff-users-top{
     padding: 10px 20px;
+}
+.staff-users-top h4{
+    margin-left: 44px;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .staff-users-main{
     background-color: #ffffff;
-    width: 80%;
-    margin: 10px 0;
+    width: 85%;
+    margin: 10px 45px;
     box-shadow: 0px 0px 2px 2px #DCDDDD;
 }
 
@@ -24,8 +39,10 @@ input[type='submit'], input[type='reset'] {
     border-radius: 5px;
     font-family: inherit;
     color: white;
-    width: 50px;
+    width: 75px;
     border: 2px solid transparent;
+    position: relative;
+    left: 69px;
 }
 
 .approve {
@@ -55,15 +72,18 @@ table td:nth-child(even){
 }
 
 input, select{
-    padding:7px 8px;
+    padding:3px 12px;
     width: 100%;
     border: 1px solid #3462FD;
     border-radius: 5px;
 }
 
 select{
-    padding: 10px 15px;
+    padding: 3px 2px;
     color  : #3462FD;
+}
+select#select {
+    width: 113%;
 }
 
 .form-buttons{
@@ -109,5 +129,17 @@ select{
     }
     .main-buttons{
         display: inline-block;
+    }
+    .header-details-right h1 {
+        position: relative;
+        top: 44px;
+        right: 26px;
+        font-size: 22px;
+    }
+    select#select {
+        width: 120%;
+    }
+    input[type='submit'], input[type='reset'] {
+        left: 25px;
     }
 }

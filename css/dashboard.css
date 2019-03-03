@@ -105,6 +105,10 @@ nav {
   left: 150px;
   text-decoration: none;
 }
+.nav-grid .nav-link-right a:hover {
+  background: transparent;
+  color: #ffffff;
+}
 
 /*nav end */
 /*section-dashboard grid left*/
@@ -117,7 +121,7 @@ nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 4fr;
   min-height: 100%;
 }
 
@@ -736,6 +740,11 @@ input:focus, select:focus{
 .dashboard-details-right {
   width: 100%;
 }
-  
+.header-details-right .merchant{
+  width: 52vh;
+  position: relative;
+  bottom: 62px;
+  left: 182px;
+}
 }
 /*# sourceMappingURL=dashboard.css.map */
