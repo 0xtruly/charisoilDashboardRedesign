@@ -19,6 +19,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+
+.link-span{
+  color: #3462FD;
+}
 /* small screen toggle button */
 #toggle{
   display: none;
