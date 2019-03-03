@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CMA Portal</title>
+    <title>Customer Portal</title>
     <link rel="stylesheet" href="../../../css/dashboard.css">
     <link rel="stylesheet" href="../../../css/cma/utility/load-release-ticket.css">
 </head>
@@ -40,41 +40,46 @@
             <!-- left nav link -->
             <div class="dashboard-nav-left">
                   <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-              <ul>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/home.svg" alt="">
-                     <a class="main-menu" href="#">home</a>
-                      <ul class="submenu">
-                          <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/operations.svg" alt="">
-                     <a class="main-menu" href="#">operations</a>
-                      <ul class="submenu">
-                        <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
-                        <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
-                        <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
-                        <li><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
-                        <li><a href="/src/cma-portal/operations/register-stock-take.html">register stock in take</a></li>
-                        <li><a href="/src/cma-portal/operations/upload-transaction-documents.html">upload transaction documents</a></li>
-                        <li><a href="/src/cma-portal/operations/view-transaction-documents.html">view transaction documents</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/utility.svg" alt="">
-                     <a class="main-menu" href="#">utility</a>
-                      <ul class="submenu">
-                        <li><a href="/src/cma-portal/utility/virtual-stock.html">View virtual stock</a></li>
-                        <li class="active"><a href="/src/cma-portal/utility/view-release-ticket.html">View Release Ticket</a></li>
-                        <li><a href="/src/cma-portal/utility/load-release-ticket.html">Load Release Tickets</a></li>
-                        <li><a href="/src/cma-portal/utility/message-feed-alert.html">Message Feed alert</a></li>
-                      </ul>
-                  </li>
-              </ul>
+                  <ul>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/home.svg" alt="">
+                       <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/customer/home/dashboard.html">dashboard</a></li>
+                            <li><a href="/src/customer/home/purchase-product">purchase product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/operations.svg" alt="">
+                       <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                          <li><a href="/src/customer/operations/track-transactions.html">track transaction</a></li>
+                          <li class="active"><a href="/src/customer/operations/view-release-ticket.html">view release ticket</a></li>
+                          <li><a href="/src/customer/operations/view-ticket-and-payment.html">view tickets and payments</a></li>
+                          <li><a href="/src/customer/operations/message-feed-alert.html">Message Feed alert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/report.svg" alt="">
+                       <a class="main-menu" href="#">Report</a>
+                       <ul class="submenu">
+                          <li><a href="/src/customer/report/purchase-details-report.html">Purchase Details Report</a></li>
+                          <li><a href="/src/customer/report/payment-details-report.html">Payment Details Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/profile.svg" alt="">
+                       <a class="main-menu" href="#">Profile</a>
+                       <ul class="submenu">
+                        <li><a href="/src/customer/profile/update-signup-details.html">Update Sign Up Details</a></li>
+                        <li><a href="/src/customer/profile/change-your-password.html">Change Your Password</a></li>
+                       </ul>
+                    </li>
+                </ul>
                 <div class="nav-link">
                     <a href="#" >log out</a>
                 </div>
@@ -82,9 +87,9 @@
             <div class="dashboard-details-right">
                 <!-- header -->
                 <div class="header-details-right">
-                    <h1 class="dashboard">view release ticket</h1>
+                    <h1 class="dashboard">view release tickets</h1>
                     <div class="merchant">
-                        <p>CMA portal</p>
+                        <p>Customer portal</p>
                         <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                     </div>
                 </div>

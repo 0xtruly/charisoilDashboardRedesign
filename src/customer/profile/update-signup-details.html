@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Portal</title>
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/security/activate-user.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-grid">
+                <div class="logo-left">
+                    
+                        <!-- <input type="button" id="toggle" value=""> -->
+                        <label for="menu" id="toggle">
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </label>
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                   <!-- <div class="imge">
+                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                   </div> -->
+                </div>
+                <div class="nav-link-right">
+                    <a href="">log out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="dashboard">
+
+        <!-- dashboard grid container -->
+        <div class="dashboard-grid-container">
+            <!-- left nav link -->
+            <div class="dashboard-nav-left">
+                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                  <ul>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/home.svg" alt="">
+                       <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/customer/home/dashboard.html">dashboard</a></li>
+                            <li><a href="/src/customer/home/purchase-product">purchase product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/operations.svg" alt="">
+                       <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                          <li><a href="/src/customer/operations/track-transactions.html">track transaction</a></li>
+                          <li><a href="/src/customer/operations/view-release-ticket.html">view release ticket</a></li>
+                          <li><a href="/src/customer/operations/view-ticket-and-payment.html">view tickets and payments</a></li>
+                          <li><a href="/src/customer/operations/message-feed-alert.html">Message Feed alert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/report.svg" alt="">
+                       <a class="main-menu" href="#">Report</a>
+                       <ul class="submenu">
+                          <li><a href="/src/customer/report/purchase-details-report.html">Purchase Details Report</a></li>
+                          <li><a href="/src/customer/report/payment-details-report.html">Payment Details Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/profile.svg" alt="">
+                       <a class="main-menu" href="#">Profile</a>
+                       <ul class="submenu">
+                        <li class="active"><a href="/src/customer/profile/update-signup-details.html">Update Sign Up Details</a></li>
+                        <li><a href="/src/customer/profile/change-your-password.html">Change Your Password</a></li>
+                       </ul>
+                    </li>
+                </ul>
+                <div class="nav-link">
+                    <a href="#" >log out</a>
+                </div>
+            </div>
+            <div class="dashboard-details-right">
+                <!-- header -->
+                <div class="header-details-right">
+                    <h1 class="dashboard">update sign up details</h1>
+                    <div class="merchant">
+                        <p>Customer portal</p>
+                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+                    </div>
+                </div>
+                <div class="activate-user-main">
+                    <form action="">
+                        <div class="change-user">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Full Name/Company
+                                    </td>
+                                    <td>
+                                        <input type="text" name="" id="">                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile Phone Number                                        
+                                    </td>
+                                    <td>
+                                        <input type="tel" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Email Address                                       
+                                    </td>
+                                    <td>
+                                        <input type="email" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Identification Type
+                                    </td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">Select Identification Type</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Identification Number
+                                    </td>
+                                    <td>
+                                        <input type="number" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Address
+                                    </td>
+                                    <td>
+                                        <textarea name="" id=""></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                                <input type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>
