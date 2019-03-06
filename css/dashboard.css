@@ -22,6 +22,9 @@
 
 .link-span{
   color: #3462FD;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
 }
 /* small screen toggle button */
 #toggle{
