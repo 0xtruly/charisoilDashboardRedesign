@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Merchant Portal</title>
+    <title>Set Product Price</title>
     <link rel="stylesheet" href="../../../css/dashboard.css">
     <link rel="stylesheet" href="../../../css/operations/product-price.css">
 </head>
@@ -120,6 +120,19 @@
                     <p>Depot(s) Wharehousing Your Product(s)</p>
                     <div class="product-price-top">
                         <form action="">
+                            <label for="search" class="search-label">
+                                <input type="search" class="search-input" placeholder="search">
+                            </label>
+                            <button class="search-btn">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                    </path>
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        <form action="" class="select">
                             <select name="" id="">
                                 <option value="" selected disabled>Select Depot</option>
                                 <option value="">Depot</option>
@@ -129,79 +142,85 @@
                         </form>
                     </div>
                     <div class="product-price-bottom"action="">
+                        <div class="left">
+                            <p class="product-prices-heading">set prices</p>
                             <div class="product-price-bottom-body">
-                                <table>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New PMS Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set PMS"></td>
-                                        </form>
-                                    </tr>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New AGO Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set AGO"></td>
-                                        </form>
-                                    </tr>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New ATK Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set ATK"></td>
-                                        </form>
-                                    </tr>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New DBK Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set DBK"></td>
-                                        </form>
-                                    </tr>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New BOIL Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set BOIL"></td>
-                                        </form>
-                                    </tr>
-                                    <tr>
-                                        <form action="">
-                                            <td>Set New LPFO Price</td>
-                                            <td><input type="number" name="" id=""></td>
-                                            <td><input type="submit" value="Set LPFO"></td>
-                                        </form>
-                                    </tr>
+                                    <table>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New PMS Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set PMS"></td>
+                                            </form>
+                                        </tr>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New AGO Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set AGO"></td>
+                                            </form>
+                                        </tr>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New ATK Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set ATK"></td>
+                                            </form>
+                                        </tr>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New DBK Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set DBK"></td>
+                                            </form>
+                                        </tr>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New BOIL Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set BOIL"></td>
+                                            </form>
+                                        </tr>
+                                        <tr>
+                                            <form action="">
+                                                <td>Set New LPFO Price</td>
+                                                <td><input type="number" name="" id=""></td>
+                                                <td><input type="submit" value="Set LPFO"></td>
+                                            </form>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p class="product-prices-heading">price history</p>
+                            <div class="product-price-bottom-body two">
+                                <table class="product-price-bottom-table">
+                                    <thead>
+                                        <tr>
+                                            <td>Product</td>
+                                            <td>Current Stock</td>
+                                            <td>Current Price(&#8358;)</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>000</td>
+                                            <td>000</td>
+                                            <td>000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>000</td>
+                                            <td>000</td>
+                                            <td>000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>000</td>
+                                            <td>000</td>
+                                            <td>000</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
-                            <div class="product-price-bottom-body two">
-                            <table class="product-price-bottom-table">
-                                <thead>
-                                    <tr>
-                                        <td>Product</td>
-                                        <td>Current Stock</td>
-                                        <td>Current Price(&#8358;)</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>000</td>
-                                        <td>000</td>
-                                        <td>000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>000</td>
-                                        <td>000</td>
-                                        <td>000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>000</td>
-                                        <td>000</td>
-                                        <td>000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>

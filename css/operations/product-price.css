@@ -1,3 +1,10 @@
+.header-details-right h1 {
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-left: 15px;
+    margin-top: 10px;
+}
 .product-price{
     padding: 20px;
 }
@@ -8,8 +15,13 @@
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
 }
+.product-prices-heading{
+    text-transform: capitalize;
+    color: #3462FD;
+    margin-top: 35px;
+}
 .product-price-top > form > select {
-    width: 40%;
+    width: 500px;
     color: #3462FD;
     font-weight: 540;
     padding: 10px;
@@ -17,8 +29,60 @@
     border-color: white;
     -webkit-box-shadow: 2px 2px 5px 0px #bcc9ce;
     box-shadow: 0px 1px 5px 1px #bcc9ce;
+    background-color: #ffffff;
+    font-size: 15px;
 }
-
+form{
+    margin-bottom: 0.1em;
+    bottom: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+}
+.select{
+    margin-bottom: 0.1em;
+    bottom: 100%;
+    margin-left: 0px;
+}
+input .search-input{
+    margin-left: 150px;
+}
+form .search-label{
+    position: relative;
+    width: 31rem;
+    height: 4rem;
+}
+.search-input{
+    width: 500px;
+    height: 38px;
+    padding: 0px 0px 0px 15px;
+    border: solid thin #bcc9ce;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
+}
+::placeholder{
+    color: #3663fd;
+    font-size: 16px;
+    font-style: inherit;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 33px;
+    height: 33px;
+    border: 0;
+    background: #3663fd;
+    color: #3663fd;
+    cursor: pointer;
+    position: relative;
+    top: 17px;
+    border-radius: 3px;
+}
+.search-btn svg{
+    width: 38px;
+    height: 38px;
+    fill: #ffffff;
+    padding: 0px;
+}
 select:focus{
     outline: none;
 }
@@ -34,6 +98,7 @@ input[type="button"] {
   width: 100%;
   padding: 0px;
   min-height: 25vh;
+  overflow: hidden;
 }
 
 
@@ -114,5 +179,12 @@ input[type="number"]{
     }
     .product-price-top > form > select {
         width: 70vw;
+    }
+    .search-input {
+        width: 330px;
+        height: 35px;
+    }
+    form {
+        margin-left: 3px;
     }
 }
