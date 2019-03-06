@@ -41,8 +41,9 @@ form .search-label{
     width: 500px;
     height: 38px;
     padding: 0 4rem 0 1.4rem;
-    border: solid thin #eee;
+    border: solid thin #bcc9ce;
     border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px #bcc9ce;
 }
 ::placeholder{
     color: #3663fd;
