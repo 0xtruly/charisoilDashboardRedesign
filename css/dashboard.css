@@ -231,7 +231,6 @@ nav {
 }
 
 .dashboard-nav-left .nav-left img {
-  fill: #ffffff;
   width: 10px;
   height: 14px;
 }
@@ -271,8 +270,7 @@ nav {
   background: #3663fd;
   border-radius: 4px;
   padding: 3px 0px 3px 0px;
-  margin-right: 25px;
-  width: fit-content;
+  margin-right: 35px;
   font-size: 14px;
   font-family: inherit;
   font-weight: 100;

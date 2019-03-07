@@ -1,0 +1,182 @@
+.heading h4 {
+  text-transform: capitalize;
+  font-weight: 200;
+  margin-left: 42px;
+  margin-top: 30px;
+}
+
+.card-container-one {
+  -webkit-box-shadow: 0px 1px 5px 1px #bcc9ce;
+          box-shadow: 0px 1px 5px 1px #bcc9ce;
+  background-color: #ffffff;
+  border-radius: 5px;
+  min-height: 300px;
+  margin: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  grid-gap: 5px;
+}
+
+.left, .right {
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.align-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+input .search-input {
+  margin-left: 150px;
+}
+
+form .search-label {
+  position: relative;
+  width: 31rem;
+  height: 4rem;
+  top: 5px;
+}
+
+.search-input {
+  width: 415px;
+  height: 38px;
+  padding: 0px 0px 0px 15px;
+  border: solid thin #bcc9ce;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px 1px #bcc9ce;
+          box-shadow: 0px 1px 5px 1px #bcc9ce;
+}
+
+::-webkit-input-placeholder {
+  color: #3663fd;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+  color: #3663fd;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+::-ms-input-placeholder {
+  color: #3663fd;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+::placeholder {
+  color: #3663fd;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.search-btn {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background: #3663fd;
+  color: #3663fd;
+  cursor: pointer;
+  position: relative;
+  top: 22px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.search-btn svg {
+  width: 38px;
+  height: 38px;
+  fill: #ffffff;
+  padding: 0px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.select-options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+  margin: 20px 0px;
+}
+
+.select-options h5, .select-options select {
+  font-size: 13px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.select-options select {
+  padding: 2px 4px;
+  border: 1px solid #3462FD;
+  border-radius: 5px;
+  width: 60%;
+  color: #3462FD;
+}
+
+.table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34% 66%;
+      grid-template-columns: 34% 66%;
+}
+
+.table .left, .table .right p {
+  font-size: 13px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.table .left span, .table .right p span {
+  text-transform: uppercase;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  float: right;
+  margin-right: 44px;
+}
+
+.button-group a {
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.button-group a button {
+  color: #ffffff;
+  background: #3462FD;
+  padding: 5px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+}
+
+.card-container-two {
+  -webkit-box-shadow: 0px 1px 5px 1px #bcc9ce;
+          box-shadow: 0px 1px 5px 1px #bcc9ce;
+  background-color: #ffffff;
+  border-radius: 5px;
+  min-height: 300px;
+  margin: 140px 45px;
+}
+/*# sourceMappingURL=virtual-stocks.css.map */
