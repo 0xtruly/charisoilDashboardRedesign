@@ -17,7 +17,7 @@
 }
 .left,.right{
     border: 2px solid red;
-    margin: 10px;
+    margin: 15px;
 }
 .align-items{
     display: grid;
@@ -75,25 +75,25 @@ select:focus{
 .select-options{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    margin: 20px 0px;
+    margin: 60px 0px 20px 10px;
     h5, select{
         font-size: 13px;
         font-weight: 200;
         text-transform: capitalize;
     }
     select{
-    padding: 2px 4px;
+    padding: 2px 0px;
     border: 1px solid #3462FD;
     border-radius: 5px;
-    width: 60%;
+    width: 65%;
     color: #3462FD;
     }
 }
 .table{
     display: grid;
-    grid-template-columns: 34% 66%;
+    grid-template-columns: 36% 64%;
 
-    .left, .right p{
+    .left-tb, .right-tb p{
         font-size: 13px;
         font-weight: 200;
         text-transform: capitalize;
@@ -123,10 +123,57 @@ select:focus{
     }
 }
 
+.tank-card{
+    background: #3462FD;
+    width: 170px;
+    height: 170px;
+    // border: 1px solid blue;
+    float: right;
+    position: relative;
+    top: 80px;
+    right: 5px;
+}
+.bars{
+    // display: inline;
+    margin-top: 12px;
+    position: relative;
+    top: 18px;
+}
+.lines{
+    height: 50px;
+    border-bottom: 5px solid black;
+    width: 50px;
+    border-radius: 5px;
+    padding: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+}
 .card-container-two{
     box-shadow: 0px 1px 5px 1px #bcc9ce;
     background-color: #ffffff;
     border-radius: 5px;
     min-height: 300px;
     margin: 140px 45px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px 220px;
+}
+.content h5{
+    grid-row: 1/span1;
+    padding: 0px;
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: capitalize;
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
+.tank-card2{
+    background: #3462FD;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    top: 95px;
+    right: -7px;
 }

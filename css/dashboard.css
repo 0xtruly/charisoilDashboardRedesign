@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Helvetica";
-  src: url("/assets/fonts/Helvetica.ttf") format("truetype");
+  font-family: Helvetica;
+  src: url(/assets/fonts/HELR45W.ttf) format("truetype");
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Helvetica;
 }
 
 
@@ -116,8 +116,15 @@ nav {
   background: transparent;
   list-style-type: none;
 }
+.nav-grid .nav-link-right #notify{
+  text-decoration: none;
+}
+img.notification {
+  width: 40px;
+  height: 40px;
+}
 
-.nav-grid .nav-link-right a {
+.nav-grid .nav-link-right #log-out {
   background-color: #FFFEFF;
   color: #000000;
   padding: 6px 25px;
@@ -125,10 +132,10 @@ nav {
   box-shadow: 1px -1px 1px 2px hsla(240, 2%, 24%, 0.68);
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+  font-size: 14px;
   position: relative;
-  top: 15px;
-  left: 150px;
+  bottom: 10px;
+  left: 70px;
   text-decoration: none;
 }
 .nav-grid .nav-link-right a:hover {
@@ -146,7 +153,7 @@ nav {
 .dashboard-grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
+  -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
   min-height: 100%;
 }

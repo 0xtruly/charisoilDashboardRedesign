@@ -21,7 +21,7 @@
 
 .left, .right {
   border: 2px solid red;
-  margin: 10px;
+  margin: 15px;
 }
 
 .align-items {
@@ -113,7 +113,7 @@ select:focus {
   display: grid;
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
-  margin: 20px 0px;
+  margin: 60px 0px 20px 10px;
 }
 
 .select-options h5, .select-options select {
@@ -123,27 +123,27 @@ select:focus {
 }
 
 .select-options select {
-  padding: 2px 4px;
+  padding: 2px 0px;
   border: 1px solid #3462FD;
   border-radius: 5px;
-  width: 60%;
+  width: 65%;
   color: #3462FD;
 }
 
 .table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 34% 66%;
-      grid-template-columns: 34% 66%;
+  -ms-grid-columns: 36% 64%;
+      grid-template-columns: 36% 64%;
 }
 
-.table .left, .table .right p {
+.table .left-tb, .table .right-tb p {
   font-size: 13px;
   font-weight: 200;
   text-transform: capitalize;
 }
 
-.table .left span, .table .right p span {
+.table .left-tb span, .table .right-tb p span {
   text-transform: uppercase;
 }
 
@@ -171,6 +171,33 @@ select:focus {
   border-radius: 4px;
 }
 
+.tank-card {
+  background: #3462FD;
+  width: 170px;
+  height: 170px;
+  float: right;
+  position: relative;
+  top: 80px;
+  right: 5px;
+}
+
+.bars {
+  margin-top: 12px;
+  position: relative;
+  top: 18px;
+}
+
+.lines {
+  height: 50px;
+  border-bottom: 5px solid black;
+  width: 50px;
+  border-radius: 5px;
+  padding: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+}
+
 .card-container-two {
   -webkit-box-shadow: 0px 1px 5px 1px #bcc9ce;
           box-shadow: 0px 1px 5px 1px #bcc9ce;
@@ -178,5 +205,31 @@ select:focus {
   border-radius: 5px;
   min-height: 300px;
   margin: 140px 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 80px 220px;
+      grid-template-rows: 80px 220px;
+}
+
+.content h5 {
+  grid-row: 1/span1;
+  padding: 0px;
+  font-weight: 200;
+  font-size: 12px;
+  text-transform: capitalize;
+  position: relative;
+  top: 65px;
+  text-align: center;
+}
+
+.tank-card2 {
+  background: #3462FD;
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 95px;
+  right: -7px;
 }
 /*# sourceMappingURL=virtual-stocks.css.map */
