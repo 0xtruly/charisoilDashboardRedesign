@@ -811,10 +811,10 @@ input:focus, select:focus{
   width: 100%;
 }
 .header-details-right .merchant{
-  width: 52vh;
+  width: fit-content;
   position: relative;
-  bottom: 62px;
-  left: 182px;
+  /* bottom: 62px; */
+  left: 50%;
 }
 }
 /*# sourceMappingURL=dashboard.css.map */
