@@ -9,248 +9,251 @@
     <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-grid">
-                <div class="logo-left">
-                    
-                        <!-- <input type="button" id="toggle" value=""> -->
-                        <label for="menu" id="toggle">
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                        </label>
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
-                   <!-- <div class="imge">
-                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
-                   </div> -->
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
                 </div>
-                <div class="nav-link-right">
-                    <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
-                    <a id="log-out" href="#">log out</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="dashboard">
+            </nav>
+        </header>
+        
+        <section class="dashboard">
 
-        <!-- dashboard grid container -->
-        <div class="dashboard-grid-container">
-            <!-- left nav link -->
-            <div class="dashboard-nav-left">
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-              <ul>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/home.svg" alt="">
-                     <a class="main-menu" href="#">home</a>
-                      <ul class="submenu">
-                          <li><a href="/src/merchantPortal/home/dashboard.html">dashboard</a></li>
-                          <li><a href="#">help manual</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/operations.svg" alt="">
-                     <a class="main-menu" href="#">operations</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
-                        <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
-                        <li><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
-                        <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/utility.svg" alt="">
-                     <a class="main-menu" href="#">utility</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
-                        <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
-                        <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
-                        <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
-                        <li class="active"><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
-                        <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/security.svg" alt="">
-                     <a class="main-menu" href="#">security</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
-                        <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
-                        <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
-                        <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
-                        <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/report.svg" alt="">
-                     <a class="main-menu" href="#">report</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
-                        <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
-                      </ul>
-                  </li>
-              </ul>
-                <div class="nav-link">
-                    <a href="#" >log out</a>
-                </div>
-            </div>
-            <div class="dashboard-details-right">
-                <!-- header -->
-                <div class="header-details-right">
-                    <h1 class="dashboard">view ticket and payment</h1>
-                    <div class="merchant">
-                        <p>merchant portal</p>
-                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                <ul>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/home.svg" alt="">
+                        <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/home/dashboard.html">dashboard</a></li>
+                            <li><a href="#">help manual</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/operations.svg" alt="">
+                        <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
+                            <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
+                            <li><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
+                            <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/utility.svg" alt="">
+                        <a class="main-menu" href="#">utility</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
+                            <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
+                            <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
+                            <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
+                            <li class="active"><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
+                            <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/security.svg" alt="">
+                        <a class="main-menu" href="#">security</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
+                            <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
+                            <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
+                            <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
+                            <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/report.svg" alt="">
+                        <a class="main-menu" href="#">report</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
+                            <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
                     </div>
                 </div>
-                <div class="view-ticket">
-                    <p>Approved and Paid Sales Request</p>
-                    <div class="view-ticket-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td>Product Ref</td>
-                                    <td>Customer</td>
-                                    <td>Product</td>
-                                    <td>Request Quantity(Litres)</td>
-                                    <td>Released Quantity (Litres)</td>
-                                    <td>Merchant</td>
-                                    <td>Credit</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input type="button" value="Select"></td>
-                                    <td>20002100513</td>
-                                    <td>Dimji Fayoka-Smith(20002)</td>
-                                    <td>LPFO</td>
-                                    <td>32,000</td>
-                                    <td>30,000</td>
-                                    <td>Folawiyi Energy Ltd(221)</td>
-                                    <td>Yes</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p>Transaction Details</p>
-                    <form  class="view-ticket-bottom" action="">
-                        <div class="view-ticket-bottom-body">
-                            <table>
-                                <tr>
-                                    <td>Transaction Name:</td>
-                                    <td>Financed by LPFO for Sanusi</td>
-                                </tr>
-                                <tr>
-                                    <td>Product:</td>
-                                    <td>LPFO</td>
-                                </tr>
-                                <tr>
-                                    <td>Merchant Name</td>
-                                    <td>Sanusi and</td>
-                                </tr>
-                                <tr>
-                                    <td>Sales rel:</td>
-                                    <td>20002100513</td>
-                                </tr>
-                                <tr>
-                                    <td>Customer Number</td>
-                                    <td>20002</td>
-                                </tr>
-                                <tr>
-                                    <td>Customer Name</td>
-                                    <td>Dimiji Fakoya-Smith</td>
-                                </tr>
-                                <tr>
-                                    <td>Approve Price</td>
-                                    <td>150.0</td>
-                                </tr>
-                                <tr>
-                                    <td>Approve Quntity</td>
-                                    <td>30,000.00 Litres</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <tr>
-                                    <td>Value of Approved Quantity:</td>
-                                    <td>&#8358;4,389,000.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Paid Quantity:</td>
-                                    <td>30,000 Litres</td>
-                                </tr>
-                                <tr>
-                                    <td>Released Quantity :</td>
-                                    <td>30,000 Litres</td>
-                                </tr>
-                                <tr>
-                                    <td>Depot</td>
-                                    <td>Folawiyi Energy Ltd</td>
-                                </tr>
-                                <tr>
-                                    <td>Storage</td>
-                                    <td>GTBank, Sanusi and co-130072-LPFO</td>
-                                </tr>
-                                <tr>
-                                    <td>Current Stock</td>
-                                    <td>80,000,000.00 Litres</td>
-                                </tr>
-                                <tr>
-                                    <td>Payment Information</td>
-                                    <td>Cash Based Transaction</td>
-                                </tr>
-                                <tr>
-                                    <td>Ticket Information</td>
-                                    <td>2 Release Tickets</td>
-                                </tr>
-                            </table>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard">view ticket and payment</h1>
+                        <div class="merchant">
+                            <p>merchant portal</p>
+                            <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                         </div>
+                    </div>
+                    <div class="view-ticket">
                         <p>Approved and Paid Sales Request</p>
                         <div class="view-ticket-top">
                             <table>
                                 <thead>
                                     <tr>
                                         <td></td>
-                                        <td>Ticket Number</td>
-                                        <td>Released Quaktity(Litres)</td>
-                                        <td>Release Date</td>
-                                        <td>Status</td>
+                                        <td>Product Ref</td>
+                                        <td>Customer</td>
+                                        <td>Product</td>
+                                        <td>Request Quantity(Litres)</td>
+                                        <td>Released Quantity (Litres)</td>
+                                        <td>Merchant</td>
+                                        <td>Credit</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="button" value="View"></td>
+                                        <td><input type="button" value="Select"></td>
                                         <td>20002100513</td>
-                                        <td>30000</td>
+                                        <td>Dimji Fayoka-Smith(20002)</td>
+                                        <td>LPFO</td>
+                                        <td>32,000</td>
+                                        <td>30,000</td>
                                         <td>Folawiyi Energy Ltd(221)</td>
-                                        <td>Approval Pending</td>
+                                        <td>Yes</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="input-right">
-                                <input type="submit" value="View Payments">
-                            </div>
                         </div>
-                    </form>
+                        <p>Transaction Details</p>
+                        <form  class="view-ticket-bottom" action="">
+                            <div class="view-ticket-bottom-body">
+                                <table>
+                                    <tr>
+                                        <td>Transaction Name:</td>
+                                        <td>Financed by LPFO for Sanusi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product:</td>
+                                        <td>LPFO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merchant Name</td>
+                                        <td>Sanusi and</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sales rel:</td>
+                                        <td>20002100513</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer Number</td>
+                                        <td>20002</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer Name</td>
+                                        <td>Dimiji Fakoya-Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve Price</td>
+                                        <td>150.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve Quntity</td>
+                                        <td>30,000.00 Litres</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td>Value of Approved Quantity:</td>
+                                        <td>&#8358;4,389,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid Quantity:</td>
+                                        <td>30,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Released Quantity :</td>
+                                        <td>30,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Depot</td>
+                                        <td>Folawiyi Energy Ltd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage</td>
+                                        <td>GTBank, Sanusi and co-130072-LPFO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Stock</td>
+                                        <td>80,000,000.00 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Payment Information</td>
+                                        <td>Cash Based Transaction</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ticket Information</td>
+                                        <td>2 Release Tickets</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>Approved and Paid Sales Request</p>
+                            <div class="view-ticket-top">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td></td>
+                                            <td>Ticket Number</td>
+                                            <td>Released Quaktity(Litres)</td>
+                                            <td>Release Date</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="button" value="View"></td>
+                                            <td>20002100513</td>
+                                            <td>30000</td>
+                                            <td>Folawiyi Energy Ltd(221)</td>
+                                            <td>Approval Pending</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="input-right">
+                                    <input type="submit" value="View Payments">
+                                </div>
+                            </div>
+                        </form>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <script src="../../../js/index.js"></script>
 </body>
 </html>

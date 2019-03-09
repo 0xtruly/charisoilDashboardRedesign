@@ -9,186 +9,188 @@
     <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-grid">
-                <div class="logo-left">
-                    
-                        <!-- <input type="button" id="toggle" value=""> -->
-                        <label for="menu" id="toggle">
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                        </label>
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
-                   <!-- <div class="imge">
-                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
-                   </div> -->
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
                 </div>
-                <div class="nav-link-right">
-                    <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
-                    <a id="log-out" href="#">log out</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="dashboard">
+            </nav>
+        </header>
+        
+        <section class="dashboard">
 
-        <!-- dashboard grid container -->
-        <div class="dashboard-grid-container">
-            <!-- left nav link -->
-            <div class="dashboard-nav-left">
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-              <ul>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/home.svg" alt="">
-                     <a class="main-menu" href="#">home</a>
-                      <ul class="submenu">
-                          <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/operations.svg" alt="">
-                     <a class="main-menu" href="#">operations</a>
-                      <ul class="submenu">
-                        <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
-                        <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
-                        <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
-                        <li><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
-                        <li><a href="/src/cma-portal/operations/register-stock-take.html">register stock in take</a></li>
-                        <li class="active"><a href="/src/cma-portal/operations/upload-transaction-documents.html">upload transaction documents</a></li>
-                        <li><a href="/src/cma-portal/operations/view-transaction-documents.html">view transaction documents</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/utility.svg" alt="">
-                     <a class="main-menu" href="#">utility</a>
-                     <ul class="submenu">
-                         <li><a href="/src/cma-portal/utility/virtual-stock.html">View virtual stock</a></li>
-                         <li><a href="/src/cma-portal/utility/view-release-ticket.html">View Release Ticket</a></li>
-                         <li><a href="/src/cma-portal/utility/load-release-ticket.html">Load Release Tickets</a></li>
-                         <li><a href="/src/cma-portal/utility/message-feed-alert.html">Message Feed alert</a></li>
-                     </ul>
-                  </li>
-              </ul>
-                <div class="nav-link">
-                    <a href="#" >log out</a>
-                </div>
-            </div>
-            <div class="dashboard-details-right">
-                <!-- header -->
-                <div class="header-details-right">
-                    <h1 class="dashboard">upload transaction documents</h1>
-                    <div class="merchant">
-                        <p>CMA portal</p>
-                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                <ul>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/home.svg" alt="">
+                        <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/operations.svg" alt="">
+                        <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                            <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
+                            <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
+                            <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
+                            <li><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
+                            <li><a href="/src/cma-portal/operations/register-stock-take.html">register stock in take</a></li>
+                            <li class="active"><a href="/src/cma-portal/operations/upload-transaction-documents.html">upload transaction documents</a></li>
+                            <li><a href="/src/cma-portal/operations/view-transaction-documents.html">view transaction documents</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/utility.svg" alt="">
+                        <a class="main-menu" href="#">utility</a>
+                        <ul class="submenu">
+                            <li><a href="/src/cma-portal/utility/virtual-stock.html">View virtual stock</a></li>
+                            <li><a href="/src/cma-portal/utility/view-release-ticket.html">View Release Ticket</a></li>
+                            <li><a href="/src/cma-portal/utility/load-release-ticket.html">Load Release Tickets</a></li>
+                            <li><a href="/src/cma-portal/utility/message-feed-alert.html">Message Feed alert</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
                     </div>
                 </div>
-                <form action="" class="approval">
-                    <div id="upload-transaction">
-                        <div class="approval-setup">
-                            <table>
-                                <tr>
-                                    <td><label for="">Choose Transaction:</label></td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Purchase Reference:</td>
-                                    <td>130081</td>
-                                </tr>
-                                <tr>
-                                    <td>Transaction Name:</td>
-                                    <td>PMS Lanstan</td>
-                                </tr>
-                                <tr>
-                                    <td>Unit of Importation:</td>
-                                    <td>Metric Tonnes</td>
-                                </tr>
-                                <tr>
-                                    <td>Product:</td>
-                                    <td>PMS</td>
-                                </tr>
-                                <tr>
-                                    <td>Merchant:</td>
-                                    <td>Lanstan Energy Ltd</td>
-                                </tr>
-                                <tr>
-                                    <td>Collateral Managers:</td>
-                                    <td>Smith CMA</td>
-                                </tr>
-                                <tr>
-                                    <td>Imported Stock:</td>
-                                    <td>6,000 Metric Tonnes</td>
-                                </tr>
-                                <tr>
-                                    <td>Initial Stock Flow:</td>
-                                    <td>8,000,000 Litres</td>
-                                </tr>
-                                <tr>
-                                    <td>Current Stock:</td>
-                                    <td>8,000,000 Litres</td>
-                                </tr>
-                                <tr>
-                                    <td>Purchase Date:</td>
-                                    <td>04 Feb 2019</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <tr>
-                                    <td><label for="">Choose Transaction:</label></td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                            <option value="">PMS Lanstan</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Choose File:</td>
-                                    <td>
-                                        <label for="file" class="file-btn">Choose File</label>
-                                        <input type="file" name="" id="file" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Transaction ref</td>
-                                    <td style="color: red">130081</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><input type="submit" value="Upload File" id="uploaded-submit"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="approval">
-                            <div class="upload-bank">
-                                <p>Access Bank</p>
-                            </div>
-                            <hr>
-                            <div class="uploaded-documents">
-                                <p>Uploaded Documents For Chosen Transaction</p>
-                            </div>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard">upload transaction documents</h1>
+                        <div class="merchant">
+                            <p>CMA portal</p>
+                            <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                         </div>
                     </div>
-                </form>
+                    <form action="" class="approval">
+                        <div id="upload-transaction">
+                            <div class="approval-setup">
+                                <table>
+                                    <tr>
+                                        <td><label for="">Choose Transaction:</label></td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Purchase Reference:</td>
+                                        <td>130081</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transaction Name:</td>
+                                        <td>PMS Lanstan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unit of Importation:</td>
+                                        <td>Metric Tonnes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product:</td>
+                                        <td>PMS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merchant:</td>
+                                        <td>Lanstan Energy Ltd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Collateral Managers:</td>
+                                        <td>Smith CMA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Imported Stock:</td>
+                                        <td>6,000 Metric Tonnes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Initial Stock Flow:</td>
+                                        <td>8,000,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Stock:</td>
+                                        <td>8,000,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Purchase Date:</td>
+                                        <td>04 Feb 2019</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td><label for="">Choose Transaction:</label></td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                                <option value="">PMS Lanstan</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Choose File:</td>
+                                        <td>
+                                            <label for="file" class="file-btn">Choose File</label>
+                                            <input type="file" name="" id="file" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transaction ref</td>
+                                        <td style="color: red">130081</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="submit" value="Upload File" id="uploaded-submit"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="approval">
+                                <div class="upload-bank">
+                                    <p>Access Bank</p>
+                                </div>
+                                <hr>
+                                <div class="uploaded-documents">
+                                    <p>Uploaded Documents For Chosen Transaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </section>
+    </div>
     <script src="../../../js/index.js"></script>
 </body>
 </html>

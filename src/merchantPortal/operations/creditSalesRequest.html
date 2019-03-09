@@ -10,228 +10,231 @@
     <link rel="stylesheet" href="../../../css/operations/credit-sales.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-grid">
-                <div class="logo-left">
-                    
-                        <!-- <input type="button" id="toggle" value=""> -->
-                        <label for="menu" id="toggle">
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                        </label>
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
-                   <!-- <div class="imge">
-                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
-                   </div> -->
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
                 </div>
-                <div class="nav-link-right">
-                    <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
-                    <a id="log-out" href="#">log out</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="dashboard">
+            </nav>
+        </header>
+        
+        <section class="dashboard">
 
-        <!-- dashboard grid container -->
-        <div class="dashboard-grid-container">
-            <!-- left nav link -->
-            <div class="dashboard-nav-left">
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-              <ul>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/home.svg" alt="">
-                     <a class="main-menu" href="#">home</a>
-                      <ul class="submenu">
-                          <li><a href="/src/merchantPortal/home/dashboard.html">dashboard</a></li>
-                          <li><a href="#">help manual</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/operations.svg" alt="">
-                     <a class="main-menu" href="#">operations</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
-                        <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
-                        <li class="active"><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
-                        <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/utility.svg" alt="">
-                     <a class="main-menu" href="#">utility</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
-                        <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
-                        <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
-                        <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
-                        <li><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
-                        <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/security.svg" alt="">
-                     <a class="main-menu" href="#">security</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
-                        <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
-                        <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
-                        <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
-                        <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-left">
-                     <span class="link-span">></span> 
-                     <img src="../../../assets/report.svg" alt="">
-                     <a class="main-menu" href="#">report</a>
-                      <ul class="submenu">
-                        <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
-                        <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
-                        <li><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
-                        <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
-                      </ul>
-                  </li>
-              </ul>
-                <div class="nav-link">
-                    <a href="#" >log out</a>
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                <ul>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/home.svg" alt="">
+                        <a class="main-menu" href="#">home</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/home/dashboard.html">dashboard</a></li>
+                            <li><a href="#">help manual</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/operations.svg" alt="">
+                        <a class="main-menu" href="#">operations</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/operations/approveSalesRequest.html">approved sales request</a></li>
+                            <li><a href="/src/merchantPortal/operations/createStaffUsers.html">create staff users</a></li>
+                            <li class="active"><a href="/src/merchantPortal/operations/creditSalesRequest.html">credit sales request</a></li>
+                            <li><a href="/src/merchantPortal/operations/setProductPrice.html">set product price</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/utility.svg" alt="">
+                        <a class="main-menu" href="#">utility</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
+                            <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
+                            <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
+                            <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
+                            <li><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
+                            <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/security.svg" alt="">
+                        <a class="main-menu" href="#">security</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
+                            <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
+                            <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
+                            <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
+                            <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-left">
+                        <span class="link-span">></span> 
+                        <img src="../../../assets/report.svg" alt="">
+                        <a class="main-menu" href="#">report</a>
+                        <ul class="submenu">
+                            <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
+                            <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
+                            <li><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
+                            <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dashboard-details-right">
-                <!-- header -->
-                <div class="header-details-right">
-                    <div class="left">
-                        <h1 class="dashboard">credit sales request</h1>
-                    </div>
-                    <div class="merchant">
-                        <p>merchant portal</p>
-                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
-                    </div>
-                    <form action="">
-                        <label for="search" class="search-label">
-                            <input type="search" class="search-input" placeholder="search">
-                        </label>
-                        <button class="search-btn">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-                        </button>
-                    </form>
-                </div>
-                <div class="credit-sales">
-                    <p>Your Current Stock</p>
-                    <div class="credit-sales-top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Depot</th>
-                                    <th>Storage Tank</th>
-                                    <th>Current Stock(Litres)</th>
-                                    <th>Current Price Naira(&#8358;)</th>
-                                    <th>Financer</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>PMS</td>
-                                    <td>Folawiyi Energy Ltd(221)</td>
-                                    <td>Providus-Lanstan Energy-Ltd 130082 PMS(17)</td>
-                                    <td>5,000,000</td>
-                                    <td>133.00</td>
-                                    <td>133.00</td>
-                                    <td><input class="approve" type="button" value="Select"></td>
-                                </tr>
-                                <tr>
-                                    <td>PMS</td>
-                                    <td>A-Z Petroleum Products Limited (201)</td>
-                                    <td>Access-Lanstan Energy Ltd-130081 PMS(15)</td>
-                                    <td>8,000,000.00</td>
-                                    <td>134.00</td>
-                                    <td>134.00</td>
-                                    <td><input class="approve" type="button" value="Select"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <form  class="credit-sales-bottom" action="">
-                            <div class="credit-sales-bottom-body left">
-                                <table>
-                                    <tr>
-                                        <td>Quantity Requested in Litres:</td>
-                                        <td><input type="number" name="" id=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Value:</td>
-                                        <td><input type="number" name="" id=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Current Price (&#8358;) :</td>
-                                        <td><input type="number" name="" id=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Credit Type</td>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="" selected disabled>Select Credit Type</option>
-                                                <option value="">Credit Type</option>
-                                                <option value="">Credit Type</option>
-                                                <option value="">Credit Type</option>
-                                                <option value="">Credit Type</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Customer</td>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="" selected disabled>Select Customer</option>
-                                                <option value="">Customer</option>
-                                                <option value="">Customer</option>
-                                                <option value="">Customer</option>
-                                                <option value="">Customer</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        <div class="credit-sales-bottom-body right">
-                            <form action="" class="file-uploads" id="upload" enctype="multipart/form-data">
-                                <input type="hidden" id="MAX-FILE-SIZE" name="MAX-FILE-SIZE" value="300000">
-                                <div>
-                                    <div class="label-center">
-                                        <img src="https://img.icons8.com/metro/52/000000/pdf.png">
-                                        <label for="upload" class="start">
-                                            <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" accept="application/pdf">
-                                            <span>Start</span>
-                                        </label>
-                                    </div>
-                                    <div id="filedrag">drag and drop your <span class="pdf">pdf</span> here or 
-                                        
-                                        browse
-                                        
-                                        for a file to upload
-                                    
-                                    </div>
-                                </div>
-                            </form>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <div class="left">
+                            <h1 class="dashboard">credit sales request</h1>
                         </div>
-                    </form>
+                        <div class="merchant">
+                            <p>merchant portal</p>
+                            <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+                        </div>
+                        <form action="">
+                            <label for="search" class="search-label">
+                                <input type="search" class="search-input" placeholder="search">
+                            </label>
+                            <button class="search-btn">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="credit-sales">
+                        <p>Your Current Stock</p>
+                        <div class="credit-sales-top">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Depot</th>
+                                        <th>Storage Tank</th>
+                                        <th>Current Stock(Litres)</th>
+                                        <th>Current Price Naira(&#8358;)</th>
+                                        <th>Financer</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PMS</td>
+                                        <td>Folawiyi Energy Ltd(221)</td>
+                                        <td>Providus-Lanstan Energy-Ltd 130082 PMS(17)</td>
+                                        <td>5,000,000</td>
+                                        <td>133.00</td>
+                                        <td>133.00</td>
+                                        <td><input class="approve" type="button" value="Select"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PMS</td>
+                                        <td>A-Z Petroleum Products Limited (201)</td>
+                                        <td>Access-Lanstan Energy Ltd-130081 PMS(15)</td>
+                                        <td>8,000,000.00</td>
+                                        <td>134.00</td>
+                                        <td>134.00</td>
+                                        <td><input class="approve" type="button" value="Select"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <form  class="credit-sales-bottom" action="">
+                                <div class="credit-sales-bottom-body left">
+                                    <table>
+                                        <tr>
+                                            <td>Quantity Requested in Litres:</td>
+                                            <td><input type="number" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Value:</td>
+                                            <td><input type="number" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current Price (&#8358;) :</td>
+                                            <td><input type="number" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Credit Type</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected disabled>Select Credit Type</option>
+                                                    <option value="">Credit Type</option>
+                                                    <option value="">Credit Type</option>
+                                                    <option value="">Credit Type</option>
+                                                    <option value="">Credit Type</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Customer</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected disabled>Select Customer</option>
+                                                    <option value="">Customer</option>
+                                                    <option value="">Customer</option>
+                                                    <option value="">Customer</option>
+                                                    <option value="">Customer</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            <div class="credit-sales-bottom-body right">
+                                <form action="" class="file-uploads" id="upload" enctype="multipart/form-data">
+                                    <input type="hidden" id="MAX-FILE-SIZE" name="MAX-FILE-SIZE" value="300000">
+                                    <div>
+                                        <div class="label-center">
+                                            <img src="https://img.icons8.com/metro/52/000000/pdf.png">
+                                            <label for="upload" class="start">
+                                                <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" accept="application/pdf">
+                                                <span>Start</span>
+                                            </label>
+                                        </div>
+                                        <div id="filedrag">drag and drop your <span class="pdf">pdf</span> here or 
+                                            
+                                            browse
+                                            
+                                            for a file to upload
+                                        
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <script src="../../../js/index.js"></script>
 </body>
 </html>
