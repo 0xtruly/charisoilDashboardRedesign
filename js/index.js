@@ -11,9 +11,7 @@ var linkLi   = document.querySelectorAll(".dashboard-nav-left ul li .main-menu")
 for (let a = 0; a < linkLi.length; a++) {
 	
 	linkLi[a].addEventListener("mouseover", function(){
-		// alert(linkLi[a].innerHTML)
 		for (let i = 0; i < linkSpan.length; i++) {
-			// alert(linkSpan[i].innerHTML)
 			if(linkSpan[i].innerHTML == "&gt;"){
 				linkSpan[a].innerHTML = "˅"
 			}
@@ -21,9 +19,7 @@ for (let a = 0; a < linkLi.length; a++) {
 	})
 
 	linkLi[a].addEventListener("mouseout", function(){
-		// alert(linkLi[a].innerHTML)
 		for (let i = 0; i < linkSpan.length; i++) {
-			// alert(linkSpan[i].innerHTML)
 			if(linkSpan[i].innerHTML == "˅"){
 				linkSpan[a].innerHTML = "&gt;"
 			}	
@@ -38,7 +34,6 @@ toggle.addEventListener("click", function(){
 		dashboard.style.width = "220px";
 		dashboard.style.height = "100%";
 		for (let i = 0; i < link.length; i++) {
-			// alert(link[i].textContent)
 			if(link[i].style.display == "inline"){
 				link[i].style.display = "none"
 			}else{
@@ -50,7 +45,6 @@ toggle.addEventListener("click", function(){
 		dashboard.style.width = "0%";
 		dashboard.style.height = "0vh";
 		for (let i = 0; i < link.length; i++) {
-			// alert(link[i].textContent)
 			if(link[i].style.display == "none"){
 				link[i].style.display = "inline"
 			}else{
@@ -59,3 +53,17 @@ toggle.addEventListener("click", function(){
 		}
 	}
 })
+
+// preloader functionality
+document.onreadystatechange = function() {
+	var state = document.readyState;
+	if (state == 'interactive'){
+		document.getElementById("content").style.visibility = "hidden";
+	}
+	else if (state == 'complete'){
+		setTimeout(function(){
+			document.getElementById("loader").style.visibility = "hidden";
+			document.getElementById("content").style.visibility = "visible";
+		}, 1000)
+	}
+}

@@ -9,107 +9,109 @@
     <link rel="stylesheet" href="../../../css/cma/utility/load-release-ticket.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-grid">
-                <div class="logo-left">
-                    
-                        <!-- <input type="button" id="toggle" value=""> -->
-                        <label for="menu" id="toggle">
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                            <span class='icon-bar'></span>
-                        </label>
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                  <!-- <h3 class="brand-name">Charis Oil</h3> -->
-                   <!-- <div class="imge">
-                     <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
-                   </div> -->
-                </div>
-                <div class="nav-link-right">
-                    <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
-                    <a id="log-out" href="#">log out</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="dashboard">
-
-        <!-- dashboard grid container -->
-        <div class="dashboard-grid-container">
-            <!-- left nav link -->
-            <div class="dashboard-nav-left">
-                  <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                  <ul>
-                    <li class="nav-left">
-                        <span class="link-span">></span> 
-                        <img src="../../../assets/home.svg" alt="">
-                       <a class="main-menu" href="#">home</a>
-                        <ul class="submenu">
-                            <li><a href="/src/customer/home/dashboard.html">dashboard</a></li>
-                            <li><a href="/src/customer/home/purchase-product">purchase product</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-left">
-                        <span class="link-span">></span> 
-                        <img src="../../../assets/operations.svg" alt="">
-                       <a class="main-menu" href="#">operations</a>
-                        <ul class="submenu">
-                          <li><a href="/src/customer/operations/track-transactions.html">track transaction</a></li>
-                          <li class="active"><a href="/src/customer/operations/view-release-ticket.html">view release ticket</a></li>
-                          <li><a href="/src/customer/operations/view-ticket-and-payment.html">view tickets and payments</a></li>
-                          <li><a href="/src/customer/operations/message-feed-alert.html">Message Feed alert</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-left">
-                        <span class="link-span">></span> 
-                        <img src="../../../assets/report.svg" alt="">
-                       <a class="main-menu" href="#">Report</a>
-                       <ul class="submenu">
-                          <li><a href="/src/customer/report/purchase-details-report.html">Purchase Details Report</a></li>
-                          <li><a href="/src/customer/report/payment-details-report.html">Payment Details Report</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-left">
-                        <span class="link-span">></span> 
-                        <img src="../../../assets/profile.svg" alt="">
-                       <a class="main-menu" href="#">Profile</a>
-                       <ul class="submenu">
-                        <li><a href="/src/customer/profile/update-signup-details.html">Update Sign Up Details</a></li>
-                        <li><a href="/src/customer/profile/change-your-password.html">Change Your Password</a></li>
-                       </ul>
-                    </li>
-                </ul>
-                <div class="nav-link">
-                    <a href="#" >log out</a>
-                </div>
-            </div>
-            <div class="dashboard-details-right">
-                <!-- header -->
-                <div class="header-details-right">
-                    <h1 class="dashboard">view release tickets</h1>
-                    <div class="merchant">
-                        <p>Customer portal</p>
-                        <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
                     </div>
                 </div>
-                <div class="release-ticket">
-                    <form action="">
-                            <select name="" id="">
-                                <option value="" selected disabled>Release Ticket</option>
-                                <option value="">Release Ticket</option>
-                                <option value="">Release Ticket</option>
-                                <option value="">Release Ticket</option>
-                            </select>
-                            <p>No Release Ticket Available</p>
-                        <input type="submit" value="View Release Ticket" class="release-ticket-button">
-                    </form>
+            </nav>
+        </header>
+        
+        <section class="dashboard">
+
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <ul>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/home.svg" alt="">
+                        <a class="main-menu" href="#">home</a>
+                            <ul class="submenu">
+                                <li><a href="/src/customer/home/dashboard.html">dashboard</a></li>
+                                <li><a href="/src/customer/home/purchase-product">purchase product</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/operations.svg" alt="">
+                        <a class="main-menu" href="#">operations</a>
+                            <ul class="submenu">
+                            <li><a href="/src/customer/operations/track-transactions.html">track transaction</a></li>
+                            <li class="active"><a href="/src/customer/operations/view-release-ticket.html">view release ticket</a></li>
+                            <li><a href="/src/customer/operations/view-ticket-and-payment.html">view tickets and payments</a></li>
+                            <li><a href="/src/customer/operations/message-feed-alert.html">Message Feed alert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/report.svg" alt="">
+                        <a class="main-menu" href="#">Report</a>
+                        <ul class="submenu">
+                            <li><a href="/src/customer/report/purchase-details-report.html">Purchase Details Report</a></li>
+                            <li><a href="/src/customer/report/payment-details-report.html">Payment Details Report</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/profile.svg" alt="">
+                        <a class="main-menu" href="#">Profile</a>
+                        <ul class="submenu">
+                            <li><a href="/src/customer/profile/update-signup-details.html">Update Sign Up Details</a></li>
+                            <li><a href="/src/customer/profile/change-your-password.html">Change Your Password</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
+                    </div>
+                </div>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard">view release tickets</h1>
+                        <div class="merchant">
+                            <p>Customer portal</p>
+                            <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
+                        </div>
+                    </div>
+                    <div class="release-ticket">
+                        <form action="">
+                                <select name="" id="">
+                                    <option value="" selected disabled>Release Ticket</option>
+                                    <option value="">Release Ticket</option>
+                                    <option value="">Release Ticket</option>
+                                    <option value="">Release Ticket</option>
+                                </select>
+                                <p>No Release Ticket Available</p>
+                            <input type="submit" value="View Release Ticket" class="release-ticket-button">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </section>
+    </div>
     <script src="../../../js/index.js"></script>
 </body>
 </html>
