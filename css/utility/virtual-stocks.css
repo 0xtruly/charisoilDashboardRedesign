@@ -20,7 +20,6 @@
 }
 
 .left, .right {
-  border: 2px solid red;
   margin: 15px;
 }
 
@@ -189,13 +188,168 @@ select:focus {
 
 .lines {
   height: 50px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #001f88;
   width: 50px;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0px;
   margin-right: auto;
   margin-left: auto;
   margin-top: -20px;
+}
+
+.tank {
+  width: 42px;
+  height: 67px;
+  border: 0px solid #001f88;
+  background: white;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  bottom: 81px;
+  left: 54px;
+}
+
+.full {
+  background-color: green;
+}
+
+.sea {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.sea svg {
+  position: relative;
+  width: 42px;
+  height: 100%;
+  bottom: 99%;
+  left: 0%;
+  fill: #008000;
+}
+
+.sea-unanimate {
+  height: 100%;
+}
+
+.sea1 {
+  height: 75%;
+}
+
+.sea2 {
+  height: 50%;
+}
+
+.sea3 {
+  height: 25%;
+}
+
+.sea4 {
+  height: 0%;
+}
+
+.sea5 {
+  height: 0%;
+}
+
+.water-fill {
+  -webkit-animation: wave 3s infinite linear, fill-up 10s infinite ease-in-out alternate;
+  animation: wave 3s infinite linear, fill-up 6s infinite ease-in-out alternate;
+}
+
+.water-filled {
+  -webkit-animation: wave1 0.9s  linear, fill-up 10s infinite ease-in-out alternate;
+  animation: wave1 0s linear, filled-up 10s infinite ease-in-out alternate;
+}
+
+@keyframes wave {
+  0% {
+    x: -750px;
+  }
+  100% {
+    x: 0;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    x: -750px;
+  }
+  100% {
+    x: 0;
+  }
+}
+
+@-webkit-keyframes wave1 {
+  0% {
+    x: 0px;
+  }
+  100% {
+    x: 0px;
+  }
+}
+
+@keyframes wave1 {
+  0% {
+    x: 0px;
+  }
+  100% {
+    x: 0px;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    x: -750px;
+  }
+  100% {
+    x: 0;
+  }
+}
+
+@keyframes fill-up {
+  0% {
+    height: 100%;
+    /* y: 100%; */
+  }
+  100% {
+    height: 100%;
+    /* y: 0%; */
+  }
+}
+
+@-webkit-keyframes fill-up {
+  0% {
+    height: 100%;
+    /* y: 100%; */
+  }
+  100% {
+    height: 100%;
+    /* y: 0%; */
+  }
+}
+
+@keyframes filled-up {
+  0% {
+    height: 100%;
+    /* y: 100%; */
+  }
+  100% {
+    height: 100%;
+    /* y: 0%; */
+  }
+}
+
+@-webkit-keyframes filled-up {
+  0% {
+    height: 100%;
+    /* y: 100%; */
+  }
+  100% {
+    height: 100%;
+    /* y: 0%; */
+  }
 }
 
 .card-container-two {
@@ -231,5 +385,46 @@ select:focus {
   position: relative;
   top: 95px;
   right: -7px;
+}
+
+.tank-card2 h5 {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  top: -80px;
+  color: #ffffff;
+}
+
+.graph {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.graph .percent {
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#svg {
+  width: 50px;
+  height: 50px;
+}
+
+#svg circle {
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+#svg.show-circle circle {
+  opacity: 1;
 }
 /*# sourceMappingURL=virtual-stocks.css.map */
