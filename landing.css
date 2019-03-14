@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.signup-contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.carousel {
+  height: auto !important;
+}
+
+.carousel .right, .carousel .left, .carousel .carousel-control, .carousel .item, .carousel .active {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.carousel .carousel-inner {
+  height: 100vh !important;
+}
+
+.carousel .carousel-caption {
+  top: 98% !important;
+  margin-bottom: 90% !important;
+  text-shadow: none  !important;
+}
+
+.carousel .carousel-caption h3 {
+  color: #7893ec  !important;
+}
+
+.carousel .carousel-caption p {
+  color: black;
+}
+
+.carousel .carousel-indicators {
+  bottom: 0 !important;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #3663fd !important;
+  opacity: .5;
+}
+
+.carousel .carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel .item > img {
+  height: 70vh !important;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.contain {
+  padding: 10px;
+}
+
+.login {
+  background-color: #3663fd;
+  text-align: center;
+}
+
+.login img {
+  margin-top: 10px;
+}
+
+.login-form {
+  width: 90%;
+  margin: 50% auto 0 auto;
+  text-align: center;
+}
+
+.login-form h2 {
+  color: white;
+}
+
+.login-form p {
+  font-size: small;
+}
+
+.login-form input {
+  width: 90%;
+  margin: 15px auto;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.login-form input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+
+.login-form span {
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.login-form span:hover, .login-form .active {
+  border-radius: 5px;
+  border: 1.3px  solid white;
+}
+
+.login-form .existing {
+  display: none;
+}
+
+.login-form input[type='submit'] {
+  color: #3663fd;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  -webkit-box-shadow: 1px 0px 1px 1px #e7e5e5;
+          box-shadow: 1px 0px 1px 1px #e7e5e5;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.login-form input[type='submit']:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+}
+
+.login-form a {
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=landing.css.map */

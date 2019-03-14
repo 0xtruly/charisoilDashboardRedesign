@@ -1,0 +1,130 @@
+// variables
+$color-doggerblue: #3663fd;
+
+
+* {box-sizing: border-box}
+// page layout
+.contents{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.signup-contents{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+
+
+.carousel{
+  height: auto !important;
+  .right ,.left, .carousel-control,.item, .active{
+  background-color: transparent !important;
+  background-image: none !important;
+  }
+
+  .carousel-inner{
+    height: 100vh !important;
+  }
+  .carousel-caption{
+    top: 98% !important;
+    margin-bottom: 90% !important;
+    text-shadow:  none  !important;
+    h3{
+      color: #7893ec  !important;
+    }
+    p{
+      color: black;
+    }
+  }
+
+  .carousel-indicators{
+    bottom: 0 !important;
+    li{
+      background-color: #3663fd !important;
+      opacity:  .5;
+    }
+    .active{
+      opacity:  1;
+    }
+  }
+
+  .item > img{
+    height: 70vh !important;
+  }
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.contain{
+  padding: 10px;
+}
+
+.login{
+  background-color: $color-doggerblue;
+  text-align: center;
+  img{
+    margin-top: 10px;
+  }
+}
+
+.login-form{
+  width: 90%;
+  margin: 50% auto 0 auto;
+  text-align: center;
+  h2{
+    color: white;
+  }
+  p{
+    font-size: small;
+  }
+  input{
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid transparent;
+  }
+  input[type="checkbox"]{
+    display:  inline;
+    width: auto;
+  }
+  
+  span{
+    color:white;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  span:hover, .active{
+    border-radius:  5px;
+    border:1.3px  solid white;
+  }
+
+  .existing{
+    display: none;
+  }
+
+  input[type='submit']{
+    color: $color-doggerblue;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    margin: 30px auto;
+    box-shadow: 1px 0px 1px 1px #e7e5e5;
+    transition: .5s linear;
+  }
+  input[type='submit']:hover{
+    box-shadow: 0px 0px 0px 0px;
+  }
+  a{
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+  }
+}
