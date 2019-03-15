@@ -24,7 +24,7 @@ $color-doggerblue: #3663fd;
   }
 
   .carousel-inner{
-    height: 100vh !important;
+    height: fit-content !important;
   }
   .carousel-caption{
     top: 98% !important;
@@ -39,7 +39,7 @@ $color-doggerblue: #3663fd;
   }
 
   .carousel-indicators{
-    bottom: 0 !important;
+    // bottom: 20px !important;
     li{
       background-color: #3663fd !important;
       opacity:  .5;
@@ -50,7 +50,7 @@ $color-doggerblue: #3663fd;
   }
 
   .item > img{
-    height: 70vh !important;
+    height: auto !important;
   }
 }
 
