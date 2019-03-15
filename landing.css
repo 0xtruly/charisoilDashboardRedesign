@@ -56,7 +56,7 @@
 }
 
 .carousel .item > img {
-  height: auto !important;
+  height: 100vh !important;
 }
 
 body {
@@ -87,7 +87,7 @@ img {
 
 .login-form {
   width: 90%;
-  margin: 50% auto 0 auto;
+  margin: 20% auto 0 auto;
   text-align: center;
 }
 
