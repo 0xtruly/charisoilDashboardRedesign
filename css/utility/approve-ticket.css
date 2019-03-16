@@ -31,14 +31,14 @@ margin: 15px;
     color: white;
     font-size: small;
     padding: 5px 10px;
-    width: 200px;
+    width: 180px;
     margin: 5px;
     border: 1px solid #3663FD;
     border-radius: 5px;
 }
 
 .approve-inputs input:nth-child(even){
-    left: 50%;
+    left: 55%;
 }
 
 .approve-inputs{
@@ -187,8 +187,8 @@ input[type="button"] {
     }
 }
 
-@media(max-width: 1100px){
+@media(min-width: 1100px){
     .approve-inputs input:nth-child(even){
-        left: 0%;
+        right: 0;
     }
 }

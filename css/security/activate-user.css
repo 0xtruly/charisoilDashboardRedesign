@@ -85,7 +85,7 @@ input, select, textarea{
     border-radius: 5px;
     margin: 2px 20px;
     width: 40%;
-    padding:  20px 50px 70px 50px;
+    padding:  20px 70px 70px 30px;
     font-size: small;
     -webkit-box-shadow: 2px 2px 5px 4px #D7DADC;
     box-shadow: 2px 2px 5px 4px #D7DADC;
@@ -93,11 +93,12 @@ input, select, textarea{
 
 .change-user  select , .change-user input{
     width: 100%;
-    margin: 10px;;
+    margin: 10px;
 }
 
 .change-user select{
     color: #3462FD;
+    width: 115%;
 }
 
 .change-user td{
