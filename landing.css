@@ -141,4 +141,11 @@
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 700px) {
+  .contents, .signup-contents {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=landing.css.map */

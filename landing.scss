@@ -124,3 +124,9 @@ $color-doggerblue: #3663fd;
     text-decoration: none;
   }
 }
+
+@media(max-width: 700px){
+  .contents, .signup-contents{
+    grid-template-columns: 1fr;
+  }
+}
