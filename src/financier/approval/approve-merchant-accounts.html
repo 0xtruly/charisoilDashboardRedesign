@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
+    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -16,7 +15,6 @@
             <nav class="nav">
                 <div class="nav-grid">
                     <div class="logo-left">
-                        
                             <!-- <input type="button" id="toggle" value=""> -->
                             <label for="menu" id="toggle">
                                 <span class='icon-bar'></span>
@@ -44,7 +42,7 @@
                 <!-- left nav link -->
                 <div class="dashboard-nav-left">
                     <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                <ul>
+                    <ul>
                     <li class="nav-left">
                         <span class="link-span">></span> 
                         <img src="../../../assets/home.svg" alt="">
@@ -141,19 +139,43 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve CMA Onboarding</h1>
+                        <h1 class="dashboard">approve merchant accounts (level2)</h1>
                         <div class="merchant">
                             <p>FINANCIER PORTAL</p>
                             <a href="">admin1400 - Acess Bank</a>
                         </div>
                     </div>
-                    <div class="approval">
-                        <p>CMAs Recently Added to Your Company Profile Awaiting Approval</p>
-                        <div class="financier-approval">
-
+                    <div class="cma-dashboard">
+                        <p>Merchants Account Updates Awaiting Approval</p>
+                        <div class="dashboard-setup">
+                            <table>
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>L1 Approval Status</td>
+                                    <td>L2 Approval Status</td>
+                                    <td>Merchant ID</td>
+                                    <td>Merchant Name</td>
+                                    <td>New Account Title</td>
+                                    <td>New Account Number</td>
+                                    <td></td>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                <tr>
+                                    <td><input type="button" value="Approve"></td>
+                                    <td>Pending</td>
+                                    <td>Pending</td>
+                                    <td>100013</td>
+                                    <td>Jagaban Company</td>
+                                    <td>Jagaban</td>
+                                    <td>222222222</td>
+                                    <td><input type="button" value="Cancel" class="cancel"></td>
+                                </tr>
+                            </tbody>
+                            </table>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
     </div>

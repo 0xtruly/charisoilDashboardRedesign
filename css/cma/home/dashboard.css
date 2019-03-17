@@ -1,5 +1,6 @@
 .cma-dashboard{
     margin: 20px;
+    padding: 10px;
     font-size: small;
 }
 
@@ -27,6 +28,7 @@
     margin-top: 20px;
     font-size: small;
     display: grid;
+    width: fit-content;
     background-color: #ffffff;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;

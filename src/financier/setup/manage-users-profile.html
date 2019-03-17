@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/operations/staff-users.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -141,94 +141,79 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve CMA Onboarding</h1>
+                        <h1 class="dashboard"> manage user profile </h1>
                         <div class="merchant">
-                            <p>FINANCIER PORTAL</p>
-                            <a href="">admin1400 - Acess Bank</a>
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
                         </div>
                     </div>
-                    <form action="" class="approval">
-                        <div class="approval-setup">
-                            <div>
-                                <label for="">Choose Approval Interface:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="">Choose User:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                                <div class="approval-submit">
-                                    <input type="submit" value="Add User To Access Table">
+                    <div class="staff-users-top">
+                        <div class="staff-users-main">
+                            <form id="new" action="">
+                                <div class="staff-users-contents">
+                                    <table>
+                                        <tr>
+                                            <td>Staff ID</td>
+                                            <td>
+                                                <select name="" id="select">
+                                                    <option value="" selected disabled >Select Staff User Profile</option>
+                                                    <option value="" >Select Staff User Profile</option>
+                                                    <option value="" >Select Staff User Profile</option>
+                                                    <option value="" >Select Staff User Profile</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Name</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td>Phone Number</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email Adress</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department</td>
+                                            <td>
+                                                <select name="" id="select">
+                                                    <option value="" selected disabled >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
-                            </div>
-                        </div>
-                    </form>
-                    
-                    <div class="approval">
-                        <p>Users Access Table For Staff Details Approval</p>
-                        <div class="dashboard-setup">
-                            <form action="">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
-                                            <td></td>
-                                        </tr>
-                                    </thead> 
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="form-buttons">
+                                    <input type="submit" class="approve" value="Save">
+                                    <input type="reset"  class="cancel" value="Clear">
+                                </div>
                             </form>
+                        </div>
+                        <div class="manage-users-bottom">
+                            <div class="manage-form">
+                                <p>Assigned Role(s)</p>
+                                <form action="" method="post">
+                                    <label for="">Add Roles:</label>
+                                    <select name="" id="">
+                                        <option value="">Select Roles</option>
+                                        <option value="">Select Roles</option>
+                                        <option value="">Select Roles</option>
+                                        <option value="">Select Roles</option>
+                                    </select>
+                                    <input type="submit" value="Assign Role">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

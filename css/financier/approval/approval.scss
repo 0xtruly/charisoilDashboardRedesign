@@ -1,0 +1,90 @@
+.financier-approval {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    min-height: 200px;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.financier-approval-bottom{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 90%;
+    .bottom-form{
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 2px 2px 2px 2px #e7e5e5;
+        border-radius: 5px;
+        width: 50%;
+        input[type="button"]{
+            padding: 5px 10px;
+            background-color: #3663fd;
+            color: white;
+            border: 2px solid #3663fd;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        .form-actions{
+            text-align: right;
+            margin: 20px 0;
+            input{
+                padding: 5px 15px;
+                margin: 5px ;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+        .form-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            label, input{
+                margin: 10px;
+            }
+            input{
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 1px solid #3663fd;
+            }
+        }
+    }
+}
+
+// manage users page
+
+
+.staff-users-main {
+    width: 80% !important;
+}
+
+.manage-users-bottom{
+    margin: 10px 45px;
+    padding: 20px;
+    // width: 76% !important;
+    .manage-form{
+        position: relative;
+        left: 25vw;
+        form{
+           padding: 20px 0;
+        }
+        p, label, select, input{
+            margin: 0 15px
+        }
+        select{
+            width: 30% !important;
+        }
+        input[type='submit']{
+            position: sticky;
+            // margin-left: 20px;
+            width: fit-content;
+            background-color: #3663fd;
+        }
+    }
+}

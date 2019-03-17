@@ -1,0 +1,109 @@
+.financier-approval {
+  padding: 15px;
+  margin-top: 20px;
+  font-size: small;
+  display: -ms-grid;
+  display: grid;
+  background-color: #ffffff;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+  min-height: 200px;
+  border-radius: 5px;
+  width: 90%;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+          box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.financier-approval-bottom {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 90%;
+}
+
+.financier-approval-bottom .bottom-form {
+  background-color: #ffffff;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+          box-shadow: 2px 2px 2px 2px #e7e5e5;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.financier-approval-bottom .bottom-form input[type="button"] {
+  padding: 5px 10px;
+  background-color: #3663fd;
+  color: white;
+  border: 2px solid #3663fd;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.financier-approval-bottom .bottom-form .form-actions {
+  text-align: right;
+  margin: 20px 0;
+}
+
+.financier-approval-bottom .bottom-form .form-actions input {
+  padding: 5px 15px;
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.financier-approval-bottom .bottom-form .form-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.financier-approval-bottom .bottom-form .form-div label, .financier-approval-bottom .bottom-form .form-div input {
+  margin: 10px;
+}
+
+.financier-approval-bottom .bottom-form .form-div input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #3663fd;
+}
+
+.staff-users-main {
+  width: 80% !important;
+}
+
+.manage-users-bottom {
+  margin: 10px 45px;
+  padding: 20px;
+}
+
+.manage-users-bottom .manage-form {
+  position: relative;
+  left: 25vw;
+}
+
+.manage-users-bottom .manage-form form {
+  padding: 20px 0;
+}
+
+.manage-users-bottom .manage-form p, .manage-users-bottom .manage-form label, .manage-users-bottom .manage-form select, .manage-users-bottom .manage-form input {
+  margin: 0 15px;
+}
+
+.manage-users-bottom .manage-form select {
+  width: 30% !important;
+}
+
+.manage-users-bottom .manage-form input[type='submit'] {
+  position: -webkit-sticky;
+  position: sticky;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #3663fd;
+}
+/*# sourceMappingURL=approval.css.map */

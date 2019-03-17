@@ -106,7 +106,7 @@ input, select, textarea{
     align-content: flex-start;
 }
 
-.change-user input[type="submit"]{
+.change-user input[type="submit"], .change-user input[type="reset"]{
     background-color: #3663FD;
     color: white;
     font-size: small;
