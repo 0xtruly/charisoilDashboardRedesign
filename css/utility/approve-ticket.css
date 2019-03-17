@@ -173,6 +173,8 @@ input[type="button"] {
         display: grid;
         -ms-grid-columns:  1fr;
         grid-template-columns:  1fr;
+        text-align: center;
+        text-align: -webkit-center;
     }
 
     .view-ticket-top {
@@ -184,6 +186,9 @@ input[type="button"] {
         display: grid;
         -ms-grid-columns: 1fr;
         grid-template-columns:  1fr;
+    }
+    .approve-inputs input:nth-child(even) {
+        left: 0;
     }
 }
 

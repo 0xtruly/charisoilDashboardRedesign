@@ -652,11 +652,11 @@
   
    .approve {
     text-transform: capitalize;
-    background-color: #034A00;
+    background-color: #034A00 !important;
   }
   
    .cancel {
-    background-color: #b10202;
+    background-color: #b10202 !important;
     text-transform: capitalize;
   }
   
@@ -716,7 +716,7 @@
   
     .dashboard-nav-left {
       position: fixed;
-      min-width: 14vw;
+      width: 14%;
       background-color: #081021;
       z-index: +1;
       /* margin-left: -40%; */
@@ -755,6 +755,7 @@
       background-color: #FFFEFF;
       color: #000000;
       padding: 6px 25px;
+      text-transform: capitalize;
       border-radius: 3px;
       box-shadow: 1px -1px 1px 2px hsla(240, 2%, 24%, 0.68);
       cursor: pointer;
@@ -792,12 +793,11 @@
   }
   @media(max-width: 700px){
     .header-details-right {
-      display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 1fr;
-          grid-template-columns: 1fr;
-      padding: 5px 31px;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 6px;
       margin-top: 85px;
+      width: max-content;
     }
     
     .right-first {
@@ -807,6 +807,10 @@
           grid-template-columns: 1fr;
       padding: 30px;
       margin: 0 auto;
+    }
+
+    .header-details-right h1 {
+      position: sticky !important;
     }
   
     .leftCard {

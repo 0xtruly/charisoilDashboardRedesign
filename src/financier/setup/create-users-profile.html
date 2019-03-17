@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Financier Portal</title>
+    <link rel="stylesheet" href="../../../css/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/operations/staff-users.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="dashboard">
+
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <ul>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/home.svg" alt="">
+                                <a class="main-menu" href="#">home</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/cma-portal/home/dashboard.html">dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/operations.svg" alt="">
+                                <a class="main-menu" href="#">setup</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/financier/setup/create-users-profile.html">create users profile</a></li>
+                                    <li><a href="/src/financier/setup/">manage users profile</a></li>
+                                    <li><a href="/src/financier/setup/">onboard CMAs</a></li>
+                                    <li><a href="/src/financier/setup/">onboard Merchant</a></li>
+                                    <li><a href="/src/financier/setup/">set Merchant accounts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/utility.svg" alt="">
+                                <a class="main-menu" href="#">approval</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/financier/approval/">Approval Levels Setup</a></li>
+                                    <li><a href="/src/financier/approval/">Approval Users Profile Details</a></li>
+                                    <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
+                                    <li><a href="/src/financier/approval/">Approve Merchant Onboarding</a></li>
+                                    <li><a href="/src/financier/approval/">Approve Merchant Accounts</a></li>
+                                    <li><a href="/src/financier/approval/">Approve Merchant Credit Sales Request</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/operations.svg" alt="">
+                                <a class="main-menu" href="#">admin operations</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/cma-portal/operations/approval-users-setup.html">approval users setup</a></li>
+                                    <li><a href="/src/cma-portal/operations/create-storage-tanks.html">create storage tanks</a></li>
+                                    <li><a href="/src/cma-portal/operations/register-dip-level.html">register dip level</a></li>
+                                    <li class="active"><a href="/src/cma-portal/operations/approve-dips.html">approve dips</a></li>
+                                    <li><a href="/src/cma-portal/operations/register-stock-take.html">register stock in take</a></li>
+                                    <li><a href="/src/cma-portal/operations/upload-transaction-documents.html">upload transaction documents</a></li>
+                                    <li><a href="/src/cma-portal/operations/view-transaction-documents.html">view transaction documents</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/utility.svg" alt="">
+                                <a class="main-menu" href="#">utility</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/merchantPortal/utility/approveReleaseTickets.html">approve release tickets</a></li>
+                                    <li><a href="/src/merchantPortal/utility/messageFeedAlert.html">message feed alert</a></li>
+                                    <li><a href="/src/merchantPortal/utility/releaseProduct.html">release product</a></li>
+                                    <li><a href="/src/merchantPortal/utility/retrieveProduct.html">retrieve product</a></li>
+                                    <li><a href="/src/merchantPortal/utility/viewTicketsandPayments.html">view tickets and payments</a></li>
+                                    <li><a href="/src/merchantPortal/utility/viewVirtualStock.html">view virtual stocks</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/security.svg" alt="">
+                                <a class="main-menu" href="#">security</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/merchantPortal/security/activateUsers.html">activate users</a></li>
+                                    <li><a href="/src/merchantPortal/security/changeUsersPassword.html">change users password</a></li>
+                                    <li><a href="/src/merchantPortal/security/changeYourPassword.html">change your password</a></li>
+                                    <li><a href="/src/merchantPortal/security/deactivateAccount.html">deactivate account</a></li>
+                                    <li><a href="/src/merchantPortal/security/grantUsersAccess.html">grant users access</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-left">
+                                <span class="link-span">></span> 
+                                <img src="../../../assets/report.svg" alt="">
+                                <a class="main-menu" href="#">report</a>
+                                <ul class="submenu">
+                                    <li><a href="/src/merchantPortal/report/currentStockDetails.html">current stock details</a></li>
+                                    <li><a href="/src/merchantPortal/report/portalCmaDetails.html">poetal cma details</a></li>
+                                    <li><a href="/src/merchantPortal/report/portalCustomerDetails.html">portal customer details</a></li>
+                                    <li><a href="/src/merchantPortal/report/portalDepotDetails.html">portal depot details</a></li>
+                                    <li><a href="/src/merchantPortal/report/portalUsersDetails.html">portal users details</a></li>
+                                    <li><a href="/src/merchantPortal/report/salesPaymentDetails.html">sales payment details</a></li>
+                                    <li><a href="/src/merchantPortal/report/salesTransactionDetails.html">sales transaction details</a></li>
+                                    <li><a href="/src/merchantPortal/report/salesTransactionTracker.html">sales transaction tracker</a></li>
+                                    <li><a href="/src/merchantPortal/report/stockTransactionDetails.html">stock transaction details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
+                    </div>
+                </div>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard"> staff user profile </h1>
+                        <div class="merchant">
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
+                        </div>
+                    </div>
+                    <div class="staff-users-top">
+                        <div class="staff-users-main">
+                            <form id="new" action="">
+                                <div class="staff-users-contents">
+                                    <table>
+                                        <tr>
+                                            <td>Staff ID</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Name</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td>Phone Number</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email Adress</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department</td>
+                                            <td>
+                                                <select name="" id="select">
+                                                    <option value="" selected disabled >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                    <option value="" >Select Department</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="form-buttons">
+                                    <input type="submit" class="approve" value="Save">
+                                    <input type="reset"  class="cancel" value="Clear">
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>

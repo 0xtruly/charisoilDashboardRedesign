@@ -142,4 +142,9 @@ select#select {
     input[type='submit'], input[type='reset'] {
         left: 25px;
     }
+    
+    .buttons {
+        padding: 10px 0px 0px 30px;
+    }
+
 }

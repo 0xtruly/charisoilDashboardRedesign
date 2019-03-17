@@ -686,11 +686,11 @@ input:focus, select:focus {
 
 .approve {
   text-transform: capitalize;
-  background-color: #034A00;
+  background-color: #034A00 !important;
 }
 
 .cancel {
-  background-color: #b10202;
+  background-color: #b10202 !important;
   text-transform: capitalize;
 }
 
@@ -747,7 +747,7 @@ input:focus, select:focus {
   }
   .dashboard-nav-left {
     position: fixed;
-    min-width: 14vw;
+    width: 14%;
     background-color: #081021;
     z-index: +1;
     /* margin-left: -40%; */
@@ -782,6 +782,7 @@ input:focus, select:focus {
     background-color: #FFFEFF;
     color: #000000;
     padding: 6px 25px;
+    text-transform: capitalize;
     border-radius: 3px;
     -webkit-box-shadow: 1px -1px 1px 2px rgba(60, 60, 62, 0.68);
             box-shadow: 1px -1px 1px 2px rgba(60, 60, 62, 0.68);
@@ -820,10 +821,13 @@ input:focus, select:focus {
   .header-details-right {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    padding: 5px 31px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 6px;
     margin-top: 85px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .right-first {
     display: -ms-grid;
@@ -832,6 +836,10 @@ input:focus, select:focus {
     grid-template-columns: 1fr;
     padding: 30px;
     margin: 0 auto;
+  }
+  .header-details-right h1 {
+    position: -webkit-sticky !important;
+    position: sticky !important;
   }
   .leftCard {
     width: 80vw;
