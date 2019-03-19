@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
     <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
     <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -60,7 +61,7 @@
                             <ul class="submenu">
                                 <li><a href="/src/financier/setup/create-users-profile.html">create users profile</a></li>
                                 <li><a href="/src/financier/setup/manage-users-profile.html">manage users profile</a></li>
-                                <li><a href="/src/financier/setup/onboard-cma.html">onboard CMA</a></li>
+                                <li class="active"><a href="/src/financier/setup/onboard-cma.html">onboard CMA</a></li>
                                 <li><a href="/src/financier/setup/onboard-merchant.html">onboard merchant</a></li>
                                 <li><a href="/src/financier/setup/set-merchant-account.html">set merchant account</a></li>
                             </ul>
@@ -70,7 +71,7 @@
                             <img src="../../../assets/utility.svg" alt="">
                             <a class="main-menu" href="#">approval</a>
                             <ul class="submenu">
-                                <li class="active"><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
+                                <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
                                 <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
                                 <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
@@ -137,90 +138,86 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve CMA Onboarding</h1>
+                        <h1 class="dashboard">Add New Collateral Managers</h1>
                         <div class="merchant">
                             <p>FINANCIER PORTAL</p>
                             <a href="">admin1400 - Acess Bank</a>
                         </div>
                     </div>
-                    <form action="" class="approval">
-                        <div class="approval-setup">
-                            <div>
-                                <label for="">Choose Approval Interface:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
+                    <div class="approval">
+                        <div class="onboard-cma">
+                            <form action="" method="post">
+                                <select>
+                                    <option value="" selected disabled>Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
                                 </select>
-                            </div>
-                            <div>
-                                <label for="">Choose User:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                                <div class="approval-submit">
-                                    <input type="submit" value="Add User To Access Table">
-                                </div>
-                            </div>
+                                <table>
+                                    <tr>
+                                        <td>CMA ID</td>
+                                        <td>2001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Ralph</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number</td>
+                                        <td>07081234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email Address</td>
+                                        <td>ralph@yahoo.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>State</td>
+                                        <td>Lagos State</td>
+                                    </tr>
+                                </table>
+                                <input type="submit" value="Add to Company Profile">
+                            </form>
                         </div>
-                    </form>
+                    </div>
                     
                     <div class="approval">
-                        <p>Users Access Table For Staff Details Approval</p>
+                        <p>Collateral Managers On Your Company Profile</p>
                         <div class="dashboard-setup">
                             <form action="">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
-                                            <td></td>
+                                            <td>Approval Status</td>
+                                            <td>CMA ID</td>
+                                            <td>CMA Company Name</td>
+                                            <td>Phone Number</td>
+                                            <td>Email Address</td>
+                                            <td>Address</td>
+                                            <td>State</td>
                                         </tr>
                                     </thead> 
                                     <tbody>
                                         <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
+                                            <td>Approved</td>
+                                            <td>10003</td>
+                                            <td>AGM Collaterals</td>
+                                            <td>08023365123</td>
+                                            <td>aguser@ag.com</td>
+                                            <td>12Gbajumo Crescent</td>
+                                            <td>Lagos State</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
+                                            <td>Approved</td>
+                                            <td>2028</td>
+                                            <td>Beckky</td>
+                                            <td>08888888888</td>
+                                            <td>bex@dky.com</td>
+                                            <td></td>
+                                            <td>Lagos State</td>
                                         </tr>
                                     </tbody>
                                 </table>

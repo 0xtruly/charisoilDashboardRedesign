@@ -2,6 +2,7 @@
     margin: 20px;
     padding: 10px;
     font-size: small;
+    overflow: auto;
 }
 
 .dashboard-search{
@@ -28,7 +29,7 @@
     margin-top: 20px;
     font-size: small;
     display: grid;
-    width: fit-content;
+    min-width: fit-content;
     background-color: #ffffff;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -39,9 +40,15 @@
             box-shadow: 2px 2px 2px 2px #e7e5e5;
     overflow: auto;
 }
+
+.dashboard-setup form{
+    overflow: auto;
+}
+
 .dashboard-setup table {
     border-spacing: 0;
     color: black;
+    width: 100%;
     text-align: left;
     font-size: small;
     padding: 0;

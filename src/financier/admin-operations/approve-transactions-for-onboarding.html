@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
     <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
     <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -44,7 +45,7 @@
                 <!-- left nav link -->
                 <div class="dashboard-nav-left">
                     <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                    <ul>
+                <ul>
                         <li class="nav-left">
                             <span class="link-span">></span> 
                             <img src="../../../assets/home.svg" alt="">
@@ -70,7 +71,7 @@
                             <img src="../../../assets/utility.svg" alt="">
                             <a class="main-menu" href="#">approval</a>
                             <ul class="submenu">
-                                <li class="active"><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
+                                <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
                                 <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
                                 <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
@@ -83,7 +84,7 @@
                             <img src="../../../assets/operations.svg" alt="">
                             <a class="main-menu" href="#">admin operations</a>
                             <ul class="submenu">
-                                <li><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
+                                <li class="active"><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
                                 <li><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
                                 <li><a href="/src/financier/admin-operations/new-transaction-shipment.html">new transaction shipment</a></li>
                             </ul>
@@ -137,93 +138,79 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve CMA Onboarding</h1>
+                        <h1 class="dashboard">Approve transactions for onboarding (level2)</h1>
                         <div class="merchant">
                             <p>FINANCIER PORTAL</p>
                             <a href="">admin1400 - Acess Bank</a>
                         </div>
-                    </div>
-                    <form action="" class="approval">
-                        <div class="approval-setup">
-                            <div>
-                                <label for="">Choose Approval Interface:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="">Choose User:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                                <div class="approval-submit">
-                                    <input type="submit" value="Add User To Access Table">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    
-                    <div class="approval">
-                        <p>Users Access Table For Staff Details Approval</p>
+                    </div>                    
+                    <div class="approve-transaction">
                         <div class="dashboard-setup">
                             <form action="">
                                 <table>
                                     <thead>
                                         <tr>
                                             <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
-                                            <td></td>
+                                            <td>L1 Approval Status</td>
+                                            <td>L2 Approval Status</td>
+                                            <td>UsTransaction Name</td>
                                         </tr>
                                     </thead> 
                                     <tbody>
                                         <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
+                                            <td><input type="button" value="Select"></td>
+                                            <td>Pending</td>
+                                            <td>Pending</td>
+                                            <td>770 Met-Tonnes of BOIL Jagaban</td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </form>
+                        </div>
+                        <div class="onboard-cma">
+                            <form action="" method="post">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Transaction Name:</td>
+                                            <td>770 Met-tonnes of BOIL Jagaban</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transaction Ref:</td>
+                                            <td>130076</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Product:</td>
+                                            <td>BOIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Imported Units:</td>
+                                            <td>Metric Tonnes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Imported Quantity:</td>
+                                            <td>770,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transaction Date:</td>
+                                            <td>20 Nov 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Initiating User:</td>
+                                            <td>admin4100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Merchant Company:</td>
+                                            <td>jagaban Compann</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CMA:</td>
+                                            <td>Clobert Services LTD</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <input type="reset" class="cancel" value="Cancel">
+                                <input type="submit" value="Add to Company Profile">
                             </form>
                         </div>
                     </div>

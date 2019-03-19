@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/operations/staff-users.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -70,7 +70,7 @@
                             <img src="../../../assets/utility.svg" alt="">
                             <a class="main-menu" href="#">approval</a>
                             <ul class="submenu">
-                                <li class="active"><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
+                                <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
                                 <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
                                 <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
@@ -84,7 +84,7 @@
                             <a class="main-menu" href="#">admin operations</a>
                             <ul class="submenu">
                                 <li><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
-                                <li><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
+                                <li class="active"><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
                                 <li><a href="/src/financier/admin-operations/new-transaction-shipment.html">new transaction shipment</a></li>
                             </ul>
                         </li>
@@ -137,95 +137,114 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve CMA Onboarding</h1>
+                        <h1 class="dashboard"> edit transaction/shipment </h1>
                         <div class="merchant">
-                            <p>FINANCIER PORTAL</p>
-                            <a href="">admin1400 - Acess Bank</a>
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
                         </div>
                     </div>
-                    <form action="" class="approval">
-                        <div class="approval-setup">
-                            <div>
-                                <label for="">Choose Approval Interface:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="">Choose User:</label>    
-                                <select name="" id="">
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                    <option value="">Select Interface Level</option>
-                                </select>
-                                <div class="approval-submit">
-                                    <input type="submit" value="Add User To Access Table">
+                    <div class="staff-users-top">
+                        <div class="staff-users-main">
+                            <form id="new" action="">
+                                <div class="staff-users-contents">
+                                    <table>
+                                        <tr>
+                                            <td>Transaction Ref:</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected disabled>Select Transaction Ref</option>
+                                                    <option value="">Select Transaction Ref</option>
+                                                    <option value="">Select Transaction Ref</option>
+                                                    <option value="">Select Transaction Ref</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Product</td>
+                                            <td>
+                                                <select>
+                                                    <option value="" selected disabled>Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Financed Merchant</td>
+                                            <td>
+                                                <select>
+                                                    <option value="" selected disabled>Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unif Of Measure</td>
+                                            <td>
+                                                <select>
+                                                    <option value="" selected disabled>Select Unit of Measure</option>
+                                                    <option value="">Select Unit of Measure</option>
+                                                    <option value="">Select Unit of Measure</option>
+                                                    <option value="">Select Unit of Measure</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quantity Shipped</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transaction Name</td>
+                                            <td>
+                                                <select>
+                                                    <option value="" selected disabled>Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                    <option value="">Select Product</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Assigned CMA</td>
+                                            <td>
+                                                <select>
+                                                    <option value="" selected disabled>Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                    <option value="">Select Merchant</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transaction Date</td>
+                                            <td><input type="date" name="" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transaction Value</td>
+                                            <td><input type="text" name="" id=""></td>
+                                        </tr>
+                                    </table>
                                 </div>
-                            </div>
-                        </div>
-                    </form>
-                    
-                    <div class="approval">
-                        <p>Users Access Table For Staff Details Approval</p>
-                        <div class="dashboard-setup">
-                            <form action="">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
-                                            <td></td>
-                                        </tr>
-                                    </thead> 
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="form-buttons">
+                                    <input type="submit" value="Commit Transaction">
+                                    <input type="reset"  value="Reset Form">
+                                </div>
                             </form>
                         </div>
+                        
                     </div>
                 </div>
             </div>
