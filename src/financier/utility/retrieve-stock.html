@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -50,7 +49,7 @@
                             <img src="../../../assets/home.svg" alt="">
                             <a class="main-menu" href="#">home</a>
                             <ul class="submenu">
-                                <li><a href="/src/financier/home/dashboard.html">dashboard</a></li>
+                                <li class="active"><a href="/src/financier/home/dashboard.html">dashboard</a></li>
                             </ul>
                         </li>
                         <li class="nav-left">
@@ -71,7 +70,7 @@
                             <a class="main-menu" href="#">approval</a>
                             <ul class="submenu">
                                 <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
-                                <li class="active"><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
+                                <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
                                 <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-accounts.html">Approve Merchant Accounts</a></li>
@@ -96,7 +95,7 @@
                             <ul class="submenu">
                                 <li><a href="/src/financier/utility/view-virtual-stock.html">view virtual stock</a></li>
                                 <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
-                                <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
+                                <li class="active"><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
                                 <li><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
                                 <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
                                 <li><a href="/src/financier/utility/message-feed-alert.html">message feed alert</a></li>
@@ -135,69 +134,158 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve staff details (level2)</h1>
+                        <h1 class="dashboard"> View Tickets And Payments </h1>
                         <div class="merchant">
-                            <p>FINANCIER PORTAL</p>
-                            <a href="">admin1400 - Acess Bank</a>
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
                         </div>
-                    </div>                    
-                    <div class="approval">
-                        <p>Staff Creation and Updates Awaitind Approval</p>
-                        <div class="dashboard-setup">
-                            <form action="">
+                    </div>
+                    <div class="view-ticket">
+                        <div class="view-ticket-top">
+                            <table class="retrieve-stock">
+                                <thead>
+                                    <tr>
+                                        <td>Transaction Ref</td>
+                                        <td>Customer</td>
+                                        <td>Product</td>
+                                        <td>Request Quantity(Litres)</td>
+                                        <td>Released Quantity (Litres)</td>
+                                        <td>Customer</td>
+                                        <td>Merchant</td>
+                                        <td>Credit</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20002100513</td>
+                                        <td>Lanstan Energy Ltd</td>
+                                        <td>AGO</td>
+                                        <td>32,000</td>
+                                        <td>30,000</td>
+                                        <td>Dimji Fayoka-Smith</td>
+                                        <td>Alhaji Bogo and Sons</td>
+                                        <td>no</td>
+                                        <td><input type="button" value="Select"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20002100513</td>
+                                        <td>Lanstan Energy Ltd</td>
+                                        <td>AGO</td>
+                                        <td>32,000</td>
+                                        <td>30,000</td>
+                                        <td>Dimji Fayoka-Smith</td>
+                                        <td>Alhaji Bogo and Sons</td>
+                                        <td>Yes</td>
+                                        <td><input type="button" value="Select"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Details and Tickets of Transaction Ref: 20002100513</p>
+                        <form  class="view-ticket-bottom" action="">
+                            <div class="view-ticket-bottom-body">
+                                <table>
+                                    <tr>
+                                        <td>Transaction Name:</td>
+                                        <td>5k Metric Tonnes Shipment of AGO for Alhaji Bogo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product:</td>
+                                        <td>AGO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merchant Name</td>
+                                        <td>Alhaju Bogo and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sales rel:</td>
+                                        <td>20002100513</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer Number</td>
+                                        <td>20002</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Customer Name</td>
+                                        <td>Dimiji Fakoya-Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve Price</td>
+                                        <td>180.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve Quntity</td>
+                                        <td>30,000.00 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value of Approved Quantity:</td>
+                                        <td>&#8358;4,389,000.00</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td>Value of Approved Quantity:</td>
+                                        <td>&#8358;4,389,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid Quantity:</td>
+                                        <td>30,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Released Quantity :</td>
+                                        <td>30,000 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Depot</td>
+                                        <td>Folawiyi Energy Ltd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage</td>
+                                        <td>GTBank, Sanusi and co-130072-LPFO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Stock</td>
+                                        <td>80,000,000.00 Litres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Payment Information</td>
+                                        <td>Cash Based Transaction</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ticket Information</td>
+                                        <td>2 Release Tickets</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>Release Tickets</p>
+                            <div class="view-ticket-top">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
+                                            <td>Ticket Number</td>
+                                            <td>Released Quaktity(Litres)</td>
+                                            <td>Release Date</td>
+                                            <td>Status</td>
                                             <td></td>
                                         </tr>
-                                    </thead> 
+                                    </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
+                                            <td>20002100513</td>
+                                            <td>30000</td>
+                                            <td>02 November 2018</td>
+                                            <td>Waybilled</td>
+                                            <td><input type="button" value="View"></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="input-right">
+                                <input type="submit" value="View Payments">
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>

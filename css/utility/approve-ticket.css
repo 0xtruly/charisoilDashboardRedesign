@@ -24,7 +24,7 @@ margin: 15px;
     color: #3663FD;
 }
 
-.approve-inputs input{
+.approve-inputs input, input[type="submit"]{
     background-color: #3663FD;
     position: relative;
     top: 80%;
@@ -35,6 +35,10 @@ margin: 15px;
     margin: 5px;
     border: 1px solid #3663FD;
     border-radius: 5px;
+}
+
+.input-right input[type="submit"]{
+    top: 0;
 }
 
 .approve-inputs input:nth-child(even){
@@ -50,6 +54,13 @@ margin: 15px;
 
 .approve-inputs > input[type="button"]{
     float: right;
+}
+
+/* financier portal pages */
+.retrieve-stock tbody tr:nth-child(even) td input[type="button"]{
+    color: #3462FD;
+    background-color: white !important;
+    border-color: #3462FD;
 }
 
 /* ticket an payments page */
@@ -95,7 +106,7 @@ margin: 15px;
 
 input[type="button"] {
   padding: 8px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: inherit;
   color: #ffffff;
 }
@@ -186,6 +197,7 @@ input[type="button"] {
         display: grid;
         -ms-grid-columns: 1fr;
         grid-template-columns:  1fr;
+        width: 90vw;
     }
     .approve-inputs input:nth-child(even) {
         left: 0;

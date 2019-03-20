@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/report/sales-payment-details.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -50,7 +49,7 @@
                             <img src="../../../assets/home.svg" alt="">
                             <a class="main-menu" href="#">home</a>
                             <ul class="submenu">
-                                <li><a href="/src/financier/home/dashboard.html">dashboard</a></li>
+                                <li\><a href="/src/financier/home/dashboard.html">dashboard</a></li>
                             </ul>
                         </li>
                         <li class="nav-left">
@@ -71,7 +70,7 @@
                             <a class="main-menu" href="#">approval</a>
                             <ul class="submenu">
                                 <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
-                                <li class="active"><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
+                                <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
                                 <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
                                 <li><a href="/src/financier/approval/approve-merchant-accounts.html">Approve Merchant Accounts</a></li>
@@ -122,7 +121,7 @@
                             <ul class="submenu">
                                 <li><a href="/src/financier/report/transaction-tracker.html">transaction tracker</a></li>
                                 <li><a href="/src/financier/report/stock-transaction-details.html">stock transaction details</a></li>
-                                <li><a href="/src/financier/report/payment-details.html">payment details</a></li>
+                                <li class="active"><a href="/src/financier/report/payment-details.html">payment details</a></li>
                                 <li><a href="/src/financier/report/current-stock.html">current stock</a></li>
                                 <li><a href="/src/financier/report/portal-users-details.html">portal users details</a></li>
                             </ul>
@@ -135,69 +134,59 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve staff details (level2)</h1>
+                        <h1 class="dashboard">payment details</h1>
                         <div class="merchant">
-                            <p>FINANCIER PORTAL</p>
-                            <a href="">admin1400 - Acess Bank</a>
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
                         </div>
-                    </div>                    
-                    <div class="approval">
-                        <p>Staff Creation and Updates Awaitind Approval</p>
-                        <div class="dashboard-setup">
-                            <form action="">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td>System ID</td>
-                                            <td>User ID</td>
-                                            <td>Level 1</td>
-                                            <td>Level 2</td>
-                                            <td></td>
-                                        </tr>
-                                    </thead> 
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41004</td>
-                                            <td>Adeola41004</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>4100</td>
-                                            <td>admin4100</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41008</td>
-                                            <td>admin41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="button" value="Set as L1 User"></td>
-                                            <td><input type="button" value="Set as L2 User"></td>
-                                            <td>41009</td>
-                                            <td>Ayobami41008</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td><input type="button" value="Revoke" style="background-color: #b10202"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
+                    </div>
+                    <div class="sales-payment">
+                        <form action="">
+                            <div class="sales-payment-form">
+                                <div>
+                                    <div>
+                                        <input type="radio" name="filter" id="" value="show" checked>
+                                        <label for="">Show All </label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="radio" name="filter" id="" value="depot">
+                                        <label for="">Filter by  Transaction</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="filter" id="" value="product" >
+                                        <label for="">Filter by Payment Date</label> 
+                                    </div>
+                                </div>
+                                <div class="sales-payment-bottom">
+                                    <div>
+                                        <label for="">Choose Reference</label>
+                                        <select name="" id="">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="" >Select Options</option>
+                                            <option value="" >Select Options</option>
+                                            <option value="" >Select Options</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="">Choose data Range</label>
+                                        <span>From: <input type="date" name="" id=""></span>
+                                        <span>To: <input type="date" name="" id=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view">
+                                <input type="radio" name="view" id="" value="customer" checked>
+                                <label for="">View on Screen</label> 
+                                <input type="radio" name="view" id="" value="customer" >
+                                <label for="">View in Crystaly Report</label> 
+                                <input type="radio" name="view" id="" value="customer" >
+                                <label for="">View in PDF</label>  
+                                <input type="radio" name="view" id="" value="customer" >
+                                <label for="">View in Excel</label> 
+                                <input type="submit" value="View Report">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

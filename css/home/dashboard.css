@@ -266,11 +266,12 @@ img.notification {
 .dashboard-nav-left {
   background: #ffffff;
   -webkit-box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
-  box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
-  height: -webkit-fill-available;
+          box-shadow: 0px -3px 10px -3px rgba(60, 60, 62, 0.88);
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
   position: relative;
   z-index: +1;
-  min-height: 100%;
   overflow: auto;
   min-width: 14vw;
 }
@@ -355,6 +356,9 @@ img.notification {
 .dashboard-details-right {
   display: block;
   background-color: #F6F8F8;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
 }
 
 .header-details-right {
