@@ -188,8 +188,18 @@ input[type="button"] {
         text-align: -webkit-center;
     }
 
+    .view-ticket{
+        width: 100vw;
+    }
+
     .view-ticket-top {
-        width: 90vw;
+        width: 100vw;
+        overflow: scroll;
+    }
+
+    .view-ticket-bottom{
+        width: 100vw;
+        overflow: scroll;
     }
 
     .view-ticket-bottom-body {
@@ -201,6 +211,9 @@ input[type="button"] {
     }
     .approve-inputs input:nth-child(even) {
         left: 0;
+    }
+    .input-right{
+        width: 100vw;
     }
 }
 
