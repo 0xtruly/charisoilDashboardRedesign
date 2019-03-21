@@ -349,6 +349,61 @@
   color: white;
 }
 
+.message-feed {
+  margin: 10px 40px;
+  overflow: auto;
+}
+
+.message-feed .table {
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.message-feed .table table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.message-feed .table table thead tr {
+  background-color: #3663fd;
+  color: #ffffff;
+}
+
+.message-feed .table table thead tr td {
+  padding: 20px;
+  height: 30px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.message-feed .table table thead tr td:nth-child(n + 2) {
+  text-align: center;
+}
+
+.message-feed .table table thead tr td:nth-child(n + 3) {
+  text-align: center;
+}
+
+.message-feed .table table thead tr td:nth-child(n + 4) {
+  text-align: right;
+}
+
+.message-feed .table table thead tr td:hover {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.message-feed .message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.message-feed .message span {
+  font-size: .8em;
+}
+
 @media (max-width: 700px) {
   .approve-transaction {
     margin: 0;
