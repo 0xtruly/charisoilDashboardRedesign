@@ -113,7 +113,7 @@ select:focus{
     float: right;
     margin-right: 44px;
     a{
-        padding-left: 15px;
+        padding-left: 8px;
         text-decoration: none;
         button{
             color: #ffffff;
@@ -135,6 +135,8 @@ select:focus{
     position: relative;
     top: 80px;
     right: 5px;
+    box-shadow: 0px 1px 5px 2px #bcc9ce;
+    border-radius: 5px;
 }
 .bars{
     // display: inline;
@@ -283,8 +285,10 @@ select:focus{
     background-color: #ffffff;
     border-radius: 5px;
     min-height: 300px;
+    padding: 30px;
     margin: 140px 45px;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 80px 220px;
 }
@@ -297,6 +301,14 @@ select:focus{
     position: relative;
     top: 65px;
     text-align: center;
+    
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
 }
 .tank-card2{
     background: #3462FD;
@@ -305,6 +317,8 @@ select:focus{
     position: relative;
     top: 95px;
     right: -7px;
+    box-shadow: 0px 1px 5px 2px #bcc9ce;
+    border-radius: 5px;
     h5{
       position: relative;
       font-size: 12px;
@@ -350,4 +364,30 @@ select:focus{
 }
 #svg.show-circle circle {
   opacity: 1;
+}
+
+// media queries
+@media(max-width: 700px){
+  .card-container-one{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .card-container-two {
+    display: grid;
+    grid-gap: 38px  5px;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 220px;
+    min-height: 120vh;
+    // grid-template-rows: 80px 220px;
+  }
+
+  .tank-card {
+    position: sticky;
+    float: left;
+  }
+  .search-input {
+    width: 50%;
+  }
 }

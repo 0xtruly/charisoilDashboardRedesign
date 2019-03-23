@@ -139,6 +139,7 @@ hr{
         display: grid;
         -ms-grid-columns:  1fr;
         grid-template-columns: 1fr;
-        padding: 30px;
+        padding: 20px;
+        width: 90vw;
     }
 }

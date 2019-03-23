@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Financier Portal</title>
+    <link rel="stylesheet" href="../../../css/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
+    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="dashboard">
+
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <ul>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/home.svg" alt="">
+                            <a class="main-menu" href="#">home</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/home/dashboard.html">dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/operations.svg" alt="">
+                            <a class="main-menu" href="#">setup</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/setup/create-users-profile.html">create users profile</a></li>
+                                <li><a href="/src/financier/setup/manage-users-profile.html">manage users profile</a></li>
+                                <li class="active"><a href="/src/financier/setup/onboard-cma.html">onboard CMA</a></li>
+                                <li><a href="/src/financier/setup/onboard-merchant.html">onboard merchant</a></li>
+                                <li><a href="/src/financier/setup/set-merchant-account.html">set merchant account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/utility.svg" alt="">
+                            <a class="main-menu" href="#">approval</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
+                                <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
+                                <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
+                                <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
+                                <li><a href="/src/financier/approval/approve-merchant-accounts.html">Approve Merchant Accounts</a></li>
+                                <li><a href="/src/financier/approval/approve-credit-purchase-request.html">Approve Merchant Credit Sales Request</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/operations.svg" alt="">
+                            <a class="main-menu" href="#">admin operations</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/admin-operations/new-transaction-shipment.html">new transaction shipment</a></li>
+                                <li><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
+                                <li><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
+                                <li><a href="/src/financier/admin-operations/approve-transactions-document.html">view transactions document</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/utility.svg" alt="">
+                            <a class="main-menu" href="#">utility</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/utility/view-virtual-stock.html">view virtual stock</a></li>
+                                <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
+                                <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
+                                <li><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
+                                <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
+                                <li><a href="/src/financier/utility/message-feed-alert.html">message feed alert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/security.svg" alt="">
+                            <a class="main-menu" href="#">security</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/security/change-your-password.html">change your password</a></li>
+                                <li><a href="/src/financier/security/change-user-password.html">change users password</a></li>
+                                <li><a href="/src/financier/security/deactivate-user.html">deactivate account</a></li>
+                                <li><a href="/src/financier/security/activate-users.html">activate users</a></li>
+                                <li><a href="/src/financier/security/manage-roles.html">manage roles</a></li>
+                                <li><a href="/src/financier/security/assign-access-to-roles.html">assign access to roles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/report.svg" alt="">
+                            <a class="main-menu" href="#">report</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/report/transaction-tracker.html">transaction tracker</a></li>
+                                <li><a href="/src/financier/report/stock-transaction-details.html">stock transaction details</a></li>
+                                <li><a href="/src/financier/report/payment-details.html">payment details</a></li>
+                                <li><a href="/src/financier/report/current-stock.html">current stock</a></li>
+                                <li><a href="/src/financier/report/portal-users-details.html">portal users details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
+                    </div>
+                </div>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard">Add New Collateral Managers</h1>
+                        <div class="merchant">
+                            <p>FINANCIER PORTAL</p>
+                            <a href="">admin1400 - Acess Bank</a>
+                        </div>
+                    </div>
+                    <div class="approval">
+                        <div class="onboard-cma">
+                            <form action="" method="post">
+                                <select>
+                                    <option value="" selected disabled>Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
+                                    <option value="">Registered Collateral Managers On Charis Platform</option>
+                                </select>
+                                <table>
+                                    <tr>
+                                        <td>CMA ID</td>
+                                        <td>2001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Ralph</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number</td>
+                                        <td>07081234567</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email Address</td>
+                                        <td>ralph@yahoo.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>State</td>
+                                        <td>Lagos State</td>
+                                    </tr>
+                                </table>
+                                <input type="submit" value="Add to Company Profile">
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="approval">
+                        <p>Collateral Managers On Your Company Profile</p>
+                        <div class="dashboard-setup">
+                            <form action="">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Approval Status</td>
+                                            <td>CMA ID</td>
+                                            <td>CMA Company Name</td>
+                                            <td>Phone Number</td>
+                                            <td>Email Address</td>
+                                            <td>Address</td>
+                                            <td>State</td>
+                                        </tr>
+                                    </thead> 
+                                    <tbody>
+                                        <tr>
+                                            <td>Approved</td>
+                                            <td>10003</td>
+                                            <td>AGM Collaterals</td>
+                                            <td>08023365123</td>
+                                            <td>aguser@ag.com</td>
+                                            <td>12Gbajumo Crescent</td>
+                                            <td>Lagos State</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Approved</td>
+                                            <td>2028</td>
+                                            <td>Beckky</td>
+                                            <td>08888888888</td>
+                                            <td>bex@dky.com</td>
+                                            <td></td>
+                                            <td>Lagos State</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/index.js"></script>
+</body>
+</html>

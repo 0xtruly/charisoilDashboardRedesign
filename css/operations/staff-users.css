@@ -88,7 +88,7 @@ select#select {
 
 .form-buttons{
     text-align: right;
-    padding: 0 10%;
+    padding: 0 8%;
 }
 
 .buttons{
@@ -114,8 +114,8 @@ select#select {
 
 .active-staff{
     color: #3462FD !important;
-    border-bottom: 2px solid #004487 !important;
-    opacity: 1 !important;
+    border-bottom: 2px solid #3462FD !important;
+    opacity: .7 !important;
 }
 
 /* media queries */
@@ -142,4 +142,9 @@ select#select {
     input[type='submit'], input[type='reset'] {
         left: 25px;
     }
+    
+    .buttons {
+        padding: 10px 0px 0px 30px;
+    }
+
 }

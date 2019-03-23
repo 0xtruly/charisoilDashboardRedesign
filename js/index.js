@@ -58,12 +58,13 @@ toggle.addEventListener("click", function(){
 document.onreadystatechange = function() {
 	var state = document.readyState;
 	if (state == 'interactive'){
-		document.getElementById("content").style.visibility = "hidden";
+		document.getElementById("content").style.display = "none";
+		document.getElementById("content").style.display = "none";
 	}
 	else if (state == 'complete'){
 		setTimeout(function(){
-			document.getElementById("loader").style.visibility = "hidden";
-			document.getElementById("content").style.visibility = "visible";
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("content").style.display = "block";
 		}, 1000)
 	}
 }

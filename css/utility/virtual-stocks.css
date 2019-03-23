@@ -157,7 +157,7 @@ select:focus {
 }
 
 .button-group a {
-  padding-left: 15px;
+  padding-left: 8px;
   text-decoration: none;
 }
 
@@ -178,6 +178,9 @@ select:focus {
   position: relative;
   top: 80px;
   right: 5px;
+  -webkit-box-shadow: 0px 1px 5px 2px #bcc9ce;
+          box-shadow: 0px 1px 5px 2px #bcc9ce;
+  border-radius: 5px;
 }
 
 .bars {
@@ -358,9 +361,11 @@ select:focus {
   background-color: #ffffff;
   border-radius: 5px;
   min-height: 300px;
+  padding: 30px;
   margin: 140px 45px;
   display: -ms-grid;
   display: grid;
+  grid-gap: 20px;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 80px 220px;
@@ -378,6 +383,15 @@ select:focus {
   text-align: center;
 }
 
+.content h5 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content h5 a:hover {
+  text-decoration: underline;
+}
+
 .tank-card2 {
   background: #3462FD;
   width: 170px;
@@ -385,6 +399,9 @@ select:focus {
   position: relative;
   top: 95px;
   right: -7px;
+  -webkit-box-shadow: 0px 1px 5px 2px #bcc9ce;
+          box-shadow: 0px 1px 5px 2px #bcc9ce;
+  border-radius: 5px;
 }
 
 .tank-card2 h5 {
@@ -426,5 +443,33 @@ select:focus {
 
 #svg.show-circle circle {
   opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .card-container-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .card-container-two {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 38px  5px;
+    -ms-grid-columns: 1.5fr 1.5fr;
+        grid-template-columns: 1.5fr 1.5fr;
+    -ms-grid-rows: 220px;
+        grid-template-rows: 220px;
+    min-height: 120vh;
+  }
+  .tank-card {
+    position: -webkit-sticky;
+    position: sticky;
+    float: left;
+  }
+  .search-input {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=virtual-stocks.css.map */
