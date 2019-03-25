@@ -3,7 +3,7 @@
     font-family: inherit;
     font-weight: 100;
     text-transform: capitalize;
-    margin-left: 59px;
+    margin-left: 16px;
     margin-top: 10px;
     font-weight: 500;
 }
@@ -42,7 +42,7 @@ input[type='submit'], input[type='reset'] {
     width: 75px;
     border: 2px solid transparent;
     position: relative;
-    left: 69px;
+    left: 5%;
 }
 
 .approve {
@@ -64,7 +64,7 @@ form{
 }
 
 table td:nth-child(odd){
-    width: 40%;
+    width: 35%;
 }
 
 table td:nth-child(even){
@@ -72,8 +72,8 @@ table td:nth-child(even){
 }
 
 input, select{
-    padding:3px 12px;
-    width: 100%;
+    padding:3px 0px;
+    width: -webkit-fill-available;
     border: 1px solid #3462FD;
     border-radius: 5px;
 }
@@ -83,7 +83,7 @@ select{
     color  : #3462FD;
 }
 select#select {
-    width: 113%;
+    width: -webkit-fill-available;
 }
 
 .form-buttons{
@@ -137,14 +137,21 @@ select#select {
         font-size: 22px;
     }
     select#select {
-        width: 120%;
+        width: -webkit-fill-available;
     }
     input[type='submit'], input[type='reset'] {
-        left: 25px;
+        left: 0%;
     }
     
     .buttons {
         padding: 10px 0px 0px 30px;
+    }
+    .staff-users-main {
+        margin: 0;
+        width: auto;
+    }
+    .staff-users-top h4 {
+        margin-left: 0px;
     }
 
 }

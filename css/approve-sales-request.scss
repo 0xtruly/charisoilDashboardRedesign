@@ -1,4 +1,4 @@
-// @import './variable.scss';
+@import './variable.scss';
 *{
     padding: 0px;
     margin: 0px;
@@ -14,7 +14,7 @@ nav {
 .nav-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background:$color-primary;
+    // background:$color-primary;
 
     .logo-left{
         // display: grid;
