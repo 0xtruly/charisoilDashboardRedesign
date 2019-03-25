@@ -1,7 +1,7 @@
 .stock-transaction{
     padding: 20px;
     display: -ms-grid;
-    margin: 20px;
+    margin: 35px 41px;
     font-size: small;
     display: grid;
     background-color: #ffffff;
@@ -32,11 +32,13 @@ input[type="button"] {
 }
 
 .stock-details  div{
-    padding: 2px 5px 25px 5px;
+    padding: 2px 0px 30px 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
 }
 
 label{
-    margin: 12px;
+    margin: 5px;
 }
 
 input[type="date"]{
@@ -44,7 +46,7 @@ input[type="date"]{
 }
 
 select{
-    width: 270px;
+    width: 280px;
 }
 
 input[type="date"], select{

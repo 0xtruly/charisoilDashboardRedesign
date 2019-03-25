@@ -209,11 +209,12 @@ select:focus {
   display: inline-block;
   margin: 10px;
   bottom: 81px;
-  left: 54px;
+  left: 57px;
 }
 
 .full {
   background-color: green;
+  left: 54px;
 }
 
 .sea {
@@ -362,7 +363,7 @@ select:focus {
   border-radius: 5px;
   min-height: 300px;
   padding: 30px;
-  margin: 140px 45px;
+  margin: 140px 10px;
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
@@ -394,7 +395,7 @@ select:focus {
 
 .tank-card2 {
   background: #3462FD;
-  width: 170px;
+  width: 175px;
   height: 170px;
   position: relative;
   top: 95px;
