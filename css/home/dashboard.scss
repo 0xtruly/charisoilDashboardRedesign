@@ -637,6 +637,12 @@
     display: -webkit-inline-box;
     display: inline-box;
   }
+  .right-third a{
+    margin-left: -2vw;
+  }
+  .right-fourth a{
+    margin-left: -3vw;
+  }
   
   .right-third .approve, .right-third .cancel, .right-fourth .product, .right-fourth .payment{
     transition: .4s linear;

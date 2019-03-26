@@ -676,6 +676,14 @@ input:focus, select:focus {
   display: inline-box;
 }
 
+.right-third a {
+  margin-left: -2vw;
+}
+
+.right-fourth a {
+  margin-left: -3vw;
+}
+
 .right-third .approve, .right-third .cancel, .right-fourth .product, .right-fourth .payment {
   -webkit-transition: .4s linear;
   transition: .4s linear;

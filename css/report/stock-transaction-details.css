@@ -66,7 +66,7 @@ input[type="submit"]{
     padding: 5px 10px;
     border: 2px solid #3663FD;
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 3ch;
     font-size: small;
 }
 
@@ -141,5 +141,17 @@ input[type="radio"]{
     
     .tracker table >tbody > tr > td:nth-child(even){
         width: 50%;
+    }
+}
+
+@media(min-width: 1300px){
+    input[type="submit"] {
+        margin-right: 6ch;
+    }
+}
+
+@media(min-width: 1400px){
+    input[type="submit"] {
+        margin-right: 9ch;
     }
 }
