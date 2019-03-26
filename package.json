@@ -1,0 +1,33 @@
+{
+  "name": "charis-oil",
+  "version": "1.0.0",
+  "description": "dashboard redesign for charis oil",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tooyosi/charisoilDashboardRedesign.git"
+  },
+  "author": "Oluwatoyosi and Segun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tooyosi/charisoilDashboardRedesign/issues"
+  },
+  "homepage": "https://github.com/Tooyosi/charisoilDashboardRedesign#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-babel": "^8.0.0"
+  }
+}
