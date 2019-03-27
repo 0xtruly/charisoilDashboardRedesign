@@ -36,21 +36,32 @@ input[type="button"] {
 
 .sales-payment-bottom  div{
     padding: 2px 5px 5px 5px;
+    margin: 0 -40px;
+}
+.sales-payment-bottom  .div1{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.sales-payment-bottom  .div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 label{
     margin: 12px;
 }
-
+span{
+    width: max-content;
+}
 input[type="date"]{
-    width: 70px;
+    width: 120px;
 }
 
 select{
-    width: 270px;
+    width: 310px;
 }
 
 input[type="date"], select{
-    padding: 5px 7px;
+    padding: 5px 0px;
     border: 1px solid #3462FD;
     border-radius: 5px;
     font-size: small;

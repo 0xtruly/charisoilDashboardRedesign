@@ -137,9 +137,9 @@ input[type="button"] {
 }
 .credit-sales-bottom-body.right img{
     position: relative;
-    left: 44%;
     width: 70px;
     height: 70px;
+    margin: 2px auto;
 }
 .label-center{
     display: grid;
@@ -158,11 +158,10 @@ label.start input[type="file"]{
     background: #3462FD;
     color: #ffffff;
     padding: 5px 10px;
-    margin: 2px;
+    margin: 2px auto;
     display: inline-block;
     position: relative;
     top: 30px;
-    left: 45%;
     width: 10%;
     text-align: center;
 }
@@ -237,6 +236,9 @@ input:focus, select:focus{
 }
 
 /* media queries */
+
+
+
 @media(max-width: 700px){
     .credit-sales-top {
         width: 100vw;
@@ -255,16 +257,19 @@ input:focus, select:focus{
         top: 35px;
         right: 15px;
     }
-
+    .header-details-right .merchant{
+        right: 82%;
+    }
     .search-input {
         width: 330px;
         height: 35px;
     }
     form {
-        margin-left: 3px;
+        margin-left: 30px;
     }
 
     .credit-sales p {
         left: 16px;
     }
+    
 }
