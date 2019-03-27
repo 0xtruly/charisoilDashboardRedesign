@@ -1,0 +1,82 @@
+.option-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  padding: 15px 0px 0px 40px;
+}
+
+.option-grid a {
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+
+.radio-button {
+  font-family: inherit;
+}
+
+.radio-button label {
+  font-weight: 100;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.view-ticket {
+  padding: 10px 40px;
+}
+
+.purchase-product-body input {
+  padding: 4px;
+  border: 1px solid #3663FD;
+  border-radius: 5px;
+}
+
+.purchase-product-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 45px;
+}
+
+.purchase-product-body > table td {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-size: small;
+}
+
+.atk-ticket, .boil-ticket, .dpk-ticket, .lpfo-ticket, .pms-ticket {
+  display: none;
+}
+
+.view-ticket-top tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.view-ticket-top > table thead tr td {
+  font-size: 12px;
+  padding: 15px 0px 15px 13px;
+  background-color: #3462FD;
+}
+
+.view-ticket-top table tbody td {
+  padding: 10px 10px 24px 10px;
+  font-size: 12px;
+}
+
+#pay {
+  margin-left: 4em;
+}
+
+#track {
+  margin-left: 0px;
+}
+/*# sourceMappingURL=purchaseProduct.css.map */
