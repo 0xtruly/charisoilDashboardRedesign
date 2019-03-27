@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
     <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
     <link rel="stylesheet" href="../../../css/customer/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/customer/home/purchaseProduct.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -97,8 +98,27 @@
                             <a href="mailto:merchant@lanstaenergy.com">merchant@lanstaenergy.com</a>
                         </div>
                     </div>
+
+                    <!-- radio button -->
+                    <div class="option-grid">
+                        <div class="radio-button">
+                            <input type="radio" name="AGO" id="ago">
+                            <label for="AGO">ago</label>
+                            <input type="radio" name="AGO" id="atk">
+                            <label for="ATK">atk</label>
+                            <input type="radio" name="AGO" id="boil">
+                            <label for="BOIL">boil</label>
+                            <input type="radio" name="AGO" id="dpk">
+                            <label for="DPK">dpk</label>
+                            <input type="radio" name="AGO" id="lpfo">
+                            <label for="LPFO">lpfo</label>
+                            <input type="radio" name="AGO" id="pms">
+                            <label for="PMS">pms</label>
+                        </div>
+                        <a href="#">click on select to purchase</a>
+                    </div>
                     <div class="view-ticket">
-                        <div class="view-ticket-top">
+                        <div class="view-ticket-top ago-ticket">
                             <table>
                                 <thead>
                                     <tr>
@@ -133,6 +153,188 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <div class="view-ticket-top atk-ticket">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>Depot</td>
+                                        <td>Merchant</td>
+                                        <td>Current Stock(Litres)</td>
+                                        <td>Current Price (Litres)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ATK</td>
+                                        <td>Techno Oil Ltd</td>
+                                        <td>World Bay Technologies Ltd</td>
+                                        <td>5,820,000</td>
+                                        <td>&#8358;185.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATK</td>
+                                        <td>Asionic Depot Ltd</td>
+                                        <td>Alhaji Bogo & Sons</td>
+                                        <td>399,900,000</td>
+                                        <td>&#8358;180.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="view-ticket-top boil-ticket">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>Depot</td>
+                                        <td>Merchant</td>
+                                        <td>Current Stock(Litres)</td>
+                                        <td>Current Price (Litres)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BOIL</td>
+                                        <td>Techno Oil Ltd</td>
+                                        <td>World Bay Technologies Ltd</td>
+                                        <td>5,820,000</td>
+                                        <td>&#8358;185.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BOIL</td>
+                                        <td>Asionic Depot Ltd</td>
+                                        <td>Alhaji Bogo & Sons</td>
+                                        <td>399,900,000</td>
+                                        <td>&#8358;180.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="view-ticket-top dpk-ticket">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>Depot</td>
+                                        <td>Merchant</td>
+                                        <td>Current Stock(Litres)</td>
+                                        <td>Current Price (Litres)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DPK</td>
+                                        <td>Techno Oil Ltd</td>
+                                        <td>World Bay Technologies Ltd</td>
+                                        <td>5,820,000</td>
+                                        <td>&#8358;185.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DPK</td>
+                                        <td>Asionic Depot Ltd</td>
+                                        <td>Alhaji Bogo & Sons</td>
+                                        <td>399,900,000</td>
+                                        <td>&#8358;180.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="view-ticket-top lpfo-ticket">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>Depot</td>
+                                        <td>Merchant</td>
+                                        <td>Current Stock(Litres)</td>
+                                        <td>Current Price (Litres)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>LPFO</td>
+                                        <td>Techno Oil Ltd</td>
+                                        <td>World Bay Technologies Ltd</td>
+                                        <td>5,820,000</td>
+                                        <td>&#8358;185.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LPFO</td>
+                                        <td>Asionic Depot Ltd</td>
+                                        <td>Alhaji Bogo & Sons</td>
+                                        <td>399,900,000</td>
+                                        <td>&#8358;180.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="view-ticket-top pms-ticket">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>Depot</td>
+                                        <td>Merchant</td>
+                                        <td>Current Stock(Litres)</td>
+                                        <td>Current Price (Litres)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PMS</td>
+                                        <td>Techno Oil Ltd</td>
+                                        <td>World Bay Technologies Ltd</td>
+                                        <td>5,820,000</td>
+                                        <td>&#8358;185.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PMS</td>
+                                        <td>Asionic Depot Ltd</td>
+                                        <td>Alhaji Bogo & Sons</td>
+                                        <td>399,900,000</td>
+                                        <td>&#8358;180.00</td>
+                                        <td><input type="button" id="pay" value="Select"></td>
+                                        <td><input type="button" id="track" value="View Spec"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
                         <p>Enter Quantity you want to purchase</p>
                         <form  class="purchase-product-bottom" action="">
                             <div class="purchase-product-body">
@@ -165,9 +367,7 @@
                                     <input type="submit" id="pay" value="Make Purchase Request">
                                     <input type="reset" id="cancel" class="cancel" value="Clear">
                                 </div>
-                            </div>
                         </form>
-
                     </div>
                 </div>
             </div>
