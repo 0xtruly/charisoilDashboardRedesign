@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
+    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div id="loader"></div>
@@ -23,14 +24,10 @@
                                 <span class='icon-bar'></span>
                             </label>
                     <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
-                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
-                    <!-- <div class="imge">
-                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
-                    </div> -->
                     </div>
                     <div class="nav-link-right">
-                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
-                        <a id="log-out" href="#">log out</a>
+                            <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                            <a id="log-out" href="#">log out</a>
                     </div>
                 </div>
             </nav>
@@ -49,7 +46,7 @@
                             <img src="../../../assets/home.svg" alt="">
                             <a class="main-menu" href="#">home</a>
                             <ul class="submenu">
-                                <li><a href="/src/financier/home/dashboard.html">dashboard</a></li>
+                                <li class="active"><a href="/src/financier/home/dashboard.html">dashboard</a></li>
                             </ul>
                         </li>
                         <li class="nav-left">
@@ -97,7 +94,7 @@
                                 <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
                                 <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
                                 <li><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
-                                <li class="active"><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
+                                <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
                                 <li><a href="/src/financier/utility/message-feed-alert.html">message feed alert</a></li>
                             </ul>
                         </li>
@@ -135,10 +132,84 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard"> approve  stock release </h1>
+                        <h1 class="dashboard"> analytics </h1>
                         <div class="merchant">
                             <p>Financier portal</p>
                             <a href="">admin4100 - Access Bank</a>
+                        </div>
+                    </div>
+                    <div class="financier-third">
+                        <form action="" method="post">
+                            <label for="">Product:</label>
+                            <select>
+                                <option value="">Select Department</option>
+                                <option value="">Select Department</option>
+                                <option value="">Select Department</option>
+                                <option value="">Select Department</option>
+                            </select>
+                        </form>
+                        <div class="financier-third-body">
+                            <div class="third-box">
+                                <div class="box-inner">
+                                    <p>Product With Average Current Stock</p>
+                                    <span class="first-span">&#8358;243,300,000</span>
+                                </div>
+                            </div>
+                            <div class="third-box">
+                                <div class="box-inner">
+                                    <p>Product With Minimum Credit Stock(DPK)</p>
+                                    <span class="second-span">&#8358;80,000,000</span>
+                                </div>
+                            </div>
+                            <div class="third-box">
+                                <div class="box-inner">
+                                    <p>Product With Maximum Credit Stock(AGO)</p>
+                                    <span class="third-span">&#8358;399,900,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="financier-fourth">
+                        <div class="financier-fourth-body">
+                            <div>
+                                <p>Product-wise Current Stock</p>
+                                <div class="financier-fourth-left"></div>
+                            </div>
+                            <div>
+                                <p>Product With Maximum Current Stock (AGO)</p>
+                                <div class="financier-fourth-right">
+                                    <div class="top"></div>
+                                    <p>Current Stock By Product</p>
+                                    <div class="bottom">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Product</td>
+                                                    <td>Total Sales(&#8358;)</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>AGO</td>
+                                                    <td>399,900,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DPK</td>
+                                                    <td>80,000,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PMS</td>
+                                                    <td>250,000,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Grand Total</td>
+                                                    <td>729,900,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
