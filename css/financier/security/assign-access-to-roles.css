@@ -1,0 +1,18 @@
+.cancel {
+    margin: 0px 0px 0px -20px;
+    color: white;
+    border: transparent;
+}
+.change-user select, .change-user input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px 15px;
+}
+.change-user input[type="submit"], .change-user input[type="reset"] {
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+    float: right;
+    width: auto;
+    cursor: pointer;
+}

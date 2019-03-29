@@ -1,0 +1,132 @@
+.sales-payment{
+    padding: 20px;
+    display: -ms-grid;
+    margin: 20px 42px 20px 42px;
+    font-size: small;
+    display: grid;
+    background-color: #ffffff;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-shadow: 2px 2px 2px 2px #e7e5e5;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+}
+
+.sales-payment-form{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type="button"] {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #ffffff;
+}
+.sales-transaction-top > table {
+  border-spacing: 0;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  min-height: 25vh;
+}
+
+
+
+.sales-payment-bottom  div{
+    padding: 2px 5px 5px 5px;
+    margin: 0 -40px;
+}
+.sales-payment-bottom  .div1{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.sales-payment-bottom  .div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+label{
+    margin: 12px;
+}
+span{
+    width: max-content;
+}
+input[type="date"]{
+    width: 120px;
+}
+
+select{
+    width: 313px;
+}
+
+input[type="date"], select{
+    background: #ffffff;
+    padding: 5px 0px;
+    border: 1px solid #3462FD;
+    border-radius: 5px;
+    font-size: small;
+    color: #3462FD;
+}
+
+input[type="radio"]{
+    margin: 10px;
+}
+
+input[type="submit"]{
+    float: right;
+    float: right;
+    background-color: #3663FD;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 38px;
+    font-size: small;
+}
+
+.view{
+    color: #3462FD;
+}
+
+/* media queries */
+@media(max-width: 700px){
+    .sales-payment-form {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .view {
+        display: grid;
+        color: #3462FD;
+    }
+
+    input[type="date"], select{
+        width: 200px;
+    }
+}
+@media(min-width: 1300px){
+    input[type="date"], select {
+        padding: 8px 0px 8px 2px;
+        border: 1px solid #3462FD;
+        border-radius: 5px;
+        font-size: small;
+        color: #3462FD;
+    }
+    
+    select {
+        width: 317px;
+    }
+    input[type="submit"] {
+        margin-right: 4rem;
+    }
+}
+
+@media(min-width: 1400px){
+    input[type="submit"] {
+        margin-right: 6rem;
+    }
+}

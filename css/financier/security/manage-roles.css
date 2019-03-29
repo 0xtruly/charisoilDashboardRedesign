@@ -1,0 +1,21 @@
+.grant-user table tbody tr>td{
+    width: 200px;
+}
+.change-user input[type="submit"], .change-user input[type="reset"] {
+    background-color: #3663FD;
+    color: white;
+    font-size: small;
+    float: right;
+    width: auto;
+    margin-right: 30px;
+}
+@media(min-width: 1300px){
+    .change-user input[type="submit"], .change-user input[type="reset"] {
+        margin-right: 37px;
+    }
+}
+@media(min-width: 1400px){
+    .change-user input[type="submit"], .change-user input[type="reset"] {
+        margin-right: 47px;
+    }
+}
