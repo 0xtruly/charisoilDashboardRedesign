@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Financier Portal</title>
+    <link rel="stylesheet" href="../../../css/home/dashboard.css">
+    <link rel="stylesheet" href="../../../css/financier/utility/virtual-stock.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div id="content">
+        <header>
+            <nav class="nav">
+                <div class="nav-grid">
+                    <div class="logo-left">
+                        
+                            <!-- <input type="button" id="toggle" value=""> -->
+                            <label for="menu" id="toggle">
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                                <span class='icon-bar'></span>
+                            </label>
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <!-- <h3 class="brand-name">Charis Oil</h3> -->
+                    <!-- <div class="imge">
+                        <img src="./assets//iconfinder_menu-alt_134216.png" alt="fff" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="nav-link-right">
+                        <a id="notify" href="#"><img src="../../../assets/notification.svg" alt="" class="notification">
+                        <a id="log-out" href="#">log out</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="dashboard">
+
+            <!-- dashboard grid container -->
+            <div class="dashboard-grid-container">
+                <!-- left nav link -->
+                <div class="dashboard-nav-left">
+                    <img class="logo" src="../../../assets/LOGO.png" alt="CharisOil">
+                    <ul>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/home.svg" alt="">
+                            <a class="main-menu" href="#">home</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/home/dashboard.html">dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/operations.svg" alt="">
+                            <a class="main-menu" href="#">setup</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/setup/create-users-profile.html">create users profile</a></li>
+                                <li><a href="/src/financier/setup/manage-users-profile.html">manage users profile</a></li>
+                                <li><a href="/src/financier/setup/onboard-cma.html">onboard CMA</a></li>
+                                <li><a href="/src/financier/setup/onboard-merchant.html">onboard merchant</a></li>
+                                <li><a href="/src/financier/setup/set-merchant-account.html">set merchant account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/utility.svg" alt="">
+                            <a class="main-menu" href="#">approval</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/approval/approval-levels-setup.html">Approval Levels Setup</a></li>
+                                <li><a href="/src/financier/approval/approve-users-profile-details.html">Approval Users Profile Details</a></li>
+                                <li><a href="/src/financier/approval/approve-cma-onboarding.html">Approve CMA Onboarding</a></li>
+                                <li><a href="/src/financier/approval/approve-merchant-onboarding.html">Approve Merchant Onboarding</a></li>
+                                <li><a href="/src/financier/approval/approve-merchant-accounts.html">Approve Merchant Accounts</a></li>
+                                <li><a href="/src/financier/approval/approve-credit-purchase-request.html">Approve Merchant Credit Sales Request</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/operations.svg" alt="">
+                            <a class="main-menu" href="#">admin operations</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/admin-operations/new-transaction-shipment.html">new transaction shipment</a></li>
+                                <li><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
+                                <li><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
+                                <li><a href="/src/financier/admin-operations/approve-transactions-document.html">view transactions document</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/utility.svg" alt="">
+                            <a class="main-menu" href="#">utility</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/utility/view-virtual-stock.html">view virtual stock</a></li>
+                                <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
+                                <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
+                                <li class="active"><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
+                                <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
+                                <li><a href="/src/financier/utility/message-feed-alert.html">message feed alert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/security.svg" alt="">
+                            <a class="main-menu" href="#">security</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/security/change-your-password.html">change your password</a></li>
+                                <li><a href="/src/financier/security/change-user-password.html">change users password</a></li>
+                                <li><a href="/src/financier/security/deactivate-user.html">deactivate account</a></li>
+                                <li><a href="/src/financier/security/activate-users.html">activate users</a></li>
+                                <li><a href="/src/financier/security/manage-roles.html">manage roles</a></li>
+                                <li><a href="/src/financier/security/assign-access-to-roles.html">assign access to roles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-left">
+                            <span class="link-span">></span> 
+                            <img src="../../../assets/report.svg" alt="">
+                            <a class="main-menu" href="#">report</a>
+                            <ul class="submenu">
+                                <li><a href="/src/financier/report/analytics.html">analytics</a></li>
+                                <li><a href="/src/financier/report/transaction-tracker.html">transaction tracker</a></li>
+                                <li><a href="/src/financier/report/stock-transaction-details.html">stock transaction details</a></li>
+                                <li><a href="/src/financier/report/payment-details.html">payment details</a></li>
+                                <li><a href="/src/financier/report/current-stock.html">current stock</a></li>
+                                <li><a href="/src/financier/report/portal-users-details.html">portal users details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-link">
+                        <a href="#" >log out</a>
+                    </div>
+                </div>
+                <div class="dashboard-details-right">
+                    <!-- header -->
+                    <div class="header-details-right">
+                        <h1 class="dashboard"> View Tickets And Payments </h1>
+                        <div class="merchant">
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
+                        </div>
+                    </div>
+                  <div class="heading"><h4>tank and virtual stock details</h4></div>
+                  <!-- cards -->
+
+                  <div class="card-container-one">
+
+                      <div class="left">
+                          <div class="align-items">
+                              <form action="">
+                                  <label for="search" class="search-label">
+                                      <input type="search" class="search-input" placeholder="search">
+                                  </label>
+                                  <button class="search-btn">
+                                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                          </path>
+                                          <path d="M0 0h24v24H0z" fill="none"></path>
+                                      </svg>
+                                  </button>
+                              </form>
+                              <div class="select-options">
+                                  <h5>storage tank:</h5>
+                                  <select name="" id="">
+                                      <option value="" selected disabled>access-lanstan energy ltd-130081 <span>pms</span></option>
+                                      <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                                      <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                                      <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                                      <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                                  </select>
+                              </div>
+                              <div class="table">
+
+                                  <div class="left-tb">
+                                      <p>depot:</p>
+                                      <p>initial stock intake by <span>cma:</span></p>
+                                      <p>current stock:</p>
+                                      <p>current price per litre:</p>
+                                      <p>current stock value:</p>
+                                  </div>
+                                      
+                                  <div class="right-tb">
+                                      <p>a-z petroleum product</p>
+                                      <p>4,000,000 litres</p>
+                                      <p>4,000,000 Litres</p>
+                                      <p>134.000 naira</p>
+                                      <p>1,072,000,000:00 naira</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="right">
+                          <div class="tank-card">
+                              <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="tank full">
+                                  <div id="sea" class="sea sea-unanimate">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" width=".25" height="2" patternContentUnits="objectBoundingBox">
+                                            <path fill="" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-filled" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- buttons -->
+                  <div class="button-group">
+                      <a href="#"><button>view all sales request payments</button></a>
+                      <a href="#"><button>stock liability to customers</button></a>
+                      <a href="#"><button>clear</button></a>
+                  </div>
+
+                  <!-- card-container-two -->
+                  <div class="card-container-two">
+                      
+                    <div class="content">
+                        <h5><a href="">live tank at depot</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                                </div>
+                                <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="75" />
+                                  <a class="btn run">Evaluate</a>
+                                </div> -->
+                                <div class="tank tank1">
+                                  <div id="sea" class="sea sea1">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>15,000,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">current stock in storage</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>    
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                              </div>
+                              <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="50"/>
+                                  <a class="btn run">Evaluate</a>
+                              </div> -->
+                                <div class="tank tank2">
+                                  <div id="sea" class="sea sea2">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>4,000,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">stock released to merchant</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>    
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                              </div>
+                              <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="25"/>
+                                  <a class="btn run">Run again</a>
+                              </div> -->
+                                <div class="tank tank3">
+                                  <div id="sea" class="sea sea3">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>3,200,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">stock released to customers</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="tank tank4">
+                                  <div id="sea" class="sea sea4">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">stock loaded out by customers</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="tank tank5">
+                                  <div id="sea" class="sea sea5">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="" patternContentUnits="objectBoundingBox">
+                                            <path fill="" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+    <script src="../../../js/index.js"></script>
+    <script src="../../../js/percentage.js"></script>
+</body>
+</html>
