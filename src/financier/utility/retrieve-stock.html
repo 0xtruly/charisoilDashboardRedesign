@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/cma/operations/approval-users-setup.css">
-    <link rel="stylesheet" href="../../../css/cma/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/financier/approval/approval.css">
-    <link rel="stylesheet" href="../../../css/financier/admin operations/approve-transactions-for-onboarding.css">
+    <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
+    <!-- <link rel="stylesheet" href="../../../css/financier/utility/virtual-stock.css"> -->
+    <link rel="stylesheet" href="../../../css/financier/utility/release-stock.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -87,7 +86,7 @@
                             <ul class="submenu">
                                 <li><a href="/src/financier/admin-operations/new-transaction-shipment.html">new transaction shipment</a></li>
                                 <li><a href="/src/financier/admin-operations/edit-transaction-shipment.html">edit transaction shipment</a></li>
-                                <li class="active"><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
+                                <li><a href="/src/financier/admin-operations/approve-transactions-for-onboarding.html">approve transactions for onboarding</a></li>
                                 <li><a href="/src/financier/admin-operations/approve-transactions-document.html">view transactions document</a></li>
                             </ul>
                         </li>
@@ -97,7 +96,7 @@
                             <a class="main-menu" href="#">utility</a>
                             <ul class="submenu">
                                 <li><a href="/src/financier/utility/view-virtual-stock.html">view virtual stock</a></li>
-                                <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
+                                <li class="active"><a href="/src/financier/utility/release-stock.html">release stock</a></li>
                                 <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
                                 <li><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
                                 <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
@@ -138,86 +137,70 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard">Approve transactions for onboarding (level2)</h1>
+                        <h1 class="dashboard">retrieve</h1>
                         <div class="merchant">
-                            <p>FINANCIER PORTAL</p>
-                            <a href="">admin1400 - Acess Bank</a>
-                        </div>
-                    </div>                    
-                    <div class="approve-transaction">
-                        <div class="dashboard-setup">
-                            <form action="">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td></td>
-                                            <td>L1 Approval Status</td>
-                                            <td>L2 Approval Status</td>
-                                            <td>UsTransaction Name</td>
-                                        </tr>
-                                    </thead> 
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="button" value="Select"></td>
-                                            <td>Pending</td>
-                                            <td>Pending</td>
-                                            <td>770 Met-Tonnes of BOIL Jagaban</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                        <div class="onboard-cma">
-                            <form action="" method="post">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>Transaction Name:</td>
-                                            <td>770 Met-tonnes of BOIL Jagaban</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Transaction Ref:</td>
-                                            <td>130076</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Product:</td>
-                                            <td>BOIL</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Imported Units:</td>
-                                            <td>Metric Tonnes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Imported Quantity:</td>
-                                            <td>770,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Transaction Date:</td>
-                                            <td>20 Nov 2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Initiating User:</td>
-                                            <td>admin4100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Merchant Company:</td>
-                                            <td>jagaban Compann</td>
-                                        </tr>
-                                        <tr>
-                                            <td>CMA:</td>
-                                            <td>Clobert Services LTD</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <input type="reset" class="cancel" value="Cancel">
-                                <input type="submit" value="Add to Company Profile">
-                            </form>
+                            <p>Financier portal</p>
+                            <a href="">admin4100 - Access Bank</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <script src="../../../js/index.js"></script>
+
+                    <!-- select and input fields -->
+                    <div class="select-options">
+                        <h5>storage tank:</h5>
+                        <select name="" id="">
+                            <option value="" selected disabled>access-lanstan energy ltd-130081 <span>pms</span></option>
+                            <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                            <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                            <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                            <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                        </select>
+                    </div>
+                    <div class="input-options">
+                        <label for="quantity to release" class="quantity">quantity to release</label>
+                        <input type="number" name="" id="" class="input-quantity">
+                    </div>
+
+                    <!-- first card -->
+                    <div class="card-container-one">
+                        <div class="table">
+                            <div class="left-table">
+                                <p>transaction name:</p>
+                                <p>depot:</p>
+                                <p>initial stock intake:</p>
+                                <p>current stock:</p>
+                                <p>stock released to merchant:</p>
+                                <p>merchant:</p>
+                                <p>cma</p>
+                                <p>transaction name:</p>
+                                <p>product:</p>
+                                <p>depot:</p>
+                                <p>total amount of paid sales:</p>
+                                <p>paid quantity</p>
+                            </div>
+
+                            <div class="right-table">
+                                <p>5k metric tonnes shipment of ago to alhaji bago</p>
+                                <p>a-z petroleum product limited</p>
+                                <p>4,000,000 litres</p>
+                                <p>4,000,000 litres</p>
+                                <p>1,000,000 litres</p>
+                                <p>alhaji bago and sons</p>
+                                <p>agm collaterals</p>
+                                <p>5k metric tonnes shipment of ago to alhaji bago</p>
+                                <p>ago</p>
+                                <p>asionic depot ltd</p>
+                                <p>&#8358; 23,000,000.00</p>
+                                <p>234,000 litres</p>
+                            </div>
+                        </div>
+                        <!-- buttons -->
+                        <div class="button-group">
+                          <a href="#"><button>view all sales request payments</button></a>
+                          <a href="#"><button>stock liability to customers</button></a>
+                          <a href="#"><button>clear</button></a>
+                        </div>
+                    </div>
+
+                    
 </body>
 </html>

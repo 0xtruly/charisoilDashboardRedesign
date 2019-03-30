@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financier Portal</title>
     <link rel="stylesheet" href="../../../css/home/dashboard.css">
-    <link rel="stylesheet" href="../../../css/utility/approve-ticket.css">
+    <link rel="stylesheet" href="../../../css/financier/utility/virtual-stock.css">
+    <link rel="stylesheet" href="../../../css/financier/utility/release-stock.css">
 </head>
 <body>
     <div id="loader"></div>
@@ -94,9 +95,9 @@
                             <a class="main-menu" href="#">utility</a>
                             <ul class="submenu">
                                 <li><a href="/src/financier/utility/view-virtual-stock.html">view virtual stock</a></li>
-                                <li class="active"><a href="/src/financier/utility/release-stock.html">release stock</a></li>
+                                <li><a href="/src/financier/utility/release-stock.html">release stock</a></li>
                                 <li><a href="/src/financier/utility/retrieve-stock.html">retrieve stock</a></li>
-                                <li><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
+                                <li class="active"><a href="/src/financier/utility/view-tickets-and-payments.html">view tickets and payments</a></li>
                                 <li><a href="/src/financier/utility/approve-stock-release.html">approve stock release </a></li>
                                 <li><a href="/src/financier/utility/message-feed-alert.html">message feed alert</a></li>
                             </ul>
@@ -135,16 +136,192 @@
                 <div class="dashboard-details-right">
                     <!-- header -->
                     <div class="header-details-right">
-                        <h1 class="dashboard"> retrieve stock </h1>
+                        <h1 class="dashboard">release stock to merchant</h1>
                         <div class="merchant">
                             <p>Financier portal</p>
                             <a href="">admin4100 - Access Bank</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+
+                    <!-- select and input fields -->
+                    <div class="select-options">
+                      <h5>storage tank:</h5>
+                      <select name="" id="">
+                          <option value="" selected disabled>access-lanstan energy ltd-130081 <span>pms</span></option>
+                          <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                          <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                          <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                          <option value="">access-lanstan energy ltd-130081 <span>pms</span></option>
+                      </select>
+                    </div>
+                    <div class="input-options">
+                        <label for="quantity to release" class="quantity">quantity to release</label>
+                        <input type="number" name="" id="" class="input-quantity">
+                    </div>
+
+                    <div class="card-container-one">
+                    
+                      <div class="table">
+                        <div class="left-table">
+                          <p>transaction name:</p>
+                          <p>depot:</p>
+                          <p>initial stock intake:</p>
+                          <p>current stock:</p>
+                          <p>stock released to merchant:</p>
+                          <p>merchant:</p>
+                          <p>cma</p>
+                          <p>transaction name:</p>
+                          <p>product:</p>
+                          <p>depot:</p>
+                          <p>total amount of paid sales:</p>
+                          <p>paid quantity</p>
+                        </div>
+                      
+                        <div class="right-table">
+                          <p>5k metric tonnes shipment of ago to alhaji bago</p>
+                          <p>a-z petroleum product limited</p>
+                          <p>4,000,000 litres</p>
+                          <p>4,000,000 litres</p>
+                          <p>1,000,000 litres</p>
+                          <p>alhaji bago and sons</p>
+                          <p>agm collaterals</p>
+                          <p>5k metric tonnes shipment of ago to alhaji bago</p>
+                          <p>ago</p>
+                          <p>asionic depot ltd</p>
+                          <p>&#8358; 23,000,000.00</p>
+                          <p>234,000 litres</p>
+                        </div>
+                      </div>
+                      <!-- buttons -->
+                      <div class="button-group">
+                        <a href="#"><button>view all sales request payments</button></a>
+                        <a href="#"><button>stock liability to customers</button></a>
+                        <a href="#"><button>clear</button></a>
+                      </div>
+
+                          <!-- Don't take this out, otherwise those other 3 will not display the green animated part -->
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                              <pattern id="water" width=".25" height="2" patternContentUnits="objectBoundingBox">
+                                <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                              </pattern>
+                            </defs>  
+                            <rect id="waves" class="water-filled" fill="url(#water)" width="3000"/> 
+                          </svg>
+                                 
+                  </div>
+
+                  <!-- card-container-two -->
+                  <div class="card-container-two">
+                      
+                    <div class="content">
+                        <h5><a href="">live tank at depot</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                                </div>
+                                <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="75" />
+                                  <a class="btn run">Evaluate</a>
+                                </div> -->
+                                <div class="tank tank1">
+                                  <div id="sea" class="sea sea1">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>15,000,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">current stock in storage</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>    
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                              </div>
+                              <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="50"/>
+                                  <a class="btn run">Evaluate</a>
+                              </div> -->
+                                <div class="tank tank2">
+                                  <div id="sea" class="sea sea2">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>4,000,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content">
+                        <h5><a href="">stock released to merchant</a></h5>
+                        <div class="tank-card2">
+                            <div class="bars">
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="lines"></div>
+                                <div class="graph">
+                                  <div class="percent"></div>    
+                                  <svg id="svg">
+                                    <circle cx="25" cy="25" r="23" stroke="white" stroke-width="3" fill="none" />
+                                  </svg>
+                              </div>
+                              <!-- <div class="form">
+                                  <label for="percent">Percent:</label>
+                                  <input id="percent" maxlength="2" type="text" value="25"/>
+                                  <a class="btn run">Run again</a>
+                              </div> -->
+                                <div class="tank tank3">
+                                  <div id="sea" class="sea sea3">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                          <pattern id="water" patternContentUnits="objectBoundingBox">
+                                            <path fill="#008000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,0.5z"/>
+                                          </pattern>
+                                        </defs>  
+                                        <rect id="waves" class="water-fill" fill="url(#water)" width="3000"/> 
+                                      </svg>
+                                  </div>              
+                              </div>
+                              <h5>3,200,000</h5>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
     </div>
     <script src="../../../js/index.js"></script>
+    <script src="../../../js/percentage.js"></script>
 </body>
 </html>
