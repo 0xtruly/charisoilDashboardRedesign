@@ -1,0 +1,13 @@
+.dashboard-setup {
+  margin: 20px 40px 20px 10px;
+}
+
+.onboard-cma {
+  margin: 20px 10px 20px 0px;
+}
+
+.approve-transaction {
+  -ms-grid-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+}
+/*# sourceMappingURL=approve-transactions-for-onboarding.css.map */

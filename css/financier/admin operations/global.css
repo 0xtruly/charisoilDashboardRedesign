@@ -1,0 +1,12 @@
+.header-details-right h1 {
+  margin-left: 57px;
+}
+
+table td:nth-child(odd) {
+  width: 38%;
+}
+
+table td:nth-child(odd) {
+  width: 40%;
+}
+/*# sourceMappingURL=global.css.map */

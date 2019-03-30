@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,MAAM,EAAE,IAAI;CACf;;AACD,AAAA,gBAAgB,CAAC;EACb,MAAM,EAAE,IAAI;CACf;;AACD,AAAA,YAAY,CAAC,CAAC,CAAC;EACX,MAAM,EAAE,SAAS;CACpB",
+    "sources": [
+        "view-tickets-and-payments.scss"
+    ],
+    "names": [],
+    "file": "view-tickets-and-payments.css"
+}
