@@ -1,5 +1,5 @@
 .financier-approval {
-  padding: 15px;
+  padding: 45px;
   margin-top: 20px;
   font-size: small;
   display: -ms-grid;
@@ -404,6 +404,17 @@
   font-size: .8em;
 }
 
+.approval-submit > input {
+  background-color: #3663FD;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid #3663FD;
+  border-radius: 5px;
+  margin-right: 77px;
+  margin-top: 20px;
+  font-size: small;
+}
+
 @media (max-width: 700px) {
   .approve-transaction {
     margin: 0;
@@ -426,6 +437,18 @@
   .financier-fourth-body {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .approval-submit > input {
+    margin-right: 16ch;
+  }
+}
+
+@media (min-width: 1400px) {
+  .approval-submit > input {
+    margin-right: 20ch;
   }
 }
 /*# sourceMappingURL=approval.css.map */

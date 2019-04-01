@@ -1,12 +1,12 @@
 .cma-dashboard{
-    margin: 20px;
+    margin: 20px 30px;
     padding: 10px;
     font-size: small;
     overflow: auto;
 }
 
 .dashboard-search{
-    margin: 20px;
+    margin: 20px 30px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }

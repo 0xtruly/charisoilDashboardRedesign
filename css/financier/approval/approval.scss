@@ -1,5 +1,5 @@
 .financier-approval {
-    padding: 15px;
+    padding: 45px;
     margin-top: 20px;
     font-size: small;
     display: grid;
@@ -342,6 +342,16 @@
         }
     }
 }
+.approval-submit > input{
+    background-color: #3663FD;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #3663FD;
+    border-radius: 5px;
+    margin-right: 77px;
+    margin-top: 20px;
+    font-size: small;
+}
 
 // media queries
 @media(max-width: 700px){
@@ -370,4 +380,14 @@
         grid-template-columns: 1fr !important;
     }
 
+}
+@media(min-width: 1300px){
+    .approval-submit > input{
+        margin-right: 16ch;
+    }
+}
+@media(min-width: 1400px){
+    .approval-submit > input{
+        margin-right: 20ch;
+    }
 }
