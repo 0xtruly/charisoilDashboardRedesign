@@ -1,7 +1,7 @@
 .sales-transaction{
     padding: 20px;
     display: -ms-grid;
-    margin: 20px;
+    margin: 20px 40px;
     font-size: small;
     display: grid;
     background-color: #ffffff;

@@ -1,0 +1,33 @@
+.approval {
+  margin: 20px 40px;
+  font-size: small;
+}
+
+.header-details-right h1 {
+  font-family: inherit;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-left: 57px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.manage-users-bottom .manage-form {
+  position: relative;
+  left: 22vw;
+}
+
+@media (min-width: 1300px) {
+  .manage-users-bottom .manage-form {
+    position: relative;
+    left: 20rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .manage-users-bottom .manage-form {
+    position: relative;
+    left: 22rem;
+  }
+}
+/*# sourceMappingURL=setup.css.map */

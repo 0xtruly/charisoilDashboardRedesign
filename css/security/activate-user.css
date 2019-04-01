@@ -102,8 +102,9 @@ input, select, textarea{
 }
 
 .change-user select{
+    background: #ffffff;
     color: #3462FD;
-    width: 115%;
+    width: 112%;
 }
 
 .change-user td{
@@ -117,6 +118,8 @@ input, select, textarea{
     font-size: small;
     float: right;
     width: auto;
+    position: relative;
+    left: 35px;
 }
 
 .cancel{
@@ -200,5 +203,22 @@ input, select, textarea{
 
     .grant-user table thead tr td,  .grant-user table{
         font-size: 3vw;
+    }
+}
+@media(min-width: 1300px){
+    .change-user input[type="submit"], .change-user input[type="reset"]{
+        left: 8px
+    }
+}
+@media(min-width: 1400px){
+    .change-user input {
+        width: 100%;
+        margin: 10px 14px;
+    }
+    .change-user select {
+        background: #ffffff;
+        color: #3462FD;
+        width: 111%;
+        margin: 10px 15px;
     }
 }

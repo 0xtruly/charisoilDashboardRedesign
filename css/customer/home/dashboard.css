@@ -92,7 +92,7 @@
 .ticket-payment{
     display: -ms-grid;
     display: grid;
-    margin: 20px;
+    margin: 20px 40px;
     -ms-grid-columns:1fr;
     grid-template-columns:1fr;
     background-color: #ffffff;
@@ -110,7 +110,7 @@
 }
 
 .ticket-payment-paragraph{
-    margin: 20px;
+    margin: 20px 40px;
     font-size: small;
 }
 

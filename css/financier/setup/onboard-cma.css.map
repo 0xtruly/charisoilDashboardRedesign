@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,SAAS;EACjB,SAAS,EAAE,KAAK;CACnB;;AACD,AAAA,qBAAqB,CAAC,EAAE,CAAC;EACrB,WAAW,EAAE,OAAO;EACpB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,UAAU;EAC1B,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "onboard-cma.scss"
+    ],
+    "names": [],
+    "file": "onboard-cma.css"
+}
